@@ -13,7 +13,7 @@ const LanguageSwitcher = () => {
     if (value !== locale) {
       router.replace(`/${value}`);
     }
-    setIsOpen(false); // Закрывать меню при выборе языка
+    setIsOpen(false);
   };
 
   return (

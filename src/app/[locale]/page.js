@@ -46,15 +46,10 @@ export default function RootLayout({ children, params: { locale } }) {
           <WorkSection></WorkSection>
           <Development></Development>
           <MarketingSection></MarketingSection>
-
           <Ready />
           <Clients/>
           <Industries/>
-
           <Faq/>
-          
-          
-
           <Footer />
           <Colophon />
         </div>
