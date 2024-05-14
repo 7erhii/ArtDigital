@@ -3,7 +3,7 @@
 }
 
 .heroCardsContainer {
-  position: absolute;
+  position: relative;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
@@ -48,29 +48,70 @@
 
 .heroCardImageFirst {
   position: absolute;
-  top: 50%;
+  width: 100%;
+  max-width: 26em;
+
+  top: -15em;
   left: 50%;
   transform: translate(-50%, -50%) rotate(7deg);
+  border-radius: 40px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
 }
+
+
 .heroCardImageSecond {
   position: absolute;
-  top: 50%;
+  width: 100%;
+  max-width: 26em;
+  top: -15em;
   left: 50%;
   transform: translate(-50%, -50%) rotate(-7deg);
+  border-radius: 40px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
 }
 
 .heroCardImageThird {
   position: absolute;
-  top: 50%;
+  width: 100%;
+  max-width: 26em;
+  top: -15em;
   left: 50%;
   transform: translate(-50%, -50%);
+  border-radius: 40px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
 }
 .heroCardImageFourth {
   position: absolute;
-  top: 50%;
+  width: 100%;
+  max-width: 26em;
+  top: -15em;
   left: 50%;
   transform: translate(-50%, -50%);
+  border-radius: 40px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
 }
+
+.heroCardImageFirstLined {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  max-width: 26em;
+}
+.heroCardImageSecondLined {
+  display: none;
+}
+.heroCardImageThirdLined {
+  display: none;
+}
+.heroCardImageFourthLined {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  max-width: 26em;
+}
+
 .heroActions {
   position: absolute;
   display: flex;

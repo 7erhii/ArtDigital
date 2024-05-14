@@ -22,11 +22,9 @@ import imageCard4 from "@/assets/images/image-card4.png";
 import styles from "./Hero.module.css";
 
 import HeroTitle from "./ui/HeroTitle";
-import HeroCards from "../HeroCards/HeroCards";
 
 export default function Hero() {
   const t = useTranslations("Hero");
-  const [bgColor, setBgColor] = useState("#3C7BF6");
 
   const highlightKeyword = (text) => {
     const parts = text.split(/(ready | готово)/gi);
@@ -60,10 +58,10 @@ export default function Hero() {
       styles.heroCardImageThirdLined,
       styles.heroCardImageFourthLined,
     ];
-
+  
     if (activeButton === "cardIcon") {
       return baseClasses[index];
-    } else if (activeButton === "gridIcon") {
+    } else if (activeButton === "gridIcon") { 
       return linedClasses[index];
     }
     return "";
@@ -72,10 +70,10 @@ export default function Hero() {
   return (
     <div className="hero">
       <div
-        className="mx-auto text-center py-20  pb-0 "
+        className="mx-auto text-center py-20 pb-48"
         style={{ maxWidth: "62em" }}
       >
-        <div className="hero__title relative text-nowrap">
+        <div className="hero__title relative">
           <h2
             className="uppercase text-8xl font-poppins pr-[3em]"
             style={{ fontSize: "5.25em", fontWeight: "600" }}
@@ -98,8 +96,56 @@ export default function Hero() {
         {/* <button>CLICK1</button> */}
       </div>
 
-      <div>
-        <HeroCards/>
+
+
+      <div
+        className={`hero__bg bg-blue-600 flex justify-center ${styles.heroBg}`}
+      >
+        <Image src={heroBgImage} alt="Main Logo" />
+        {/* <div className={`hero__cards ${styles.heroCardsContainer}`}>
+          <button className={`card ${cardClass(0)}`}>
+            <Image src={imageCard1} alt="cardImage" />
+          </button>
+          <button className={`card ${cardClass(1)}`}>
+            <Image src={imageCard2} alt="cardImage" />
+          </button>
+          <button className={`card ${cardClass(2)}`}>
+            <Image src={imageCard3} alt="cardImage" />
+          </button>
+          <button className={`card ${cardClass(3)}`}>
+            <Image src={imageCard4} alt="cardImage" />
+          </button>
+        </div> */}
+        <div className={`hero__cards ${styles.heroCardsContainer}`}>
+          <button className={`card ${styles.cardFirstLined}`}>
+            <Image src={imageCard1} alt="cardImage" />
+          </button>
+          <button className={`card ${styles.cardSecondLined}`}>
+            <Image src={imageCard1} alt="cardImage" />
+          </button>
+        </div>
+        <div className={`hero__actions ${styles.heroActions}`}>
+          <button
+            onClick={() => handleButtonClick("cardIcon")}
+            className={
+              activeButton === "cardIcon"
+                ? `${styles.heroButton} ${styles.heroButtonActive}`
+                : styles.heroButton
+            }
+          >
+            <Image src={cardIcon} alt="" />
+          </button>
+          <button
+            onClick={() => handleButtonClick("gridIcon")}
+            className={
+              activeButton === "gridIcon"
+                ? `${styles.heroButton} ${styles.heroButtonActive}`
+                : styles.heroButton
+            }
+          >
+            <Image src={gridIcon} alt="" />
+          </button>
+        </div>
       </div>
     </div>
   );
