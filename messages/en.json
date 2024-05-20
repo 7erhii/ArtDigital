@@ -35,8 +35,27 @@
     "subtitle": "At our company, we're prepared for any challenge to ensure your business thrives. We're ready to create anything people desire, turning your ideas into digital solutions that exceed your expectations!",
     "button": "Start cooperation"
   },
-  "Index": {
-    "title": "Hello World"
+  "Cards": {
+    "card1": {
+      "title": "ready-made",
+      "subtitle": "Inspiration On Demand",
+      "descr": "More about Ready-Made"
+    },
+    "card2": {
+      "title": "Design",
+      "subtitle": "Crafting Visual Excellence",
+      "descr": "More about Design"
+    },
+    "card3": {
+      "title": "marketing",
+      "subtitle": "Strategic Impact",
+      "descr": "More about Marketing"
+    },
+    "card4": {
+      "title": "DEVELOPMENT",
+      "subtitle": "Building Your Wishes",
+      "descr": "More about Development"
+    }
   },
   "achievements": {
     "title": "The Pinnacle of",
@@ -264,8 +283,8 @@
     }
   },
   "Colophon": {
-    "copyright" : "Copyright © 2024 . All rights reserved",
-    "policy" : "Privacy Policy",
-    "terms" : "Terms & Conditions"
+    "copyright": "Copyright © 2024 . All rights reserved",
+    "policy": "Privacy Policy",
+    "terms": "Terms & Conditions"
   }
 }

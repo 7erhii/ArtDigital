@@ -15,20 +15,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function HeroCards() {
   const [activeButton, setActiveButton] = useState("card");
-  const [cardWidth, setCardWidth] = useState(14 * parseFloat(getComputedStyle(document.body).fontSize));
-  const [gap, setGap] = useState(3 * parseFloat(getComputedStyle(document.body).fontSize)); 
   const cardRefs = useRef([]);
-
-  const updateDimensions = () => {
-    const fontSize = parseFloat(getComputedStyle(document.body).fontSize);
-    setCardWidth(14 * fontSize);
-    setGap(4 * fontSize);
-  };
-
-  useEffect(() => {
-    window.addEventListener('resize', updateDimensions);
-    return () => window.removeEventListener('resize', updateDimensions);
-  }, []);
 
   const stackCards = () => {
     gsap.to(cardRefs.current, {
@@ -42,19 +29,21 @@ export default function HeroCards() {
         trigger: cardRefs.current,
         start: "top center",
         end: "bottom top",
-        toggleActions: "play none none none"
-      }
+        toggleActions: "play none none none",
+      },
     });
   };
 
   const spreadCards = () => {
-    const offset = cardWidth + gap; 
+    const cardWidth = 14 * 16;
+    const gap = 60; // px
+    const offset = cardWidth + gap;
 
     gsap.to(cardRefs.current, {
       duration: 0.5,
       x: (i) => {
         const indexOffset = i - cardRefs.current.length / 2 + 0.5;
-        return indexOffset * offset;
+        return indexOffset * (cardWidth + gap);
       },
       y: 0,
       rotation: 0,
@@ -64,8 +53,8 @@ export default function HeroCards() {
         trigger: cardRefs.current,
         start: "top center",
         end: "bottom top",
-        toggleActions: "play none none none"
-      }
+        toggleActions: "play none none none",
+      },
     });
   };
 
@@ -75,17 +64,28 @@ export default function HeroCards() {
     } else if (activeButton === "grid") {
       spreadCards();
     }
-  }, [activeButton, cardWidth, gap]); 
+  }, [activeButton]);
 
   return (
     <div className={styles.pageWrapper}>
+      <button className={styles.sideButton} style={{ left: "25%" }}></button>
       <div className={styles.container}>
         {[imageCard1, imageCard2, imageCard3, imageCard4].map((src, index) => (
-          <div key={src} ref={(el) => (cardRefs.current[index] = el)} className={styles.card}>
-            <Image src={src} alt="card image" />
+          // <div
+          //   key={src}
+          //   ref={(el) => (cardRefs.current[index] = el)}
+          //   className={styles.card}
+          // >
+          //   <Image src={src} alt="cardImage" />
+          // </div>
+          <div>
+            <div>title</div>
+            <Image src={src} alt="cardImage" />
+            <div>bottom</div>
           </div>
         ))}
       </div>
+      <button className={styles.sideButton} style={{ right: "25%" }}></button>
       <div className={`hero__actions ${styles.heroActions}`}>
         <button
           className={`${styles.heroButton} ${activeButton === "card" ? styles.heroButtonActive : ""}`}
