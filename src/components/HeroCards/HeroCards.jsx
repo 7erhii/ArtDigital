@@ -128,9 +128,9 @@ export default function HeroCards({ cards = cardsData }) {
         onMouseEnter={() => {
           gsap.to(cardRefs.current[cardRefs.current.length - 1], {
             duration: 0.5,
-            x: "20%",
+            x: "-120%",
             rotationX: -23,
-            rotationY: 41,
+            rotationY: -41,
             skewY: -12,
           });
         }}
@@ -217,9 +217,9 @@ export default function HeroCards({ cards = cardsData }) {
         onMouseEnter={() => {
           gsap.to(cardRefs.current[cardRefs.current.length - 1], {
             duration: 0.5,
-            x: "-20%",
+            x: "100%",
             rotationX: -23,
-            rotationY: -41,
+            rotationY: 41,
             skewY: -12,
           });
         }}
