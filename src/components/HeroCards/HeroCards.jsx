@@ -2,7 +2,6 @@ import React, { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-
 import styles from "./HeroCards.module.css";
 import cardIcon from "@/assets/icons/icon-cards.svg";
 import gridIcon from "@/assets/icons/icon-grid2.svg";
@@ -10,7 +9,6 @@ import imageCard1 from "@/assets/images/image-card1-bg.svg";
 import imageCard2 from "@/assets/images/image-card2-bg.svg";
 import imageCard3 from "@/assets/images/image-card3-bg.svg";
 import imageCard4 from "@/assets/images/image-card4-bg.svg";
-
 import { IoArrowForwardOutline } from "react-icons/io5";
 import { useTranslations } from "next-intl";
 
@@ -43,11 +41,30 @@ const cardsData = [
   },
 ];
 
+const lightenColor = (color, percent) => {
+  const num = parseInt(color.replace("#", ""), 16);
+  const amt = Math.round(2.55 * percent);
+  const R = (num >> 16) + amt;
+  const G = ((num >> 8) & 0x00ff) + amt;
+  const B = (num & 0x0000ff) + amt;
+  return (
+    "#" +
+    (0x1000000 +
+      (R < 255 ? (R < 1 ? 0 : R) : 255) * 0x10000 +
+      (G < 255 ? (G < 1 ? 0 : G) : 255) * 0x100 +
+      (B < 255 ? (B < 1 ? 0 : B) : 255)
+    )
+      .toString(16)
+      .slice(1)
+  );
+};
+
 export default function HeroCards({ cards = cardsData }) {
   const t = useTranslations("Cards");
   const [activeButton, setActiveButton] = useState("card");
   const [cardIndex, setCardIndex] = useState(0);
   const cardRefs = useRef([]);
+  const popUpRef = useRef(null);
 
   const stackCards = () => {
     gsap.to(cardRefs.current, {
@@ -90,12 +107,54 @@ export default function HeroCards({ cards = cardsData }) {
     });
   };
 
+  const updateColors = (index) => {
+    const reorderedCards = [
+      ...cards.slice(index),
+      ...cards.slice(0, index),
+    ];
+
+    const backgroundColor =
+      reorderedCards[3].cardColor === "#fff"
+        ? "#151515"
+        : reorderedCards[3].cardColor;
+
+    const previousCardColor = reorderedCards[0] ? reorderedCards[0].cardColor : "#151515";
+    const previousTextColor = previousCardColor === "#fff" ? "#151515" : "#fff";
+    const borderColor = previousCardColor === "#fff" ? "#ccc" : lightenColor(previousCardColor, 20);
+
+    gsap.to(popUpRef.current, {
+      duration: 0.24,
+      backgroundColor: previousCardColor,
+      color: previousTextColor,
+    });
+
+    return { backgroundColor, borderColor };
+  };
+
   const rotateCardsLeft = () => {
-    setCardIndex((prevIndex) => (prevIndex + 1) % cards.length);
+    setCardIndex((prevIndex) => {
+      const newIndex = (prevIndex + 1) % cards.length;
+      const { backgroundColor, borderColor } = updateColors(newIndex);
+      gsap.to(".pageWrapper", { backgroundColor, duration: 0.5 });
+      gsap.to(cardRefs.current[cardRefs.current.length - 1], {
+        borderTop: `2px solid ${borderColor}`,
+        borderRight: `2px solid ${borderColor}`,
+      });
+      return newIndex;
+    });
   };
 
   const rotateCardsRight = () => {
-    setCardIndex((prevIndex) => (prevIndex - 1 + cards.length) % cards.length);
+    setCardIndex((prevIndex) => {
+      const newIndex = (prevIndex - 1 + cards.length) % cards.length;
+      const { backgroundColor, borderColor } = updateColors(newIndex);
+      gsap.to(".pageWrapper", { backgroundColor, duration: 0.5 });
+      gsap.to(cardRefs.current[cardRefs.current.length - 1], {
+        borderTop: `2px solid ${borderColor}`,
+        borderRight: `2px solid ${borderColor}`,
+      });
+      return newIndex;
+    });
   };
 
   useEffect(() => {
@@ -112,39 +171,60 @@ export default function HeroCards({ cards = cardsData }) {
   ];
 
   const backgroundColor =
-    reorderedCards[3].cardColor === "#fff" ? "#151515" : reorderedCards[3].cardColor;
+    reorderedCards[3].cardColor === "#fff"
+      ? "#151515"
+      : reorderedCards[3].cardColor;
+
+  const previousCardColor = reorderedCards[0] ? reorderedCards[0].cardColor : "#151515";
+  const previousTextColor = previousCardColor === "#fff" ? "#151515" : "#fff";
+  const borderColor = previousCardColor === "#fff" ? "#ccc" : lightenColor(previousCardColor, 20);
 
   return (
-    <div
-      className={styles.pageWrapper}
-      style={{ backgroundColor }}
-    >
+    <div className={`${styles.pageWrapper} pageWrapper`} style={{ backgroundColor }}>
       <button
         className={styles.sideButton}
         style={{
           left: "25%",
           display: activeButton === "card" ? "block" : "none",
+          clipPath: "polygon(0% 0%, 100% 0%, 70% 50%, 100% 100%, 0% 100%)",
         }}
         onMouseEnter={() => {
           gsap.to(cardRefs.current[cardRefs.current.length - 1], {
             duration: 0.5,
             x: "-120%",
+            y: -50,
             rotationX: -23,
             rotationY: -41,
             skewY: -12,
+            borderTop: `2px solid ${borderColor}`,
+            borderRight: `2px solid ${borderColor}`,
+          });
+          gsap.to(popUpRef.current, {
+            duration: 0.24,
+            height: "100%",
+            backgroundColor: previousCardColor,
+            color: previousTextColor,
           });
         }}
         onMouseLeave={() => {
           gsap.to(cardRefs.current[cardRefs.current.length - 1], {
             duration: 0.5,
             x: 0,
+            y: -120,
             rotationX: 0,
             rotationY: 0,
             skewY: 0,
+            borderTop: "none",
+            borderRight: "none",
+          });
+          gsap.to(popUpRef.current, {
+            duration: 0.24,
+            height: "0%",
           });
         }}
         onClick={rotateCardsLeft}
       ></button>
+
       <div className={styles.container}>
         {[imageCard1, imageCard2, imageCard3, imageCard4].map((src, index) => (
           <div
@@ -202,8 +282,26 @@ export default function HeroCards({ cards = cardsData }) {
                 padding: "1em 1.3em",
               }}
             >
-              <p style={{ fontSize: "0.76em" }}>{t(reorderedCards[index].descr)}</p>
+              <p style={{ fontSize: "0.76em" }}>
+                {t(reorderedCards[index].descr)}
+              </p>
               <IoArrowForwardOutline />
+            </div>
+            <div
+              ref={popUpRef}
+              style={{
+                position: "absolute",
+                display: "flex",
+                bottom: "0",
+                width: "100%",
+                textAlign: "center",
+                justifyContent: "center",
+                alignItems: "center",
+                height: "0%",
+                overflow: "hidden",
+              }}
+            >
+              <p>{t('cardText.prevPage')}</p>
             </div>
           </div>
         ))}
@@ -213,23 +311,30 @@ export default function HeroCards({ cards = cardsData }) {
         style={{
           right: "25%",
           display: activeButton === "card" ? "block" : "none",
+          clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 30% 50%)",
         }}
         onMouseEnter={() => {
           gsap.to(cardRefs.current[cardRefs.current.length - 1], {
             duration: 0.5,
             x: "100%",
+            y: -50,
             rotationX: -23,
             rotationY: 41,
             skewY: -12,
+            borderTop: `2px solid ${borderColor}`,
+            borderRight: `2px solid ${borderColor}`,
           });
         }}
         onMouseLeave={() => {
           gsap.to(cardRefs.current[cardRefs.current.length - 1], {
             duration: 0.5,
             x: 0,
+            y: -120,
             rotationX: 0,
             rotationY: 0,
             skewY: 0,
+            borderTop: "none",
+            borderRight: "none",
           });
         }}
         onClick={rotateCardsRight}

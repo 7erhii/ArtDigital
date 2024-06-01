@@ -55,6 +55,10 @@
       "title": "DEVELOPMENT",
       "subtitle": "Building Your Wishes",
       "descr": "More about Development"
+    },
+    "cardText": {
+      "prevPage": "previous page",
+      "nextPage": "NEXT PAGE"
     }
   },
   "achievements": {
