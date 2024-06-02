@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import gsap from "gsap";
@@ -50,8 +50,7 @@ const lightenColor = (color, percent) => {
   const B = (num & 0x0000ff) + amt;
   return (
     "#" +
-    (
-      0x1000000 +
+    (0x1000000 +
       (R < 255 ? (R < 1 ? 0 : R) : 255) * 0x10000 +
       (G < 255 ? (G < 1 ? 0 : G) : 255) * 0x100 +
       (B < 255 ? (B < 1 ? 0 : B) : 255)
@@ -66,6 +65,7 @@ export default function HeroCards({ cards = cardsData }) {
   const [activeButton, setActiveButton] = useState("card");
   const [cardIndex, setCardIndex] = useState(0);
   const [popUpText, setPopUpText] = useState(t("cardText.prevPage"));
+  const [canInteract, setCanInteract] = useState(false);
   const cardRefs = useRef([]);
   const popUpRef = useRef(null);
 
@@ -79,9 +79,10 @@ export default function HeroCards({ cards = cardsData }) {
       stagger: 0.1,
       scrollTrigger: {
         trigger: cardRefs.current,
-        start: "top center",
+        start: "top 75%", // Start a bit earlier
         end: "bottom top",
         toggleActions: "play none none none",
+        onEnter: () => setCanInteract(true), // Enable interaction when animation completes
       },
     });
   };
@@ -137,6 +138,8 @@ export default function HeroCards({ cards = cardsData }) {
   };
 
   const rotateCardsLeft = () => {
+    if (!canInteract) return;
+    setCanInteract(false); // Disable interaction during animation
     setCardIndex((prevIndex) => {
       const newIndex = (prevIndex + 1) % cards.length;
       const { backgroundColor, borderColor } = updateColors(newIndex);
@@ -145,11 +148,14 @@ export default function HeroCards({ cards = cardsData }) {
         borderTop: `2px solid ${borderColor}`,
         borderRight: `2px solid ${borderColor}`,
       });
+      stackCards(newIndex);
       return newIndex;
     });
   };
 
   const rotateCardsRight = () => {
+    if (!canInteract) return;
+    setCanInteract(false); // Disable interaction during animation
     setCardIndex((prevIndex) => {
       const newIndex = (prevIndex - 1 + cards.length) % cards.length;
       const reorderedCards = [
@@ -182,7 +188,7 @@ export default function HeroCards({ cards = cardsData }) {
         backgroundColor: previousCardColor,
         color: previousTextColor,
       });
-
+      stackCards(newIndex);
       return newIndex;
     });
   };
@@ -236,41 +242,46 @@ export default function HeroCards({ cards = cardsData }) {
           left: "25%",
           display: activeButton === "card" ? "block" : "none",
           clipPath: "polygon(0% 0%, 100% 0%, 70% 50%, 100% 100%, 0% 100%)",
+          pointerEvents: canInteract ? "auto" : "none",
         }}
         onMouseEnter={() => {
           setPopUpText(t("cardText.prevPage"));
-          gsap.to(cardRefs.current[cardRefs.current.length - 1], {
-            duration: 0.5,
-            x: "-140%",
-            y: -50,
-            rotationX: -23,
-            rotationY: -41,
-            skewY: -12,
-            borderTop: `2px solid ${borderColorLeft}`,
-            borderRight: `2px solid ${borderColorLeft}`,
-          });
-          gsap.to(popUpRef.current, {
-            duration: 0.24,
-            height: "100%",
-            backgroundColor: previousCardColorLeft,
-            color: previousTextColorLeft,
-          });
+          if (canInteract) {
+            gsap.to(cardRefs.current[cardRefs.current.length - 1], {
+              duration: 0.5,
+              x: "-140%",
+              y: -50,
+              rotationX: -23,
+              rotationY: -41,
+              skewY: -12,
+              borderTop: `2px solid ${borderColorLeft}`,
+              borderRight: `2px solid ${borderColorLeft}`,
+            });
+            gsap.to(popUpRef.current, {
+              duration: 0.24,
+              height: "100%",
+              backgroundColor: previousCardColorLeft,
+              color: previousTextColorLeft,
+            });
+          }
         }}
         onMouseLeave={() => {
-          gsap.to(cardRefs.current[cardRefs.current.length - 1], {
-            duration: 0.5,
-            x: 0,
-            y: -120,
-            rotationX: 0,
-            rotationY: 0,
-            skewY: 0,
-            borderTop: "none",
-            borderRight: "none",
-          });
-          gsap.to(popUpRef.current, {
-            duration: 0.24,
-            height: "0%",
-          });
+          if (canInteract) {
+            gsap.to(cardRefs.current[cardRefs.current.length - 1], {
+              duration: 0.5,
+              x: 0,
+              y: -120,
+              rotationX: 0,
+              rotationY: 0,
+              skewY: 0,
+              borderTop: "none",
+              borderRight: "none",
+            });
+            gsap.to(popUpRef.current, {
+              duration: 0.24,
+              height: "0%",
+            });
+          }
         }}
         onClick={rotateCardsLeft}
       ></button>
@@ -303,8 +314,8 @@ export default function HeroCards({ cards = cardsData }) {
                     let color = blueWord
                       ? "#3C7BF6"
                       : greenWord
-                        ? "#82B55B"
-                        : "#151515";
+                      ? "#82B55B"
+                      : "#151515";
 
                     return (
                       <React.Fragment key={wordIndex}>
@@ -351,7 +362,7 @@ export default function HeroCards({ cards = cardsData }) {
                 overflow: "hidden",
               }}
             >
-              <p style={{textTransform: "uppercase"}}>{popUpText}</p>
+              <p style={{ textTransform: "uppercase" }}>{popUpText}</p>
             </div>
           </div>
         ))}
@@ -362,41 +373,46 @@ export default function HeroCards({ cards = cardsData }) {
           right: "25%",
           display: activeButton === "card" ? "block" : "none",
           clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 30% 50%)",
+          pointerEvents: canInteract ? "auto" : "none",
         }}
         onMouseEnter={() => {
           setPopUpText(t("cardText.nextPage"));
-          gsap.to(cardRefs.current[cardRefs.current.length - 1], {
-            duration: 0.5,
-            x: "140%",
-            y: -50,
-            rotationX: -23,
-            rotationY: 41,
-            skewY: -12,
-            borderTop: `2px solid ${borderColorRight}`,
-            borderLeft: `2px solid ${borderColorRight}`,
-          });
-          gsap.to(popUpRef.current, {
-            duration: 0.24,
-            height: "100%",
-            backgroundColor: previousCardColorRight,
-            color: previousTextColorRight,
-          });
+          if (canInteract) {
+            gsap.to(cardRefs.current[cardRefs.current.length - 1], {
+              duration: 0.5,
+              x: "140%",
+              y: -50,
+              rotationX: -23,
+              rotationY: 41,
+              skewY: -12,
+              borderTop: `2px solid ${borderColorRight}`,
+              borderLeft: `2px solid ${borderColorRight}`,
+            });
+            gsap.to(popUpRef.current, {
+              duration: 0.24,
+              height: "100%",
+              backgroundColor: previousCardColorRight,
+              color: previousTextColorRight,
+            });
+          }
         }}
         onMouseLeave={() => {
-          gsap.to(cardRefs.current[cardRefs.current.length - 1], {
-            duration: 0.5,
-            x: 0,
-            y: -120,
-            rotationX: 0,
-            rotationY: 0,
-            skewY: 0,
-            borderTop: "none",
-            borderLeft: "none",
-          });
-          gsap.to(popUpRef.current, {
-            duration: 0.24,
-            height: "0%",
-          });
+          if (canInteract) {
+            gsap.to(cardRefs.current[cardRefs.current.length - 1], {
+              duration: 0.5,
+              x: 0,
+              y: -120,
+              rotationX: 0,
+              rotationY: 0,
+              skewY: 0,
+              borderTop: "none",
+              borderLeft: "none",
+            });
+            gsap.to(popUpRef.current, {
+              duration: 0.24,
+              height: "0%",
+            });
+          }
         }}
         onClick={rotateCardsRight}
       ></button>
