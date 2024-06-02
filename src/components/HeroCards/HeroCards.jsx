@@ -1,3 +1,4 @@
+"use client"
 import React, { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import gsap from "gsap";
@@ -49,7 +50,8 @@ const lightenColor = (color, percent) => {
   const B = (num & 0x0000ff) + amt;
   return (
     "#" +
-    (0x1000000 +
+    (
+      0x1000000 +
       (R < 255 ? (R < 1 ? 0 : R) : 255) * 0x10000 +
       (G < 255 ? (G < 1 ? 0 : G) : 255) * 0x100 +
       (B < 255 ? (B < 1 ? 0 : B) : 255)
@@ -63,6 +65,7 @@ export default function HeroCards({ cards = cardsData }) {
   const t = useTranslations("Cards");
   const [activeButton, setActiveButton] = useState("card");
   const [cardIndex, setCardIndex] = useState(0);
+  const [popUpText, setPopUpText] = useState(t("cardText.prevPage"));
   const cardRefs = useRef([]);
   const popUpRef = useRef(null);
 
@@ -85,7 +88,7 @@ export default function HeroCards({ cards = cardsData }) {
 
   const spreadCards = () => {
     const cardWidth = 14 * 16;
-    const gap = 60; // px
+    const gap = 60; 
     const offset = cardWidth + gap;
 
     gsap.to(cardRefs.current, {
@@ -108,19 +111,21 @@ export default function HeroCards({ cards = cardsData }) {
   };
 
   const updateColors = (index) => {
-    const reorderedCards = [
-      ...cards.slice(index),
-      ...cards.slice(0, index),
-    ];
+    const reorderedCards = [...cards.slice(index), ...cards.slice(0, index)];
 
     const backgroundColor =
       reorderedCards[3].cardColor === "#fff"
         ? "#151515"
         : reorderedCards[3].cardColor;
 
-    const previousCardColor = reorderedCards[0] ? reorderedCards[0].cardColor : "#151515";
+    const previousCardColor = reorderedCards[0]
+      ? reorderedCards[0].cardColor
+      : "#151515";
     const previousTextColor = previousCardColor === "#fff" ? "#151515" : "#fff";
-    const borderColor = previousCardColor === "#fff" ? "#ccc" : lightenColor(previousCardColor, 20);
+    const borderColor =
+      previousCardColor === "#fff"
+        ? "#ccc"
+        : lightenColor(previousCardColor, 20);
 
     gsap.to(popUpRef.current, {
       duration: 0.24,
@@ -147,12 +152,37 @@ export default function HeroCards({ cards = cardsData }) {
   const rotateCardsRight = () => {
     setCardIndex((prevIndex) => {
       const newIndex = (prevIndex - 1 + cards.length) % cards.length;
-      const { backgroundColor, borderColor } = updateColors(newIndex);
+      const reorderedCards = [
+        ...cards.slice(newIndex),
+        ...cards.slice(0, newIndex),
+      ];
+
+      const backgroundColor =
+        reorderedCards[3].cardColor === "#fff"
+          ? "#151515"
+          : reorderedCards[3].cardColor;
+
+      const previousCardColor = reorderedCards[2]
+        ? reorderedCards[2].cardColor
+        : "#151515";
+      const previousTextColor =
+        previousCardColor === "#fff" ? "#151515" : "#fff";
+      const borderColor =
+        previousCardColor === "#fff"
+          ? "#ccc"
+          : lightenColor(previousCardColor, 20);
+
       gsap.to(".pageWrapper", { backgroundColor, duration: 0.5 });
       gsap.to(cardRefs.current[cardRefs.current.length - 1], {
         borderTop: `2px solid ${borderColor}`,
-        borderRight: `2px solid ${borderColor}`,
+        borderLeft: `2px solid ${borderColor}`,
       });
+      gsap.to(popUpRef.current, {
+        duration: 0.24,
+        backgroundColor: previousCardColor,
+        color: previousTextColor,
+      });
+
       return newIndex;
     });
   };
@@ -175,12 +205,31 @@ export default function HeroCards({ cards = cardsData }) {
       ? "#151515"
       : reorderedCards[3].cardColor;
 
-  const previousCardColor = reorderedCards[0] ? reorderedCards[0].cardColor : "#151515";
-  const previousTextColor = previousCardColor === "#fff" ? "#151515" : "#fff";
-  const borderColor = previousCardColor === "#fff" ? "#ccc" : lightenColor(previousCardColor, 20);
+  const previousCardColorLeft = reorderedCards[0]
+    ? reorderedCards[0].cardColor
+    : "#151515";
+  const previousTextColorLeft =
+    previousCardColorLeft === "#fff" ? "#151515" : "#fff";
+  const borderColorLeft =
+    previousCardColorLeft === "#fff"
+      ? "#ccc"
+      : lightenColor(previousCardColorLeft, 20);
+
+  const previousCardColorRight = reorderedCards[2]
+    ? reorderedCards[2].cardColor
+    : "#151515";
+  const previousTextColorRight =
+    previousCardColorRight === "#fff" ? "#151515" : "#fff";
+  const borderColorRight =
+    previousCardColorRight === "#fff"
+      ? "#ccc"
+      : lightenColor(previousCardColorRight, 20);
 
   return (
-    <div className={`${styles.pageWrapper} pageWrapper`} style={{ backgroundColor }}>
+    <div
+      className={`${styles.pageWrapper} pageWrapper`}
+      style={{ backgroundColor }}
+    >
       <button
         className={styles.sideButton}
         style={{
@@ -189,21 +238,22 @@ export default function HeroCards({ cards = cardsData }) {
           clipPath: "polygon(0% 0%, 100% 0%, 70% 50%, 100% 100%, 0% 100%)",
         }}
         onMouseEnter={() => {
+          setPopUpText(t("cardText.prevPage"));
           gsap.to(cardRefs.current[cardRefs.current.length - 1], {
             duration: 0.5,
-            x: "-120%",
+            x: "-140%",
             y: -50,
             rotationX: -23,
             rotationY: -41,
             skewY: -12,
-            borderTop: `2px solid ${borderColor}`,
-            borderRight: `2px solid ${borderColor}`,
+            borderTop: `2px solid ${borderColorLeft}`,
+            borderRight: `2px solid ${borderColorLeft}`,
           });
           gsap.to(popUpRef.current, {
             duration: 0.24,
             height: "100%",
-            backgroundColor: previousCardColor,
-            color: previousTextColor,
+            backgroundColor: previousCardColorLeft,
+            color: previousTextColorLeft,
           });
         }}
         onMouseLeave={() => {
@@ -253,8 +303,8 @@ export default function HeroCards({ cards = cardsData }) {
                     let color = blueWord
                       ? "#3C7BF6"
                       : greenWord
-                      ? "#82B55B"
-                      : "#151515";
+                        ? "#82B55B"
+                        : "#151515";
 
                     return (
                       <React.Fragment key={wordIndex}>
@@ -301,7 +351,7 @@ export default function HeroCards({ cards = cardsData }) {
                 overflow: "hidden",
               }}
             >
-              <p>{t('cardText.prevPage')}</p>
+              <p style={{textTransform: "uppercase"}}>{popUpText}</p>
             </div>
           </div>
         ))}
@@ -314,15 +364,22 @@ export default function HeroCards({ cards = cardsData }) {
           clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 30% 50%)",
         }}
         onMouseEnter={() => {
+          setPopUpText(t("cardText.nextPage"));
           gsap.to(cardRefs.current[cardRefs.current.length - 1], {
             duration: 0.5,
-            x: "100%",
+            x: "140%",
             y: -50,
             rotationX: -23,
             rotationY: 41,
             skewY: -12,
-            borderTop: `2px solid ${borderColor}`,
-            borderRight: `2px solid ${borderColor}`,
+            borderTop: `2px solid ${borderColorRight}`,
+            borderLeft: `2px solid ${borderColorRight}`,
+          });
+          gsap.to(popUpRef.current, {
+            duration: 0.24,
+            height: "100%",
+            backgroundColor: previousCardColorRight,
+            color: previousTextColorRight,
           });
         }}
         onMouseLeave={() => {
@@ -334,7 +391,11 @@ export default function HeroCards({ cards = cardsData }) {
             rotationY: 0,
             skewY: 0,
             borderTop: "none",
-            borderRight: "none",
+            borderLeft: "none",
+          });
+          gsap.to(popUpRef.current, {
+            duration: 0.24,
+            height: "0%",
           });
         }}
         onClick={rotateCardsRight}
