@@ -17,7 +17,7 @@ const Header = () => {
         <Nav></Nav>
 
         <div className="header__actions flex gap-4">
-          <button className="main-btn main-btn--sm main-btn--black bg-mainBlack text-white py-2 px-3 rounded-full	">
+        <button className={`main-btn main-btn--sm main-btn--black bg-mainBlack text-white py-2 px-3 rounded-full ${styles.headerButton}`}>
             <span>Contact us</span>
           </button>
           <div className="language-menu flex items-center">

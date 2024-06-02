@@ -42,7 +42,7 @@ export default function RootLayout({ children, params: { locale } }) {
           <Header />
           <Hero></Hero>
           <AchievementsSection></AchievementsSection>
-          {/* <DesignSection></DesignSection>
+          <DesignSection></DesignSection>
           <WorkSection></WorkSection>
           <Development></Development>
           <MarketingSection></MarketingSection>
@@ -51,7 +51,7 @@ export default function RootLayout({ children, params: { locale } }) {
           <Industries/>
           <Faq/>
           <Footer />
-          <Colophon /> */}
+          <Colophon />
         </div>
       </body>
     </html>

@@ -88,7 +88,7 @@ export default function Hero() {
           >
             {t("title-line2")}
           </h2>
-          <button className="main-btn main-btn--red btn absolute top-0 right-0">
+          <button className="main-btn main-btn--red btn absolute top-0 right-0" style={{background: "#3C7BF6", padding: "1.5em 2em", border: "0.3em solid #6E94F1", color: "#fff"}}>
             {t("button")}
           </button>
         </div>

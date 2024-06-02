@@ -25,3 +25,14 @@
 .navItem:hover {
     color: red;
 }
+
+.headerButton { 
+    background: #151515;
+    cursor: pointer;
+}
+
+.headerButton > span  { 
+    cursor: pointer;
+    font-size: 0.8em;
+
+}
