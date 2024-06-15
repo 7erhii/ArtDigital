@@ -1,13 +1,9 @@
 import React from "react";
 import { Inter } from "next/font/google";
-import "./globals.css";
-
+import { unstable_setRequestLocale } from "next-intl/server";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
 import FontResizer from "@/components/FontResizer.js";
-
-import Header from "@/components/Header/Header";
 import Hero from "@/components/Hero/Hero";
 import AchievementsSection from "@/components/Achievements/AchievementsSection";
 import DesignSection from "@/components/Design/DesignSection";
@@ -18,42 +14,31 @@ import Ready from "@/components/Ready/Ready";
 import Clients from "@/components/Clients/Clients";
 import Industries from "@/components/Industries/Industries";
 import Faq from "@/components/Faq/Faq";
-import Footer from "@/components/Footer/Footer";
-import Colophon from "@/components/Colophon/Colophon";
 
 const inter = Inter({ subsets: ["latin"] });
 
 const locales = ["en", "ru"];
 
-import { unstable_setRequestLocale } from "next-intl/server";
-
 export function generateStaticParams() {
   return locales.map((locale) => ({ params: { locale } }));
 }
 
-export default function RootLayout({ children, params: { locale } }) {
+export default function HomePage({ params: { locale } }) {
   unstable_setRequestLocale(locale);
 
   return (
-    <html lang={locale}>
-      <body className={"main"}>
-        <FontResizer />
-        <div className="flex flex-col min-h-screen">
-          <Header />
-          <Hero></Hero>
-          <AchievementsSection></AchievementsSection>
-          <DesignSection></DesignSection>
-          <WorkSection></WorkSection>
-          <Development></Development>
-          <MarketingSection></MarketingSection>
-          <Ready />
-          <Clients/>
-          <Industries/>
-          <Faq/>
-          <Footer />
-          <Colophon />
-        </div>
-      </body>
-    </html>
+    <div className={inter.className}>
+      <FontResizer />
+      <Hero />
+      <AchievementsSection />
+      <DesignSection />
+      <WorkSection />
+      <Development />
+      <MarketingSection />
+      <Ready />
+      <Clients />
+      <Industries />
+      <Faq />
+    </div>
   );
 }

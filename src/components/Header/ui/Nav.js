@@ -1,30 +1,27 @@
 import { getMessages } from "next-intl/server";
-
+import Link from "next/link";
 import { LuLayoutGrid } from "react-icons/lu";
 import styles from "./Nav.module.css";
 
-
-const Nav = async () => {
-  const { Header } = await getMessages();
+const Nav = async ({ locale }) => {
+  const { Header } = await getMessages({ locale });
 
   const t = (key) => {
-    if (typeof Header === 'object' && Header !== null) {
-      return Header[key]; 
+    if (typeof Header === "object" && Header !== null) {
+      return Header[key];
     }
-    return '';
+    return "";
   };
 
   return (
     <nav className={styles.nav}>
       <ul className={styles.menu}>
-
-
-      <li className={styles.navItem}>
+        <li className={styles.navItem}>
           <div className={styles.navTitle}>{t("title1")}</div>
           <div className={styles.navDropdovnGroup}>
             <div className={styles.navDropdovnItem}>
               <LuLayoutGrid />
-              <p> {t("subtitle1-1")}</p>
+              <Link href={`/${locale}/design`}>Go to Design </Link>
             </div>
             <div className={styles.navDropdovnItem}>
               <LuLayoutGrid />
@@ -36,7 +33,6 @@ const Nav = async () => {
             </div>
           </div>
         </li>
-
         <li className={styles.navItem}>
           <div className={styles.navTitle}>{t("title2")}</div>
           <div className={styles.navDropdovnGroup}>
@@ -54,7 +50,6 @@ const Nav = async () => {
             </div>
           </div>
         </li>
-
         <li className={styles.navItem}>
           <div className={styles.navTitle}>{t("title3")}</div>
           <div className={styles.navDropdovnGroup}>
@@ -72,7 +67,6 @@ const Nav = async () => {
             </div>
           </div>
         </li>
-
       </ul>
     </nav>
   );
