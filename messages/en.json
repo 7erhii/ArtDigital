@@ -1,34 +1,51 @@
 {
-  "Header": {
-    "title1": "Design",
-    "title2": "Development",
-    "title3": "Marketing",
-    "title4": "Ready-made Solutions ",
-    "title5": "More",
+  "Header": [
+    {
+      "title": "Design",
+      "links": ["/ux-ui", "/web", "/outdoor"],
+      "subtitles": [
+        "UX/ UI research and design",
+        "Web, landings and mobile design",
+        "Outdoor design for business"
+      ]
+    },
+    {
+      "title": "Development",
+      "links": ["/backend", "/frontend", "/fullstack"],
+      "subtitles": ["Back-End", "Front-End", "Full Stack"]
+    },
+    {
+      "title": "Marketing",
+      "links": ["/product-branding", "/seo-advertising"],
+      "subtitles": ["Product branding", "SEO Advertising"]
+    },
+    {
+      "title": "Ready-made Solutions",
+      "links": [
+        "/ip-telephony",
+        "/security-systems",
+        "/api-integration",
+        "/chat-bot",
+        "/billing-system",
+        "/iptv-ott"
+      ],
+      "subtitles": [
+        "IP telephony implementation & administration",
+        "Implementation of security systems",
+        "Implementation of a CRM system",
+        "Integration of systems using API",
+        "Chat bot implementations",
+        "Ready Billing system",
+        "IPTV/OTT"
+      ]
+    },
+    {
+      "title": "More",
+      "links": ["/service1", "/service2", "/service3"],
+      "subtitles": ["Service", "Service", "Service"]
+    }
+  ],
 
-    "subtitle1-1": "UX/UI Design",
-    "subtitle1-2": "UX/UI Design",
-    "subtitle1-3": "UX/UI Design",
-
-    "subtitle2-1": "Back-End",
-    "subtitle2-2": "Front-End",
-    "subtitle2-3": "Full Stack",
-
-    "subtitle3-1": "Product branding",
-    "subtitle3-2": "SEO Advertising",
-    "subtitle3-3": "Full Stack",
-
-    "subtitle4-1": "IP telephony implementation & administration",
-    "subtitle4-2": "Implementation of security systems",
-    "subtitle4-4": "Integration of systems using API",
-    "subtitle4-5": "Chat bot implementations",
-    "subtitle4-6": "Ready Billing system",
-    "subtitle4-7": "IPTV/OTT",
-
-    "subtitle5-1": "Service",
-    "subtitle5-2": "Service",
-    "subtitle5-3": "Service"
-  },
   "Hero": {
     "title-line1": "we are ready to",
     "title-line2": "with you bussiness",
@@ -290,5 +307,237 @@
     "copyright": "Copyright © 2024 . All rights reserved",
     "policy": "Privacy Policy",
     "terms": "Terms & Conditions"
+  },
+  "FrontEnd": {
+    "Hero": {
+      "HeroTitle": "Professional Front-end Development",
+      "HeroSubtitle": "Creating innovative and user-friendly web interfaces that impress your clients and enhance your business efficiency",
+      "HeroButton": "Contact us",
+      "HeroButtonClear": "Button"
+    },
+    "About": {
+      "Title": "all about",
+      "Subtitle": "Our Clients",
+      "Description": "Discover how we partner with businesses to drive success through tailored solutions and exceptional service."
+    },
+    "Services": {
+      "Title": "SERVICES",
+      "Subtitle": "Front-End development services",
+      "Description": "The best service for all your needs"
+    },
+    "Stack": {
+      "Title": "TECH STACK",
+      "Subtitle": "Crafting Visual Excellence",
+      "Description": "From Concept to Creation, Your Vision Brought to Life"
+    },
+    "Advantages": {
+      "Title": "Advantages",
+      "Subtitle": "Why Front-end Development Matters",
+      "Description": "Unleash the full potential of your website with responsive, dynamic, and user-centric front-end solutions",
+      "Items": [
+        {
+          "Title": "Enhanced User Experience",
+          "Description": "Front-end development focuses on creating intuitive and engaging interfaces that make it easy for users to navigate and interact with your website."
+        },
+        {
+          "Title": "Responsive Design",
+          "Description": "Ensures your website looks and functions well on all devices, from desktops to smartphones, providing a seamless experience for users."
+        },
+        {
+          "Title": "Faster Load Times",
+          "Description": "Optimized front-end code and efficient resource management lead to quicker page loads, reducing bounce rates and improving user satisfaction"
+        },
+        {
+          "Title": "Cross-Browser Compatibility",
+          "Description": "Front-end development ensures your website works consistently across different browsers, offering a uniform experience for all users."
+        },
+        {
+          "Title": "SEO Optimization",
+          "Description": "Properly structured front-end code and fast-loading pages improve your website's visibility on search engines, helping attract more organic traffic."
+        },
+        {
+          "Title": "Scalability and Maintenance",
+          "Description": "Well-organized and modular front-end code makes it easier to update and scale your website as your business grows, ensuring long-term sustainability."
+        }
+      ]
+    },
+    "Process": {
+      "Title": "process",
+      "Subtitle": "Front-End Development Process",
+      "Description": "A step-by-step process for creating effective and intuitive user interfaces.",
+      "Steps": [
+        {
+          "Title": "Analysis and Planning",
+          "Description": "Understanding project requirements and defining a clear roadmap"
+        },
+        {
+          "Title": "Wireframing and Prototyping",
+          "Description": "Designing the basic structure and interactive elements of the user interface"
+        },
+        {
+          "Title": "Visual Design",
+          "Description": "Crafting the aesthetic elements and overall look of the website"
+        },
+        {
+          "Title": "Development",
+          "Description": "Writing clean, efficient code to bring the design to life"
+        },
+        {
+          "Title": "Deployment",
+          "Description": "Launching the website and making it accessible to users"
+        },
+        {
+          "Title": "Maintenance and Updates",
+          "Description": "Continuously improving the website and adding new features based on user feedback and emerging trends"
+        }
+      ]
+    },
+    "FAQ": {
+      "Title": "faq",
+      "Subtitle": "Frequently Asked Questions",
+      "Description": "",
+      "Items": [
+        {
+          "Question": "What is front-end development?",
+          "Answer": "Front-end development involves creating the part of a website that users interact with directly. This includes the design, layout, and interactive elements."
+        },
+        {
+          "Question": "Why is responsive design important in front-end development?",
+          "Answer": "Responsive design ensures that a website looks and functions well on a variety of devices, providing a seamless user experience."
+        },
+        {
+          "Question": "What technologies are commonly used in front-end development?",
+          "Answer": "Common technologies include HTML, CSS, JavaScript, and various frameworks and libraries such as React, Angular, and Vue.js."
+        },
+        {
+          "Question": "How do you ensure cross-browser compatibility in front-end development?",
+          "Answer": "Cross-browser compatibility is ensured by testing the website on multiple browsers and using polyfills and fallbacks for unsupported features."
+        },
+        {
+          "Question": "How does front-end development differ from back-end development?",
+          "Answer": "Front-end development focuses on the user interface and experience, while back-end development involves server-side logic, databases, and application functionality."
+        },
+        {
+          "Question": "What is the role of a front-end developer in a web development team?",
+          "Answer": "A front-end developer is responsible for implementing visual elements that users interact with, ensuring a cohesive and responsive user experience."
+        }
+      ]
+    }
+  },
+  "BackEnd": {
+    "Hero": {
+      "HeroTitle": "Professional Back-end Development",
+      "HeroSubtitle": "Creating innovative and user-friendly web interfaces that impress your clients and enhance your business efficiency",
+      "HeroButton": "Contact us",
+      "HeroButtonClear": "Button"
+    },
+    "About": {
+      "Title": "all about",
+      "Subtitle": "Our Clients",
+      "Description": "Discover how we partner with businesses to drive success through tailored solutions and exceptional service."
+    },
+    "Services": {
+      "Title": "SERVICES",
+      "Subtitle": "Front-End development services",
+      "Description": "The best service for all your needs"
+    },
+    "Stack": {
+      "Title": "TECH STACK",
+      "Subtitle": "Crafting Visual Excellence",
+      "Description": "From Concept to Creation, Your Vision Brought to Life"
+    },
+    "Advantages": {
+      "Title": "Advantages",
+      "Subtitle": "Why Front-end Development Matters",
+      "Description": "Unleash the full potential of your website with responsive, dynamic, and user-centric front-end solutions",
+      "Items": [
+        {
+          "Title": "Enhanced User Experience",
+          "Description": "Front-end development focuses on creating intuitive and engaging interfaces that make it easy for users to navigate and interact with your website."
+        },
+        {
+          "Title": "Responsive Design",
+          "Description": "Ensures your website looks and functions well on all devices, from desktops to smartphones, providing a seamless experience for users."
+        },
+        {
+          "Title": "Faster Load Times",
+          "Description": "Optimized front-end code and efficient resource management lead to quicker page loads, reducing bounce rates and improving user satisfaction"
+        },
+        {
+          "Title": "Cross-Browser Compatibility",
+          "Description": "Front-end development ensures your website works consistently across different browsers, offering a uniform experience for all users."
+        },
+        {
+          "Title": "SEO Optimization",
+          "Description": "Properly structured front-end code and fast-loading pages improve your website's visibility on search engines, helping attract more organic traffic."
+        },
+        {
+          "Title": "Scalability and Maintenance",
+          "Description": "Well-organized and modular front-end code makes it easier to update and scale your website as your business grows, ensuring long-term sustainability."
+        }
+      ]
+    },
+    "Process": {
+      "Title": "process",
+      "Subtitle": "Front-End Development Process",
+      "Description": "A step-by-step process for creating effective and intuitive user interfaces.",
+      "Steps": [
+        {
+          "Title": "Analysis and Planning",
+          "Description": "Understanding project requirements and defining a clear roadmap"
+        },
+        {
+          "Title": "Wireframing and Prototyping",
+          "Description": "Designing the basic structure and interactive elements of the user interface"
+        },
+        {
+          "Title": "Visual Design",
+          "Description": "Crafting the aesthetic elements and overall look of the website"
+        },
+        {
+          "Title": "Development",
+          "Description": "Writing clean, efficient code to bring the design to life"
+        },
+        {
+          "Title": "Deployment",
+          "Description": "Launching the website and making it accessible to users"
+        },
+        {
+          "Title": "Maintenance and Updates",
+          "Description": "Continuously improving the website and adding new features based on user feedback and emerging trends"
+        }
+      ]
+    },
+    "FAQ": {
+      "Title": "faq",
+      "Subtitle": "Frequently Asked Questions",
+      "Description": "",
+      "Items": [
+        {
+          "Question": "What is front-end development?",
+          "Answer": "Front-end development involves creating the part of a website that users interact with directly. This includes the design, layout, and interactive elements."
+        },
+        {
+          "Question": "Why is responsive design important in front-end development?",
+          "Answer": "Responsive design ensures that a website looks and functions well on a variety of devices, providing a seamless user experience."
+        },
+        {
+          "Question": "What technologies are commonly used in front-end development?",
+          "Answer": "Common technologies include HTML, CSS, JavaScript, and various frameworks and libraries such as React, Angular, and Vue.js."
+        },
+        {
+          "Question": "How do you ensure cross-browser compatibility in front-end development?",
+          "Answer": "Cross-browser compatibility is ensured by testing the website on multiple browsers and using polyfills and fallbacks for unsupported features."
+        },
+        {
+          "Question": "How does front-end development differ from back-end development?",
+          "Answer": "Front-end development focuses on the user interface and experience, while back-end development involves server-side logic, databases, and application functionality."
+        },
+        {
+          "Question": "What is the role of a front-end developer in a web development team?",
+          "Answer": "A front-end developer is responsible for implementing visual elements that users interact with, ensuring a cohesive and responsive user experience."
+        }
+      ]
+    }
   }
 }

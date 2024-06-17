@@ -3,7 +3,6 @@ import { Inter } from "next/font/google";
 import { unstable_setRequestLocale } from "next-intl/server";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import FontResizer from "@/components/FontResizer.js";
 import Hero from "@/components/Hero/Hero";
 import AchievementsSection from "@/components/Achievements/AchievementsSection";
 import DesignSection from "@/components/Design/DesignSection";
@@ -28,7 +27,6 @@ export default function HomePage({ params: { locale } }) {
 
   return (
     <div className={inter.className}>
-      <FontResizer />
       <Hero />
       <AchievementsSection />
       <DesignSection />

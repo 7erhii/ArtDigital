@@ -1,5 +1,7 @@
 import { Inter } from "next/font/google";
 import { NextIntlClientProvider, useMessages } from "next-intl";
+
+import FontResizer from "@/components/FontResizer.js";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import Colophon from "@/components/Colophon/Colophon";
@@ -20,6 +22,7 @@ export default function RootLayout({ children, params: { locale } }) {
       <body className={inter.className}>
         <NextIntlClientProvider messages={messages}>
           <div className="flex flex-col min-h-screen">
+            <FontResizer />
             <Header locale={locale} />
             <main className="flex-grow">{children}</main>
             <Footer />
