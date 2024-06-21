@@ -1,11 +1,12 @@
 import { Inter } from "next/font/google";
 import { NextIntlClientProvider, useMessages } from "next-intl";
-
 import FontResizer from "@/components/FontResizer.js";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import Colophon from "@/components/Colophon/Colophon";
 import "./globals.css";
+import ContactForm from "@/components/ui/ContactForm/ContactForm";
+import Faq from "@/components/Faq/Faq";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,12 +20,14 @@ export default function RootLayout({ children, params: { locale } }) {
 
   return (
     <html lang={locale}>
-      <body className={inter.className}>
+      <body className={inter.className} style={{fontSize: "16px"}}>
         <NextIntlClientProvider messages={messages}>
           <div className="flex flex-col min-h-screen">
             <FontResizer />
             <Header locale={locale} />
             <main className="flex-grow">{children}</main>
+            <ContactForm/>
+            <Faq/>
             <Footer />
             <Colophon />
           </div>

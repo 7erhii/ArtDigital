@@ -36,7 +36,6 @@ export default function HomePage({ params: { locale } }) {
       <Ready />
       <Clients />
       <Industries />
-      <Faq />
     </div>
   );
 }

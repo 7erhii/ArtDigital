@@ -115,7 +115,7 @@ export default function Development() {
         />
 
         <BorderedTitle title={"DeveopmentSection"} />
-        <GridCards cardsData={cardsDataFront} />
+        <GridCards cardsData={cardsDataFront} type=""/>
 
         <BorderedTitle title={"FrontEndSection"} />
         <GridCards cardsData={cardsDataBack} />

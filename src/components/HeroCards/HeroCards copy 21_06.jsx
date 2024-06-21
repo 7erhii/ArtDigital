@@ -21,28 +21,24 @@ const cardsData = [
     subscribe: "card1.subtitle",
     descr: "card1.descr",
     cardColor: "#151515",
-    image: imageCard1,
   },
   {
     title: "card3.title",
     subscribe: "card3.subtitle",
     descr: "card3.descr",
     cardColor: "#82B55B",
-    image: imageCard2,
   },
   {
     title: "card4.title",
     subscribe: "card4.subtitle",
     descr: "card4.descr",
     cardColor: "#fff",
-    image: imageCard3,
   },
   {
     title: "card2.title",
     subscribe: "card2.subtitle",
     descr: "card2.descr",
     cardColor: "#3C7BF6",
-    image: imageCard4,
   },
 ];
 
@@ -289,16 +285,18 @@ export default function HeroCards({ cards = cardsData }) {
       ></button>
 
       <div className={styles.container}>
-        {reorderedCards.map((card, index) => (
+        {[imageCard1, imageCard2, imageCard3, imageCard4].map((src, index) => (
           <div
-            key={card.image}
+            key={src}
             ref={(el) => (cardRefs.current[index] = el)}
             className={styles.card}
           >
             <div className={styles.cardText}>
-              <h2 className={styles.cardTitle}>{t(card.title)}</h2>
+              <h2 className={styles.cardTitle}>
+                {t(reorderedCards[index].title)}
+              </h2>
               <p className={styles.cardSubscribe}>
-                {t(card.subscribe)
+                {t(reorderedCards[index].subscribe)
                   .split(" ")
                   .map((word, wordIndex, wordsArray) => {
                     let blueWord = ["Visual", "Excellence"].includes(word);
@@ -314,8 +312,8 @@ export default function HeroCards({ cards = cardsData }) {
                     let color = blueWord
                       ? "#3C7BF6"
                       : greenWord
-                      ? "#82B55B"
-                      : "#151515";
+                        ? "#82B55B"
+                        : "#151515";
 
                     return (
                       <React.Fragment key={wordIndex}>
@@ -329,22 +327,22 @@ export default function HeroCards({ cards = cardsData }) {
                   })}
               </p>
             </div>
-            <Image src={card.image} alt="cardImage" priority />
+            <Image src={src} alt="cardImage" />
             <div
               style={{
-                backgroundColor: card.cardColor,
+                backgroundColor: reorderedCards[index].cardColor,
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "space-between",
                 color:
-                  card.cardColor === "#fff"
+                  reorderedCards[index].cardColor === "#fff"
                     ? "#151515"
                     : "#fff",
                 padding: "1em 1.3em",
               }}
             >
               <p style={{ fontSize: "0.76em" }}>
-                {t(card.descr)}
+                {t(reorderedCards[index].descr)}
               </p>
               <IoArrowForwardOutline />
             </div>

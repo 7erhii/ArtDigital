@@ -11,7 +11,7 @@ export default function CustomHero({
   coloredWords,
   specialWords,
 }) {
-  // добавлены новые пропсы
+
   const t = useTranslations(sectionName);
 
   return (

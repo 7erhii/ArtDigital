@@ -2,15 +2,16 @@ import styles from "./Header.module.css";
 import Image from "next/image";
 import mainLogo from "@/assets/images/main-logo.svg";
 import Nav from "./ui/Nav";
+import Link from "next/link";
 import LanguageSwitcher from "./ui/LanguageSwitcher";
 
 const Header = ({ locale }) => {
   return (
     <header className={styles.header}>
       <div className={styles.container}>
-        <a href={`/${locale}`} className="header__logo">
+        <Link href={`/${locale}`} className="header__logo">
           <Image src={mainLogo} alt="Main Logo" />
-        </a>
+        </Link>
         <Nav locale={locale} />
         <div className="header__actions flex gap-4">
           <button

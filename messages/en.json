@@ -318,17 +318,46 @@
     "About": {
       "Title": "all about",
       "Subtitle": "Our Clients",
-      "Description": "Discover how we partner with businesses to drive success through tailored solutions and exceptional service."
+      "Description": "Discover how we partner with businesses to drive success through tailored solutions and exceptional service.",
+      "InfoCards": [
+        {
+          "Title": "Connect",
+          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et sapien eu risus consectetur imperdiet. Maecenas sit amet lorem auctor, commodo est vulputate, volutpat felis"
+        },
+        {
+          "Title": "Research",
+          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et sapien eu risus consectetur imperdiet. Maecenas sit amet lorem auctor, commodo est vulputate, volutpat felis"
+        },
+        {
+          "Title": "Development",
+          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et sapien eu risus consectetur imperdiet. Maecenas sit amet lorem auctor, commodo est vulputate, volutpat felis"
+        }
+      ]
     },
     "Services": {
       "Title": "SERVICES",
       "Subtitle": "Front-End development services",
-      "Description": "The best service for all your needs"
+      "Description": "The best service for all your needs",
+      "ServicesCards": [
+        {
+          "Title": "Lorem ipsum dolor sit amet",
+          "Description": "Tailored user experiences and intuitive interfaces designed to elevate your product's performance"
+        },
+        {
+          "Title": "Lorem ipsum dolor sit amet",
+          "Description": "Tailored user experiences and intuitive interfaces designed to elevate your product's performance"
+        },
+        {
+          "Title": "Lorem ipsum dolor sit amet",
+          "Description": "Tailored user experiences and intuitive interfaces designed to elevate your product's performance"
+        }
+      ]
     },
     "Stack": {
       "Title": "TECH STACK",
       "Subtitle": "Crafting Visual Excellence",
-      "Description": "From Concept to Creation, Your Vision Brought to Life"
+      "Description": "From Concept to Creation, Your Vision Brought to Life",
+      "DoubleCard": "Nulla euismod sem eu fermentum volutpat. Interdum et malesuada fames ac ante ipsum primis in faucibus Nulla euismod sem eu fermentum volutpat. Interdum et"
     },
     "Advantages": {
       "Title": "Advantages",
@@ -396,7 +425,33 @@
       "Title": "faq",
       "Subtitle": "Frequently Asked Questions",
       "Description": "",
-      "Items": [
+      "MainPage": [
+        {
+          "Question": "What is front-end development?",
+          "Answer": "Front-end development involves creating the part of a website that users interact with directly. This includes the design, layout, and interactive elements."
+        },
+        {
+          "Question": "Why is responsive design important in front-end development?",
+          "Answer": "Responsive design ensures that a website looks and functions well on a variety of devices, providing a seamless user experience."
+        },
+        {
+          "Question": "What technologies are commonly used in front-end development?",
+          "Answer": "Common technologies include HTML, CSS, JavaScript, and various frameworks and libraries such as React, Angular, and Vue.js."
+        },
+        {
+          "Question": "How do you ensure cross-browser compatibility in front-end development?",
+          "Answer": "Cross-browser compatibility is ensured by testing the website on multiple browsers and using polyfills and fallbacks for unsupported features."
+        },
+        {
+          "Question": "How does front-end development differ from back-end development?",
+          "Answer": "Front-end development focuses on the user interface and experience, while back-end development involves server-side logic, databases, and application functionality."
+        },
+        {
+          "Question": "What is the role of a front-end developer in a web development team?",
+          "Answer": "A front-end developer is responsible for implementing visual elements that users interact with, ensuring a cohesive and responsive user experience."
+        }
+      ],
+      "FrontEndPage": [
         {
           "Question": "What is front-end development?",
           "Answer": "Front-end development involves creating the part of a website that users interact with directly. This includes the design, layout, and interactive elements."
@@ -434,12 +489,40 @@
     "About": {
       "Title": "all about",
       "Subtitle": "Our Clients",
-      "Description": "Discover how we partner with businesses to drive success through tailored solutions and exceptional service."
+      "Description": "Discover how we partner with businesses to drive success through tailored solutions and exceptional service.",
+      "InfoCards": [
+        {
+          "Title": "Connect",
+          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et sapien eu risus consectetur imperdiet. Maecenas sit amet lorem auctor, commodo est vulputate, volutpat felis"
+        },
+        {
+          "Title": "Research",
+          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et sapien eu risus consectetur imperdiet. Maecenas sit amet lorem auctor, commodo est vulputate, volutpat felis"
+        },
+        {
+          "Title": "Development",
+          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et sapien eu risus consectetur imperdiet. Maecenas sit amet lorem auctor, commodo est vulputate, volutpat felis"
+        }
+      ]
     },
     "Services": {
       "Title": "SERVICES",
-      "Subtitle": "Front-End development services",
-      "Description": "The best service for all your needs"
+      "Subtitle": "Back-End development services",
+      "Description": "The best service for all your needs",
+      "ServicesCards": [
+        {
+          "Title": "Lorem ipsum dolor sit amet",
+          "Description": "Tailored user experiences and intuitive interfaces designed to elevate your product's performance"
+        },
+        {
+          "Title": "Lorem ipsum dolor sit amet",
+          "Description": "Tailored user experiences and intuitive interfaces designed to elevate your product's performance"
+        },
+        {
+          "Title": "Lorem ipsum dolor sit amet",
+          "Description": "Tailored user experiences and intuitive interfaces designed to elevate your product's performance"
+        }
+      ]
     },
     "Stack": {
       "Title": "TECH STACK",
@@ -448,38 +531,38 @@
     },
     "Advantages": {
       "Title": "Advantages",
-      "Subtitle": "Why Front-end Development Matters",
+      "Subtitle": "Why Back-end Development Matters",
       "Description": "Unleash the full potential of your website with responsive, dynamic, and user-centric front-end solutions",
       "Items": [
         {
-          "Title": "Enhanced User Experience",
-          "Description": "Front-end development focuses on creating intuitive and engaging interfaces that make it easy for users to navigate and interact with your website."
+          "Title": "Database Management",
+          "Description": "Back-end development ensures efficient storage, retrieval, and management of data, allowing for dynamic and data-driven websites and applications"
         },
         {
-          "Title": "Responsive Design",
-          "Description": "Ensures your website looks and functions well on all devices, from desktops to smartphones, providing a seamless experience for users."
+          "Title": "User Authentication",
+          "Description": "Implements secure systems for user login, registration, and access control, ensuring data privacy and security"
         },
         {
-          "Title": "Faster Load Times",
-          "Description": "Optimized front-end code and efficient resource management lead to quicker page loads, reducing bounce rates and improving user satisfaction"
+          "Title": "Server-Side Logic",
+          "Description": "Manages the core functionality and logic of applications, enabling complex operations and processes to be executed behind the scenes"
         },
         {
-          "Title": "Cross-Browser Compatibility",
-          "Description": "Front-end development ensures your website works consistently across different browsers, offering a uniform experience for all users."
+          "Title": "API Integration",
+          "Description": "Facilitates seamless integration with third-party services and APIs, expanding the capabilities and functionality of the application"
         },
         {
-          "Title": "SEO Optimization",
-          "Description": "Properly structured front-end code and fast-loading pages improve your website's visibility on search engines, helping attract more organic traffic."
+          "Title": "Performance Optimization",
+          "Description": "Enhances the speed and performance of applications by optimizing server responses and managing server resources efficiently"
         },
         {
-          "Title": "Scalability and Maintenance",
-          "Description": "Well-organized and modular front-end code makes it easier to update and scale your website as your business grows, ensuring long-term sustainability."
+          "Title": "Scalability and Flexibility",
+          "Description": "Allows applications to handle increasing loads and grow with the business by implementing scalable server-side architecture and solutions"
         }
       ]
     },
     "Process": {
       "Title": "process",
-      "Subtitle": "Front-End Development Process",
+      "Subtitle": "Back-End Development Process",
       "Description": "A step-by-step process for creating effective and intuitive user interfaces.",
       "Steps": [
         {
@@ -491,12 +574,12 @@
           "Description": "Designing the basic structure and interactive elements of the user interface"
         },
         {
-          "Title": "Visual Design",
-          "Description": "Crafting the aesthetic elements and overall look of the website"
-        },
-        {
           "Title": "Development",
           "Description": "Writing clean, efficient code to bring the design to life"
+        },
+        {
+          "Title": "Deployment",
+          "Description": "Launching the website and making it accessible to users"
         },
         {
           "Title": "Deployment",
