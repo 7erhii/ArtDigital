@@ -26,8 +26,8 @@ export default function RootLayout({ children, params: { locale } }) {
             <FontResizer />
             <Header locale={locale} />
             <main className="flex-grow">{children}</main>
-            <ContactForm/>
-            <Faq/>
+            {/* <ContactForm/>
+            <Faq/> */}
             <Footer />
             <Colophon />
           </div>

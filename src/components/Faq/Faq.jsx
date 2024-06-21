@@ -1,15 +1,14 @@
 import React from "react";
-
 import { useTranslations } from "next-intl";
-
 import styles from "./Faq.module.css";
 import SectionTitle from "../ui/SectionTitle/SectionTitle";
-
 import CustomAccordion from "../ui/customAccordion/CustomAccordion";
 
+export default function Faq({ page }) {
+  const t = useTranslations("FAQ");
 
-export default function Faq() {
-  const t = useTranslations("Faq");
+  // Получение массива объектов из переводов
+  const items = t.raw(page);
 
   return (
     <div className={styles.FaqContainer}>
@@ -47,7 +46,7 @@ export default function Faq() {
       />
 
       <div>
-        <CustomAccordion />
+        <CustomAccordion data={items} />
       </div>
     </div>
   );

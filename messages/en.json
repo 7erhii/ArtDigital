@@ -227,6 +227,77 @@
     }
   },
 
+  "FAQ": {
+    "title": "faq",
+    "subtitle": "Frequently Asked Questions",
+    "MainPageItems": [
+      {
+        "title": "MAINWhat is back-end development?",
+        "descr": "MAINBack-end development involves creating the server-side logic, databases, and infrastructure that power the functionality of websites and applications"
+      },
+      {
+        "title": "MAINWhat is a database, and why is it important in back-end development?",
+        "descr": "MAINWe provide a comprehensive range of marketing strategies tailored to your specific needs. Our services include social media marketing, search engine optimization (SEO), pay-per-click (PPC) advertising, content marketing, email marketing, and more. We work closely with you to develop a strategy that aligns with your goals and maximizes your online presence."
+      },
+      {
+        "title": "What programming languages are commonly used in back-end development?",
+        "descr": "We provide a comprehensive range of marketing strategies tailored to your specific needs. Our services include social media marketing, search engine optimization (SEO), pay-per-click (PPC) advertising, content marketing, email marketing, and more. We work closely with you to develop a strategy that aligns with your goals and maximizes your online presence."
+      },
+      {
+        "title": "What is an API, and why is it important in back-end development?",
+        "descr": "We provide a comprehensive range of marketing strategies tailored to your specific needs. Our services include social media marketing, search engine optimization (SEO), pay-per-click (PPC) advertising, content marketing, email marketing, and more. We work closely with you to develop a strategy that aligns with your goals and maximizes your online presence."
+      },
+      {
+        "title": "How does back-end development interact with front-end development?",
+        "descr": "We provide a comprehensive range of marketing strategies tailored to your specific needs. Our services include social media marketing, search engine optimization (SEO), pay-per-click (PPC) advertising, content marketing, email marketing, and more. We work closely with you to develop a strategy that aligns with your goals and maximizes your online presence."
+      }
+    ],
+    "FrontendPageItems": [
+      {
+        "title": "FRONTWhat is back-end development?",
+        "descr": "FRONTBack-end development involves creating the server-side logic, databases, and infrastructure that power the functionality of websites and applications"
+      },
+      {
+        "title": "FRONTWhat is a database, and why is it important in back-end development?",
+        "descr": "FRONTWe provide a comprehensive range of marketing strategies tailored to your specific needs. Our services include social media marketing, search engine optimization (SEO), pay-per-click (PPC) advertising, content marketing, email marketing, and more. We work closely with you to develop a strategy that aligns with your goals and maximizes your online presence."
+      },
+      {
+        "title": "What programming languages are commonly used in back-end development?",
+        "descr": "We provide a comprehensive range of marketing strategies tailored to your specific needs. Our services include social media marketing, search engine optimization (SEO), pay-per-click (PPC) advertising, content marketing, email marketing, and more. We work closely with you to develop a strategy that aligns with your goals and maximizes your online presence."
+      },
+      {
+        "title": "What is an API, and why is it important in back-end development?",
+        "descr": "We provide a comprehensive range of marketing strategies tailored to your specific needs. Our services include social media marketing, search engine optimization (SEO), pay-per-click (PPC) advertising, content marketing, email marketing, and more. We work closely with you to develop a strategy that aligns with your goals and maximizes your online presence."
+      },
+      {
+        "title": "How does back-end development interact with front-end development?",
+        "descr": "We provide a comprehensive range of marketing strategies tailored to your specific needs. Our services include social media marketing, search engine optimization (SEO), pay-per-click (PPC) advertising, content marketing, email marketing, and more. We work closely with you to develop a strategy that aligns with your goals and maximizes your online presence."
+      }
+    ],
+    "BackendPageItems": [
+      {
+        "title": "FRONTWhat is back-end development?",
+        "descr": "FRONTBack-end development involves creating the server-side logic, databases, and infrastructure that power the functionality of websites and applications"
+      },
+      {
+        "title": "FRONTWhat is a database, and why is it important in back-end development?",
+        "descr": "FRONTWe provide a comprehensive range of marketing strategies tailored to your specific needs. Our services include social media marketing, search engine optimization (SEO), pay-per-click (PPC) advertising, content marketing, email marketing, and more. We work closely with you to develop a strategy that aligns with your goals and maximizes your online presence."
+      },
+      {
+        "title": "What programming languages are commonly used in back-end development?",
+        "descr": "We provide a comprehensive range of marketing strategies tailored to your specific needs. Our services include social media marketing, search engine optimization (SEO), pay-per-click (PPC) advertising, content marketing, email marketing, and more. We work closely with you to develop a strategy that aligns with your goals and maximizes your online presence."
+      },
+      {
+        "title": "What is an API, and why is it important in back-end development?",
+        "descr": "We provide a comprehensive range of marketing strategies tailored to your specific needs. Our services include social media marketing, search engine optimization (SEO), pay-per-click (PPC) advertising, content marketing, email marketing, and more. We work closely with you to develop a strategy that aligns with your goals and maximizes your online presence."
+      },
+      {
+        "title": "How does back-end development interact with front-end development?",
+        "descr": "We provide a comprehensive range of marketing strategies tailored to your specific needs. Our services include social media marketing, search engine optimization (SEO), pay-per-click (PPC) advertising, content marketing, email marketing, and more. We work closely with you to develop a strategy that aligns with your goals and maximizes your online presence."
+      }
+    ]
+  },
+
   "ContactForm": {
     "title": "Get In Touch With Your Future Partners!",
     "description": "Let's explore your project concept collaboratively. Get in touch with us to outline your objectives and explore how we can support you.",
@@ -260,36 +331,6 @@
     "inputTextarea": {
       "label": "Tell more about project",
       "placeholder": "Tell us more about you wishes"
-    }
-  },
-  "Faq": {
-    "title": "faq",
-    "subtitle": "Frequently Asked Questions",
-    "faq": {
-      "item1": {
-        "title": "What marketing strategies do you offer?",
-        "descr": "We provide a comprehensive range of marketing strategies tailored to your specific needs. Our services include social media marketing, search engine optimization (SEO), pay-per-click (PPC) advertising, content marketing, email marketing, and more. We work closely with you to develop a strategy that aligns with your goals and maximizes your online presence."
-      },
-      "item2": {
-        "title": "How long does it typically take to complete a project?",
-        "descr": "We provide a comprehensive range of marketing strategies tailored to your specific needs. Our services include social media marketing, search engine optimization (SEO), pay-per-click (PPC) advertising, content marketing, email marketing, and more. We work closely with you to develop a strategy that aligns with your goals and maximizes your online presence."
-      },
-      "item3": {
-        "title": "How do I get started with your services?",
-        "descr": "We provide a comprehensive range of marketing strategies tailored to your specific needs. Our services include social media marketing, search engine optimization (SEO), pay-per-click (PPC) advertising, content marketing, email marketing, and more. We work closely with you to develop a strategy that aligns with your goals and maximizes your online presence."
-      },
-      "item4": {
-        "title": "What industries do you specialize in?",
-        "descr": "We provide a comprehensive range of marketing strategies tailored to your specific needs. Our services include social media marketing, search engine optimization (SEO), pay-per-click (PPC) advertising, content marketing, email marketing, and more. We work closely with you to develop a strategy that aligns with your goals and maximizes your online presence."
-      },
-      "item5": {
-        "title": "Do you provide ongoing support after the project is completed?",
-        "descr": "We provide a comprehensive range of marketing strategies tailored to your specific needs. Our services include social media marketing, search engine optimization (SEO), pay-per-click (PPC) advertising, content marketing, email marketing, and more. We work closely with you to develop a strategy that aligns with your goals and maximizes your online presence."
-      },
-      "item6": {
-        "title": "What sets your development services apart from others?",
-        "descr": "We provide a comprehensive range of marketing strategies tailored to your specific needs. Our services include social media marketing, search engine optimization (SEO), pay-per-click (PPC) advertising, content marketing, email marketing, and more. We work closely with you to develop a strategy that aligns with your goals and maximizes your online presence."
-      }
     }
   },
   "Footer": {
@@ -420,63 +461,6 @@
           "Description": "Continuously improving the website and adding new features based on user feedback and emerging trends"
         }
       ]
-    },
-    "FAQ": {
-      "Title": "faq",
-      "Subtitle": "Frequently Asked Questions",
-      "Description": "",
-      "MainPage": [
-        {
-          "Question": "What is front-end development?",
-          "Answer": "Front-end development involves creating the part of a website that users interact with directly. This includes the design, layout, and interactive elements."
-        },
-        {
-          "Question": "Why is responsive design important in front-end development?",
-          "Answer": "Responsive design ensures that a website looks and functions well on a variety of devices, providing a seamless user experience."
-        },
-        {
-          "Question": "What technologies are commonly used in front-end development?",
-          "Answer": "Common technologies include HTML, CSS, JavaScript, and various frameworks and libraries such as React, Angular, and Vue.js."
-        },
-        {
-          "Question": "How do you ensure cross-browser compatibility in front-end development?",
-          "Answer": "Cross-browser compatibility is ensured by testing the website on multiple browsers and using polyfills and fallbacks for unsupported features."
-        },
-        {
-          "Question": "How does front-end development differ from back-end development?",
-          "Answer": "Front-end development focuses on the user interface and experience, while back-end development involves server-side logic, databases, and application functionality."
-        },
-        {
-          "Question": "What is the role of a front-end developer in a web development team?",
-          "Answer": "A front-end developer is responsible for implementing visual elements that users interact with, ensuring a cohesive and responsive user experience."
-        }
-      ],
-      "FrontEndPage": [
-        {
-          "Question": "What is front-end development?",
-          "Answer": "Front-end development involves creating the part of a website that users interact with directly. This includes the design, layout, and interactive elements."
-        },
-        {
-          "Question": "Why is responsive design important in front-end development?",
-          "Answer": "Responsive design ensures that a website looks and functions well on a variety of devices, providing a seamless user experience."
-        },
-        {
-          "Question": "What technologies are commonly used in front-end development?",
-          "Answer": "Common technologies include HTML, CSS, JavaScript, and various frameworks and libraries such as React, Angular, and Vue.js."
-        },
-        {
-          "Question": "How do you ensure cross-browser compatibility in front-end development?",
-          "Answer": "Cross-browser compatibility is ensured by testing the website on multiple browsers and using polyfills and fallbacks for unsupported features."
-        },
-        {
-          "Question": "How does front-end development differ from back-end development?",
-          "Answer": "Front-end development focuses on the user interface and experience, while back-end development involves server-side logic, databases, and application functionality."
-        },
-        {
-          "Question": "What is the role of a front-end developer in a web development team?",
-          "Answer": "A front-end developer is responsible for implementing visual elements that users interact with, ensuring a cohesive and responsive user experience."
-        }
-      ]
     }
   },
   "BackEnd": {
@@ -588,37 +572,6 @@
         {
           "Title": "Maintenance and Updates",
           "Description": "Continuously improving the website and adding new features based on user feedback and emerging trends"
-        }
-      ]
-    },
-    "FAQ": {
-      "Title": "faq",
-      "Subtitle": "Frequently Asked Questions",
-      "Description": "",
-      "Items": [
-        {
-          "Question": "What is front-end development?",
-          "Answer": "Front-end development involves creating the part of a website that users interact with directly. This includes the design, layout, and interactive elements."
-        },
-        {
-          "Question": "Why is responsive design important in front-end development?",
-          "Answer": "Responsive design ensures that a website looks and functions well on a variety of devices, providing a seamless user experience."
-        },
-        {
-          "Question": "What technologies are commonly used in front-end development?",
-          "Answer": "Common technologies include HTML, CSS, JavaScript, and various frameworks and libraries such as React, Angular, and Vue.js."
-        },
-        {
-          "Question": "How do you ensure cross-browser compatibility in front-end development?",
-          "Answer": "Cross-browser compatibility is ensured by testing the website on multiple browsers and using polyfills and fallbacks for unsupported features."
-        },
-        {
-          "Question": "How does front-end development differ from back-end development?",
-          "Answer": "Front-end development focuses on the user interface and experience, while back-end development involves server-side logic, databases, and application functionality."
-        },
-        {
-          "Question": "What is the role of a front-end developer in a web development team?",
-          "Answer": "A front-end developer is responsible for implementing visual elements that users interact with, ensuring a cohesive and responsive user experience."
         }
       ]
     }

@@ -13,6 +13,7 @@ import Ready from "@/components/Ready/Ready";
 import Clients from "@/components/Clients/Clients";
 import Industries from "@/components/Industries/Industries";
 import Faq from "@/components/Faq/Faq";
+import ContactForm from "@/components/ui/ContactForm/ContactForm";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -36,6 +37,8 @@ export default function HomePage({ params: { locale } }) {
       <Ready />
       <Clients />
       <Industries />
+      <ContactForm />
+      <Faq page="MainPageItems" />
     </div>
   );
 }

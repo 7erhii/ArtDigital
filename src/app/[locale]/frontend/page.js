@@ -41,6 +41,8 @@ import SectionTitle from "@/components/ui/SectionTitle/SectionTitle";
 import InfoCards from "@/components/ui/InfoCards/InfoCards";
 import GridCards from "@/components/ui/GridCards/GridCards";
 import StepsCards from "@/components/StepsCards/StepsCards";
+import ContactForm from "@/components/ui/ContactForm/ContactForm";
+import Faq from "@/components/Faq/Faq";
 
 const images = [
   lineImage1,
@@ -124,16 +126,16 @@ export default function FrontEndPage() {
 
   return (
     <div>
-      {/* <CustomHero
+      <CustomHero
         sectionName="FrontEnd"
         imageSrc={FrontendImage}
         imageAlt="FrontEnd image, people behind the table"
         coloredWords={["Front-end"]}
         specialWords={["Professional", "Front-end"]}
-      /> */}
-      {/* <div className={styles.aboutSection}></div> */}
+      />
+      <div className={styles.aboutSection}></div>
 
-      {/* <SectionWrapper dark={true}>
+      <SectionWrapper dark={true}>
         <SectionTitle
           title={t("About.Title")}
           subtitle={t("About.Subtitle")
@@ -170,13 +172,13 @@ export default function FrontEndPage() {
           styleType=""
         />
         <InfoCards data={aboutData} />
-      </SectionWrapper> */}
+      </SectionWrapper>
 
-      {/* <div className="bg-[#151515] pb-[5em]">
+      <div className="bg-[#151515] pb-[5em]">
         <RunningLine speed={7000} images={images} />
-      </div> */}
+      </div>
 
-      {/* <SectionWrapper>
+      <SectionWrapper>
         <SectionTitle
           title={t("Services.Title")}
           subtitle={t("Services.Subtitle")
@@ -213,9 +215,9 @@ export default function FrontEndPage() {
           styleType="sectionTitleWhite"
         />
         <InfoCards data={aboutData} color="dark" textAlign="left" />
-      </SectionWrapper> */}
+      </SectionWrapper>
 
-      {/* <SectionWrapper>
+      <SectionWrapper>
         <SectionTitle
           title={t("Stack.Title")}
           subtitle={t("Stack.Subtitle")
@@ -253,9 +255,9 @@ export default function FrontEndPage() {
         />
 
         <GridCards cardsData={cardsDataFront} type="white" />
-      </SectionWrapper> */}
+      </SectionWrapper>
 
-      {/* <SectionWrapper dark={true}>
+      <SectionWrapper dark={true}>
         <SectionTitle
           title={t("Advantages.Title")}
           subtitle={t("Advantages.Subtitle")
@@ -293,7 +295,7 @@ export default function FrontEndPage() {
         />
 
         <InfoCards data={AdvantagesData} color="white" textAlign="center" />
-      </SectionWrapper> */}
+      </SectionWrapper>
 
       <SectionWrapper dark={true}>
         <SectionTitle
@@ -334,6 +336,8 @@ export default function FrontEndPage() {
 
         <StepsCards data={StepsData} />
       </SectionWrapper>
+      <ContactForm />
+      <Faq page="FrontendPageItems" />
     </div>
   );
 }

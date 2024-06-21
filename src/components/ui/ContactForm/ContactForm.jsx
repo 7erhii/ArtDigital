@@ -22,7 +22,6 @@ import {
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 
-import { MdOutlineQuestionMark } from "react-icons/md";
 import iconQuestion from "@/assets/icons/icon-question.svg";
 
 import styles from "./ContactForm.module.css";
@@ -60,7 +59,7 @@ const contactFormData = {
   },
 };
 
-export default function ContactForm({ data = contactFormData }) {
+const ContactForm = React.memo(function ContactForm({ data = contactFormData }) {
   const t = useTranslations("ContactForm");
 
   return (
@@ -142,7 +141,6 @@ export default function ContactForm({ data = contactFormData }) {
                     <Tooltip>
                       <TooltipTrigger asChild>
                         <button>
-                          {/* <MdOutlineQuestionMark /> */}
                           <Image src={iconQuestion} alt="question" />
                         </button>
                       </TooltipTrigger>
@@ -187,7 +185,6 @@ export default function ContactForm({ data = contactFormData }) {
               {t(data.inputDropdown.title)}
             </Label>
             <Select>
-              {/* <SelectTrigger className="w-[180px]"> */}
               <SelectTrigger>
                 <SelectValue placeholder={t(data.inputDropdown.placeholder)} />
               </SelectTrigger>
@@ -218,30 +215,9 @@ export default function ContactForm({ data = contactFormData }) {
             <Button variant="outline">Button</Button>
           </div>
         </form>
-
-        {/* <Label htmlFor="email">Email</Label>
-      <TooltipProvider>
-        <div>
-          <Input
-            type="email"
-            id="email"
-            placeholder="Email"
-            icon={
-              <Tooltip>
-                <TooltipTrigger asChild>
-                  <button>
-                    <MdOutlineQuestionMark />
-                  </button>
-                </TooltipTrigger>
-                <TooltipContent>
-                  <p>Введите ваш email адрес</p>
-                </TooltipContent>
-              </Tooltip>
-            }
-          />
-        </div>
-      </TooltipProvider> */}
       </div>
     </div>
   );
-}
+});
+
+export default ContactForm;

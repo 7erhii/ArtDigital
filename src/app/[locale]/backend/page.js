@@ -39,6 +39,8 @@ import SectionWrapper from "@/components/SectionWrapper/SectionWrapper";
 import SectionTitle from "@/components/ui/SectionTitle/SectionTitle";
 import InfoCards from "@/components/ui/InfoCards/InfoCards";
 import StepsCards from "@/components/StepsCards/StepsCards";
+import ContactForm from "@/components/ui/ContactForm/ContactForm";
+import Faq from "@/components/Faq/Faq";
 
 const images = [
   lineImage1,
@@ -111,15 +113,15 @@ export default function BackendPage() {
 
   return (
     <div className={inter.className}>
-      {/* <CustomHero
+      <CustomHero
         sectionName="BackEnd"
         imageSrc={BackendImage}
         imageAlt={"Backend image, people behind the table"}
         coloredWords={["Back-end"]}
         specialWords={["Professional", "Back-end"]}
-      /> */}
+      />
 
-      {/* <SectionWrapper dark={true}>
+      <SectionWrapper dark={true}>
         <SectionTitle
           title={t("About.Title")}
           subtitle={t("About.Subtitle")
@@ -156,13 +158,13 @@ export default function BackendPage() {
           styleType=""
         />
         <InfoCards data={aboutData} color="white" textAlign="center" />
-      </SectionWrapper> */}
+      </SectionWrapper>
 
-      {/* <div className="bg-[#151515] pb-[5em]">
+      <div className="bg-[#151515] pb-[5em]">
         <RunningLine speed={7000} images={images} />
-      </div> */}
+      </div>
 
-      {/* <SectionWrapper>
+      <SectionWrapper>
         <SectionTitle
           title={t("Services.Title")}
           subtitle={t("Services.Subtitle")
@@ -199,9 +201,9 @@ export default function BackendPage() {
           styleType="sectionTitleWhite"
         />
         <InfoCards data={servicesData} color="dark" textAlign="left" />
-      </SectionWrapper> */}
+      </SectionWrapper>
 
-      {/* <SectionWrapper>
+      <SectionWrapper>
         <SectionTitle
           title={t("Stack.Title")}
           subtitle={t("Stack.Subtitle")
@@ -239,9 +241,9 @@ export default function BackendPage() {
         />
 
         <GridCards cardsData={cardsDataBack} type="white" />
-      </SectionWrapper> */}
+      </SectionWrapper>
 
-      {/* <SectionWrapper dark={true}>
+      <SectionWrapper dark={true}>
         <SectionTitle
           title={t("Advantages.Title")}
           subtitle={t("Advantages.Subtitle")
@@ -279,7 +281,7 @@ export default function BackendPage() {
         />
 
         <InfoCards data={AdvantagesData} color="white" textAlign="center" />
-      </SectionWrapper> */}
+      </SectionWrapper>
 
       <SectionWrapper dark={true}>
         <SectionTitle
@@ -320,6 +322,10 @@ export default function BackendPage() {
 
         <StepsCards data={StepsData} />
       </SectionWrapper>
+
+      <ContactForm></ContactForm>
+      <Faq page="BackendPageItems" />
+
     </div>
   );
 }
