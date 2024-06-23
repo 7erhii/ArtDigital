@@ -48,9 +48,9 @@ const Nav = ({ locale }) => {
       <ul className={styles.menu}>
         {menuData.map((item, index) => (
           <li className={styles.navItem} key={index}>
-            <div className={styles.navTitle}>
-              <Link href={`/${locale}${item.links[0]}`}>{item.title}</Link>
-            </div>
+            <Link href={`/${locale}${item.links[0]}`}>
+              <div className={styles.navTitle}>{item.title}</div>
+            </Link>
             <div className={styles.navDropdovnGroup}>
               {item.subtitles.map((subtitle, idx) => (
                 <div className={styles.navDropdovnItem} key={idx}>

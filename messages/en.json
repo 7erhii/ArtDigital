@@ -2,7 +2,7 @@
   "Header": [
     {
       "title": "Design",
-      "links": ["/ux-ui", "/web", "/outdoor"],
+      "links": ["/design", "/design", "/design"],
       "subtitles": [
         "UX/ UI research and design",
         "Web, landings and mobile design",
@@ -84,7 +84,13 @@
     "subtitle": "Our company stands as a beacon of excellence, having aided numerous businesses in achieving their goals. With a wealth of knowledge and a team of seasoned professionals, we bring extensive experience to every project. Our track record speaks volumes, as satisfied clients continue to be our greatest testament.",
     "subtitleSecond": "Driven by a passion for innovation and a commitment to excellence, we continuously strive to exceed expectations. Our collaborative approach ensures that each client receives personalised attention and solutions tailored to their unique needs. ",
     "buttonText": "More about us",
-    "titleSecond": "The achievements of our team, validated by the results attained"
+    "titleSecond": "The achievements of our team, validated by the results attained",
+    "AchievementsData": [
+      { "Count": "9", "Description": "Years" },
+      { "Count": "53", "Description": "Projects" },
+      { "Count": "100+", "Description": "Solutions" },
+      { "Count": "190+", "Description": "Clients" }
+    ]
   },
   "designSection": {
     "title": "Design",
@@ -232,68 +238,80 @@
     "subtitle": "Frequently Asked Questions",
     "MainPageItems": [
       {
-        "title": "MAINWhat is back-end development?",
-        "descr": "MAINBack-end development involves creating the server-side logic, databases, and infrastructure that power the functionality of websites and applications"
-      },
-      {
-        "title": "MAINWhat is a database, and why is it important in back-end development?",
-        "descr": "MAINWe provide a comprehensive range of marketing strategies tailored to your specific needs. Our services include social media marketing, search engine optimization (SEO), pay-per-click (PPC) advertising, content marketing, email marketing, and more. We work closely with you to develop a strategy that aligns with your goals and maximizes your online presence."
-      },
-      {
-        "title": "What programming languages are commonly used in back-end development?",
+        "title": "What marketing strategies do you offer?",
         "descr": "We provide a comprehensive range of marketing strategies tailored to your specific needs. Our services include social media marketing, search engine optimization (SEO), pay-per-click (PPC) advertising, content marketing, email marketing, and more. We work closely with you to develop a strategy that aligns with your goals and maximizes your online presence."
       },
       {
-        "title": "What is an API, and why is it important in back-end development?",
+        "title": "How long does it typically take to complete a project?",
         "descr": "We provide a comprehensive range of marketing strategies tailored to your specific needs. Our services include social media marketing, search engine optimization (SEO), pay-per-click (PPC) advertising, content marketing, email marketing, and more. We work closely with you to develop a strategy that aligns with your goals and maximizes your online presence."
       },
       {
-        "title": "How does back-end development interact with front-end development?",
+        "title": "How do I get started with your services?",
+        "descr": "We provide a comprehensive range of marketing strategies tailored to your specific needs. Our services include social media marketing, search engine optimization (SEO), pay-per-click (PPC) advertising, content marketing, email marketing, and more. We work closely with you to develop a strategy that aligns with your goals and maximizes your online presence."
+      },
+      {
+        "title": "What industries do you specialize in?",
+        "descr": "We provide a comprehensive range of marketing strategies tailored to your specific needs. Our services include social media marketing, search engine optimization (SEO), pay-per-click (PPC) advertising, content marketing, email marketing, and more. We work closely with you to develop a strategy that aligns with your goals and maximizes your online presence."
+      },
+      {
+        "title": "Do you provide ongoing support after the project is completed?",
+        "descr": "We provide a comprehensive range of marketing strategies tailored to your specific needs. Our services include social media marketing, search engine optimization (SEO), pay-per-click (PPC) advertising, content marketing, email marketing, and more. We work closely with you to develop a strategy that aligns with your goals and maximizes your online presence."
+      },
+      {
+        "title": "What sets your development services apart from others?",
         "descr": "We provide a comprehensive range of marketing strategies tailored to your specific needs. Our services include social media marketing, search engine optimization (SEO), pay-per-click (PPC) advertising, content marketing, email marketing, and more. We work closely with you to develop a strategy that aligns with your goals and maximizes your online presence."
       }
     ],
     "FrontendPageItems": [
       {
-        "title": "FRONTWhat is back-end development?",
-        "descr": "FRONTBack-end development involves creating the server-side logic, databases, and infrastructure that power the functionality of websites and applications"
+        "title": "What is front-end development?",
+        "descr": "Front-end development involves creating the part of a website that users interact with directly. This includes the design, layout, and interactive elements"
       },
       {
-        "title": "FRONTWhat is a database, and why is it important in back-end development?",
-        "descr": "FRONTWe provide a comprehensive range of marketing strategies tailored to your specific needs. Our services include social media marketing, search engine optimization (SEO), pay-per-click (PPC) advertising, content marketing, email marketing, and more. We work closely with you to develop a strategy that aligns with your goals and maximizes your online presence."
+        "title": "Why is responsive design important in front-end development?",
+        "descr": "2"
       },
       {
-        "title": "What programming languages are commonly used in back-end development?",
-        "descr": "We provide a comprehensive range of marketing strategies tailored to your specific needs. Our services include social media marketing, search engine optimization (SEO), pay-per-click (PPC) advertising, content marketing, email marketing, and more. We work closely with you to develop a strategy that aligns with your goals and maximizes your online presence."
+        "title": "What technologies are commonly used in front-end development?",
+        "descr": "3"
       },
       {
-        "title": "What is an API, and why is it important in back-end development?",
-        "descr": "We provide a comprehensive range of marketing strategies tailored to your specific needs. Our services include social media marketing, search engine optimization (SEO), pay-per-click (PPC) advertising, content marketing, email marketing, and more. We work closely with you to develop a strategy that aligns with your goals and maximizes your online presence."
+        "title": "How do you ensure cross-browser compatibility in front-end development?",
+        "descr": "4"
       },
       {
-        "title": "How does back-end development interact with front-end development?",
-        "descr": "We provide a comprehensive range of marketing strategies tailored to your specific needs. Our services include social media marketing, search engine optimization (SEO), pay-per-click (PPC) advertising, content marketing, email marketing, and more. We work closely with you to develop a strategy that aligns with your goals and maximizes your online presence."
+        "title": "How does front-end development differ from back-end development?",
+        "descr": "5"
+      },
+      {
+        "title": "What is the role of a front-end developer in a web development team?",
+        "descr": "=)"
       }
     ],
     "BackendPageItems": [
       {
-        "title": "FRONTWhat is back-end development?",
-        "descr": "FRONTBack-end development involves creating the server-side logic, databases, and infrastructure that power the functionality of websites and applications"
+        "title": "What is back-end development?",
+        "descr": "Back-end development involves creating the server-side logic, databases, and infrastructure that power the functionality of websites and applications"
       },
       {
-        "title": "FRONTWhat is a database, and why is it important in back-end development?",
-        "descr": "FRONTWe provide a comprehensive range of marketing strategies tailored to your specific needs. Our services include social media marketing, search engine optimization (SEO), pay-per-click (PPC) advertising, content marketing, email marketing, and more. We work closely with you to develop a strategy that aligns with your goals and maximizes your online presence."
+        "title": "What is a database, and why is it important in back-end development?",
+        "descr": "2"
       },
       {
         "title": "What programming languages are commonly used in back-end development?",
-        "descr": "We provide a comprehensive range of marketing strategies tailored to your specific needs. Our services include social media marketing, search engine optimization (SEO), pay-per-click (PPC) advertising, content marketing, email marketing, and more. We work closely with you to develop a strategy that aligns with your goals and maximizes your online presence."
+        "descr": "3"
       },
       {
-        "title": "What is an API, and why is it important in back-end development?",
-        "descr": "We provide a comprehensive range of marketing strategies tailored to your specific needs. Our services include social media marketing, search engine optimization (SEO), pay-per-click (PPC) advertising, content marketing, email marketing, and more. We work closely with you to develop a strategy that aligns with your goals and maximizes your online presence."
+        "title": "How do you ensure the security of a back-end system?",
+        "descr": "4"
       },
       {
-        "title": "How does back-end development interact with front-end development?",
-        "descr": "We provide a comprehensive range of marketing strategies tailored to your specific needs. Our services include social media marketing, search engine optimization (SEO), pay-per-click (PPC) advertising, content marketing, email marketing, and more. We work closely with you to develop a strategy that aligns with your goals and maximizes your online presence."
+        "title": "",
+        "descr": ""
+      },
+      {
+        "title": "",
+        "descr": ""
       }
     ]
   },
@@ -505,6 +523,106 @@
         {
           "Title": "Lorem ipsum dolor sit amet",
           "Description": "Tailored user experiences and intuitive interfaces designed to elevate your product's performance"
+        }
+      ]
+    },
+    "Stack": {
+      "Title": "TECH STACK",
+      "Subtitle": "Crafting Visual Excellence",
+      "Description": "From Concept to Creation, Your Vision Brought to Life"
+    },
+    "Advantages": {
+      "Title": "Advantages",
+      "Subtitle": "Why Back-end Development Matters",
+      "Description": "Unleash the full potential of your website with responsive, dynamic, and user-centric front-end solutions",
+      "Items": [
+        {
+          "Title": "Database Management",
+          "Description": "Back-end development ensures efficient storage, retrieval, and management of data, allowing for dynamic and data-driven websites and applications"
+        },
+        {
+          "Title": "User Authentication",
+          "Description": "Implements secure systems for user login, registration, and access control, ensuring data privacy and security"
+        },
+        {
+          "Title": "Server-Side Logic",
+          "Description": "Manages the core functionality and logic of applications, enabling complex operations and processes to be executed behind the scenes"
+        },
+        {
+          "Title": "API Integration",
+          "Description": "Facilitates seamless integration with third-party services and APIs, expanding the capabilities and functionality of the application"
+        },
+        {
+          "Title": "Performance Optimization",
+          "Description": "Enhances the speed and performance of applications by optimizing server responses and managing server resources efficiently"
+        },
+        {
+          "Title": "Scalability and Flexibility",
+          "Description": "Allows applications to handle increasing loads and grow with the business by implementing scalable server-side architecture and solutions"
+        }
+      ]
+    },
+    "Process": {
+      "Title": "process",
+      "Subtitle": "Back-End Development Process",
+      "Description": "A step-by-step process for creating effective and intuitive user interfaces.",
+      "Steps": [
+        {
+          "Title": "Analysis and Planning",
+          "Description": "Understanding project requirements and defining a clear roadmap"
+        },
+        {
+          "Title": "Wireframing and Prototyping",
+          "Description": "Designing the basic structure and interactive elements of the user interface"
+        },
+        {
+          "Title": "Development",
+          "Description": "Writing clean, efficient code to bring the design to life"
+        },
+        {
+          "Title": "Deployment",
+          "Description": "Launching the website and making it accessible to users"
+        },
+        {
+          "Title": "Deployment",
+          "Description": "Launching the website and making it accessible to users"
+        },
+        {
+          "Title": "Maintenance and Updates",
+          "Description": "Continuously improving the website and adding new features based on user feedback and emerging trends"
+        }
+      ]
+    }
+  },
+  "Design": {
+    "Hero": {
+      "HeroTitle": "WE DESIGN YOUR BEST IDEAS ",
+      "HeroSubtitle": "Creating innovative and user-friendly web interfaces that impress your clients and enhance your business efficiency",
+      "HeroButton": "Contact us",
+      "HeroButtonClear": "Button"
+    },
+    "AchievementsData": [
+      { "Count": "140+", "Description": "Succeeded projects" },
+      { "Count": "$12MM", "Description": "Annual revenue" },
+      { "Count": "3K+", "Description": "Clients" }
+    ],
+
+    "Services": {
+      "Title": "SERVICES",
+      "Subtitle": "Back-End development services",
+      "Description": "The best service for all your needs",
+      "ServicesCards": [
+        {
+          "Title": "UX/ UI research and design",
+          "Description": "Tailored user experiences and intuitive interfaces designed to elevate your product's performance"
+        },
+        {
+          "Title": "Web, landings and mobile design",
+          "Description": "Engaging designs optimized for web, landing pages, and mobile platforms to drive user engagement and conversions"
+        },
+        {
+          "Title": "Outdoor design for business",
+          "Description": "Eye-catching outdoor designs crafted to enhance brand visibility and leave a lasting impression on your audience"
         }
       ]
     },

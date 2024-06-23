@@ -17,32 +17,11 @@ import React from "react";
 export default function AchievementsSection() {
   const t = useTranslations("achievements");
 
-  const cardData = [
-    {
-      icon: CalendarIcon,
-      number: "9",
-      text: "Years",
-      borderRadius: "40px 12px 12px 40px",
-    },
-    {
-      icon: ArrowIcon,
-      number: "53",
-      text: "Projects",
-      borderRadius: "12px 12px 12px 12px",
-    },
-    {
-      icon: CheckIcon,
-      number: "100+",
-      text: "Solutions",
-      borderRadius: "12px 12px 12px 12px",
-    },
-    {
-      icon: UserIcon,
-      number: "190+",
-      text: "Clients",
-      borderRadius: "12px 40px 40px 12px",
-    },
-  ];
+  const achievementsData = t.raw("AchievementsData").map((item, index) => ({
+    icon: index === 0 ? CalendarIcon : index === 1 ? ArrowIcon : index === 2 ? UserIcon : CheckIcon,
+    number: item.Count,
+    text: item.Description,
+  }));
 
   return (
     <div className={styles.AchievementsSection}>
@@ -125,15 +104,7 @@ export default function AchievementsSection() {
             </h2>
           </div>
           <div className={styles.achievementsCards}>
-            {cardData.map((data, index) => (
-              <AchievementCard
-                key={index}
-                icon={data.icon}
-                number={data.number}
-                text={data.text}
-                borderRadius={data.borderRadius}
-              />
-            ))}
+            <AchievementCard data={achievementsData} />
           </div>
         </div>
       </div>

@@ -14,9 +14,10 @@ export default function HeroCustomTitle({
       <h1 className={styles.HeroTitle}>
         {t("Hero.HeroTitle")
           .split(" ")
-          .map((word, index) => {
+          .map((word, index, array) => {
             const isSpecial = specialWords.includes(word);
             const isColored = coloredWords.includes(word);
+            const addSpace = (index < array.length - 1) ? ' ' : '';
             return (
               <React.Fragment key={index}>
                 <span
@@ -24,7 +25,7 @@ export default function HeroCustomTitle({
                     isColored ? { color: "#3C7BF6" } : { color: "#151515" }
                   }
                 >
-                  {word}
+                  {word}{addSpace}
                 </span>
                 {isSpecial && <br />}
               </React.Fragment>
