@@ -18,7 +18,7 @@ export default function DesignSection() {
         subtitle={t("subtitle")
           .split(" ")
           .map((word, index, words) => {
-            let specialWord = ["Visual"].includes(word);
+            let specialWord = [""].includes(word);
             let blueWord = ["Visual", "Excellence"].includes(word);
 
             if (specialWord || blueWord) {

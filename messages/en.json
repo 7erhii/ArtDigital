@@ -16,7 +16,7 @@
     },
     {
       "title": "Marketing",
-      "links": ["/product-branding", "/seo-advertising"],
+      "links": ["/marketing", "/seo-advertising"],
       "subtitles": ["Product branding", "SEO Advertising"]
     },
     {
@@ -609,7 +609,7 @@
 
     "Services": {
       "Title": "SERVICES",
-      "Subtitle": "Back-End development services",
+      "Subtitle": "Three Main Ways of the design",
       "Description": "The best service for all your needs",
       "ServicesCards": [
         {
@@ -631,65 +631,161 @@
       "Subtitle": "Crafting Visual Excellence",
       "Description": "From Concept to Creation, Your Vision Brought to Life"
     },
+    
+    "Design": {
+      "Title": "Design",
+      "Subtitle": "Crafting Visual Excellence",
+      "Description": "From Concept to Creation, Your Vision Brought to Life"
+    },
     "Advantages": {
-      "Title": "Advantages",
-      "Subtitle": "Why Back-end Development Matters",
-      "Description": "Unleash the full potential of your website with responsive, dynamic, and user-centric front-end solutions",
+      "Title": "advantages",
+      "Subtitle": "Business Success with UX/UI Design",
+      "Description": "Discover how our designs boost your business",
       "Items": [
         {
-          "Title": "Database Management",
-          "Description": "Back-end development ensures efficient storage, retrieval, and management of data, allowing for dynamic and data-driven websites and applications"
+          "Title": "Increased User Engagement",
+          "Description": "Engaging UX/UI designs captivate users, encouraging longer interactions and repeat visits, boosting customer engagement"
         },
         {
-          "Title": "User Authentication",
-          "Description": "Implements secure systems for user login, registration, and access control, ensuring data privacy and security"
+          "Title": "Higher Conversion Rates",
+          "Description": "Intuitive interfaces and clear calls-to-action guide users through the conversion funnel, resulting in increased sales and conversions"
         },
         {
-          "Title": "Server-Side Logic",
-          "Description": "Manages the core functionality and logic of applications, enabling complex operations and processes to be executed behind the scenes"
+          "Title": "Brand Differentiation",
+          "Description": "Unique and visually appealing designs set your brand apart, creating memorable experiences for users and enhancing brand recognition"
         },
         {
-          "Title": "API Integration",
-          "Description": "Facilitates seamless integration with third-party services and APIs, expanding the capabilities and functionality of the application"
+          "Title": "Improved Accessibility",
+          "Description": "Accessible design practices ensure that your product is usable by all, reaching a wider audience and enhancing inclusivity"
         },
         {
-          "Title": "Performance Optimization",
-          "Description": "Enhances the speed and performance of applications by optimizing server responses and managing server resources efficiently"
+          "Title": "Faster Time to Market",
+          "Description": "Efficient design processes reduce development time, enabling quicker launches and giving your business a competitive edge"
         },
         {
-          "Title": "Scalability and Flexibility",
-          "Description": "Allows applications to handle increasing loads and grow with the business by implementing scalable server-side architecture and solutions"
+          "Title": "Lower Support Costs",
+          "Description": "Intuitive designs minimize user confusion and support requests, reducing the need for customer support and associated costs"
         }
       ]
     },
     "Process": {
       "Title": "process",
-      "Subtitle": "Back-End Development Process",
-      "Description": "A step-by-step process for creating effective and intuitive user interfaces.",
+      "Subtitle": "Design Creation Process",
+      "Description": "From research to implementation, learn the four key steps in crafting effective designs",
       "Steps": [
         {
-          "Title": "Analysis and Planning",
-          "Description": "Understanding project requirements and defining a clear roadmap"
+          "Title": "Research & Discovery",
+          "Description": "Gather insights, analyze competitors, and define user needs and goals"
         },
         {
-          "Title": "Wireframing and Prototyping",
-          "Description": "Designing the basic structure and interactive elements of the user interface"
+          "Title": "Conceptualization & Ideation",
+          "Description": "Brainstorm ideas, sketch wireframes, and create design concepts based on research findings"
         },
         {
-          "Title": "Development",
-          "Description": "Writing clean, efficient code to bring the design to life"
+          "Title": "Prototyping & Testing",
+          "Description": "Develop interactive prototypes, conduct user testing, and gather feedback to refine designs"
         },
         {
-          "Title": "Deployment",
-          "Description": "Launching the website and making it accessible to users"
+          "Title": "Implementation & Iteration",
+          "Description": "Hand off designs to development, iterate based on user feedback, and continuously improve the product"
+        }
+      ]
+    }
+  },
+  "Marketing": {
+    "Hero": {
+      "HeroTitle": "Expert Marketing Solutions",
+      "HeroSubtitle": "Drive growth and engage your audience with tailored strategies and innovative campaigns designed to achieve your business goals.",
+      "HeroButton": "Contact us",
+      "HeroButtonClear": "Button"
+    },
+    "AchievementsData": [
+      { "Count": "140+", "Description": "Succeeded projects" },
+      { "Count": "$12MM", "Description": "Annual revenue" },
+      { "Count": "3K+", "Description": "Clients" }
+    ],
+
+    "Services": {
+      "Title": "SERVICES",
+      "Subtitle": "Three Main Ways of the design",
+      "Description": "The best service for all your needs",
+      "ServicesCards": [
+        {
+          "Title": "UX/ UI research and design",
+          "Description": "Tailored user experiences and intuitive interfaces designed to elevate your product's performance"
         },
         {
-          "Title": "Deployment",
-          "Description": "Launching the website and making it accessible to users"
+          "Title": "Web, landings and mobile design",
+          "Description": "Engaging designs optimized for web, landing pages, and mobile platforms to drive user engagement and conversions"
         },
         {
-          "Title": "Maintenance and Updates",
-          "Description": "Continuously improving the website and adding new features based on user feedback and emerging trends"
+          "Title": "Outdoor design for business",
+          "Description": "Eye-catching outdoor designs crafted to enhance brand visibility and leave a lasting impression on your audience"
+        }
+      ]
+    },
+    "Stack": {
+      "Title": "TECH STACK",
+      "Subtitle": "Crafting Visual Excellence",
+      "Description": "From Concept to Creation, Your Vision Brought to Life"
+    },
+    
+    "Design": {
+      "Title": "Design",
+      "Subtitle": "Crafting Visual Excellence",
+      "Description": "From Concept to Creation, Your Vision Brought to Life"
+    },
+    "Advantages": {
+      "Title": "advantages",
+      "Subtitle": "Business Success with UX/UI Design",
+      "Description": "Discover how our designs boost your business",
+      "Items": [
+        {
+          "Title": "Increased User Engagement",
+          "Description": "Engaging UX/UI designs captivate users, encouraging longer interactions and repeat visits, boosting customer engagement"
+        },
+        {
+          "Title": "Higher Conversion Rates",
+          "Description": "Intuitive interfaces and clear calls-to-action guide users through the conversion funnel, resulting in increased sales and conversions"
+        },
+        {
+          "Title": "Brand Differentiation",
+          "Description": "Unique and visually appealing designs set your brand apart, creating memorable experiences for users and enhancing brand recognition"
+        },
+        {
+          "Title": "Improved Accessibility",
+          "Description": "Accessible design practices ensure that your product is usable by all, reaching a wider audience and enhancing inclusivity"
+        },
+        {
+          "Title": "Faster Time to Market",
+          "Description": "Efficient design processes reduce development time, enabling quicker launches and giving your business a competitive edge"
+        },
+        {
+          "Title": "Lower Support Costs",
+          "Description": "Intuitive designs minimize user confusion and support requests, reducing the need for customer support and associated costs"
+        }
+      ]
+    },
+    "Process": {
+      "Title": "process",
+      "Subtitle": "Design Creation Process",
+      "Description": "From research to implementation, learn the four key steps in crafting effective designs",
+      "Steps": [
+        {
+          "Title": "Research & Discovery",
+          "Description": "Gather insights, analyze competitors, and define user needs and goals"
+        },
+        {
+          "Title": "Conceptualization & Ideation",
+          "Description": "Brainstorm ideas, sketch wireframes, and create design concepts based on research findings"
+        },
+        {
+          "Title": "Prototyping & Testing",
+          "Description": "Develop interactive prototypes, conduct user testing, and gather feedback to refine designs"
+        },
+        {
+          "Title": "Implementation & Iteration",
+          "Description": "Hand off designs to development, iterate based on user feedback, and continuously improve the product"
         }
       ]
     }

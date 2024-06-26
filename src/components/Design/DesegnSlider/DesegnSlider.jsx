@@ -3,9 +3,6 @@ import React from "react";
 import Slider from "react-slick";
 import { useTranslations } from "next-intl";
 
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
-
 import styles from "./DesignSlider.module.css";
 
 import sliderImage1 from "@/assets/images/slide1.png";

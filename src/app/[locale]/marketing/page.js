@@ -33,7 +33,7 @@ import iconNodeJs from "@/assets/icons/icon-nodejs.svg";
 
 import CustomHero from "@/components/CustomHero/CustomHero";
 
-import DesignImage from "@/assets/images/image-dev-design.png";
+import MarketingImage from "@/assets/images/image-dev-marketing.png";
 import RunningLine from "@/components/ui/RunningLine/RunningLine";
 import GridCards from "@/components/ui/GridCards/GridCards";
 import AchievementCard from "@/components/Achievements/AchievementCard";
@@ -86,7 +86,7 @@ const getIcon = (title) => {
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function DesignPage() {
+export default function MarketingPage() {
   const t = useTranslations("Design");
 
   // const aboutData = t.raw("About.InfoCards").map((card) => ({
@@ -127,11 +127,11 @@ export default function DesignPage() {
       {/* <DesignSlider /> */}
 
       <CustomHero
-        sectionName="Design"
-        imageSrc={DesignImage}
-        imageAlt={"Design image, desk with a design ideas"}
-        coloredWords={["DESIGN"]}
-        specialWords={["DESIGN", "BEST"]}
+        sectionName="Marketing"
+        imageSrc={MarketingImage}
+        imageAlt={"Marketing image, people discuss things"}
+        coloredWords={["Marketing"]}
+        specialWords={["Marketing", "Expert"]}
       />
 
       <SectionWrapper dark={true}>

@@ -291,7 +291,7 @@ export default function HeroCards({ cards = cardsData }) {
       <div className={styles.container}>
         {reorderedCards.map((card, index) => (
           <div
-            key={card.image}
+            key={index}
             ref={(el) => (cardRefs.current[index] = el)}
             className={styles.card}
           >
