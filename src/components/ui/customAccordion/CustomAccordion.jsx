@@ -5,7 +5,7 @@ import { IoIosArrowRoundDown } from "react-icons/io";
 import styles from "./CustomAccordion.module.css";
 
 export default function CustomAccordion({ data = [] }) {
-  const [open, setOpen] = React.useState(0); // Set the first element as initially open
+  const [open, setOpen] = React.useState(0); 
 
   const toggle = (index) => {
     setOpen(open === index ? null : index);

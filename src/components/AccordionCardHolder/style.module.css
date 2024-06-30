@@ -1,0 +1,106 @@
+.cardsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75em;
+}
+
+.card {
+  background: rgba(21, 21, 21, 0.02);
+  border: 1px solid rgba(21, 21, 21, 0.1);
+  padding: 2.5em;
+  display: flex;
+  flex-direction: column;
+  transition: background-color 0.5s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  background: #3c7bf6;
+  color: #fff;
+}
+
+.card.activeCard {
+  background-color: #3c7bf6;
+  color: #fff;
+}
+
+.card:hover .iconWrapper,
+.card.activeCard .iconWrapper {
+  transform: rotate(360deg);
+}
+
+.card.activeCard .horizontalLine {
+  transform: rotate(-90deg);
+}
+
+.cardTitle {
+  display: flex;
+  justify-content: space-between;
+  gap: 4em;
+  cursor: pointer;
+}
+
+.cardTitleText > h3 {
+  font-size: 2em;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.cardTitleText > h4 {
+  font-size: 1em;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.iconWrapper {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  transition: transform 0.5s ease;
+}
+
+.horizontalLine,
+.verticalLine {
+  position: absolute;
+  background-color: black;
+  transition:
+    background 0.24s ease-in-out,
+    transform 0.5s ease;
+}
+
+.horizontalLine {
+  width: 2px;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.verticalLine {
+  width: 100%;
+  height: 2px;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.card.activeCard .verticalLine {
+  display: none;
+}
+
+.card:hover .horizontalLine,
+.card:hover .verticalLine,
+.card.activeCard .horizontalLine,
+.card.activeCard .verticalLine {
+  background: #fff;
+}
+
+.innerCardsWrapper {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.innerCardsWrapper.open {
+  max-height: 900px;
+}

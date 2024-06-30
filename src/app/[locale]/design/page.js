@@ -174,7 +174,7 @@ export default function DesignPage() {
           description={t("Services.Description")}
           styleType="sectionTitleWhite"
         />
-        <InfoCards data={servicesData} color="dark" textAlign="center" />
+        <InfoCards data={servicesData} colorType="dark" textAlign="center" />
       </SectionWrapper>
 
       <div className="my-10">
@@ -255,7 +255,7 @@ export default function DesignPage() {
           styleType="sectionTitleWhite"
         />
 
-        <InfoCards data={AdvantagesData} color="dark" textAlign="center" />
+        <InfoCards data={AdvantagesData} colorType="dark" textAlign="center" />
       </SectionWrapper>
 
       <SectionWrapper dark={true}>

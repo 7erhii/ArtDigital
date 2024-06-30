@@ -157,7 +157,7 @@ export default function BackendPage() {
           description={t("About.Description")}
           styleType=""
         />
-        <InfoCards data={aboutData} color="white" textAlign="center" />
+        <InfoCards data={aboutData} colorType="whiteDark" textAlign="center" />
       </SectionWrapper>
 
       <div className="bg-[#151515] pb-[5em]">
@@ -200,7 +200,7 @@ export default function BackendPage() {
           description={t("Services.Description")}
           styleType="sectionTitleWhite"
         />
-        <InfoCards data={servicesData} color="dark" textAlign="left" />
+        <InfoCards data={servicesData} colorType="dark" textAlign="left" />
       </SectionWrapper>
 
       <SectionWrapper>
@@ -280,7 +280,7 @@ export default function BackendPage() {
           styleType=""
         />
 
-        <InfoCards data={AdvantagesData} color="white" textAlign="center" />
+        <InfoCards data={AdvantagesData} colorType="whiteDark" textAlign="center" />
       </SectionWrapper>
 
       <SectionWrapper dark={true}>

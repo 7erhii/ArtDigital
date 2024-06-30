@@ -171,7 +171,7 @@ export default function FrontEndPage() {
           description={t("About.Description")}
           styleType=""
         />
-        <InfoCards data={aboutData} />
+        <InfoCards data={aboutData} colorType="whiteDark"  />
       </SectionWrapper>
 
       <div className="bg-[#151515] pb-[5em]">
@@ -214,7 +214,7 @@ export default function FrontEndPage() {
           description={t("Services.Description")}
           styleType="sectionTitleWhite"
         />
-        <InfoCards data={aboutData} color="dark" textAlign="left" />
+        <InfoCards data={aboutData} colorType="dark" textAlign="left" />
       </SectionWrapper>
 
       <SectionWrapper>
@@ -294,7 +294,7 @@ export default function FrontEndPage() {
           styleType=""
         />
 
-        <InfoCards data={AdvantagesData} color="white" textAlign="center" />
+        <InfoCards data={AdvantagesData} colorType="whiteDark" textAlign="center" />
       </SectionWrapper>
 
       <SectionWrapper dark={true}>

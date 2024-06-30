@@ -390,6 +390,14 @@
         {
           "Title": "Development",
           "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et sapien eu risus consectetur imperdiet. Maecenas sit amet lorem auctor, commodo est vulputate, volutpat felis"
+        },
+        {
+          "Title": "Development",
+          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et sapien eu risus consectetur imperdiet. Maecenas sit amet lorem auctor, commodo est vulputate, volutpat felis"
+        },
+        {
+          "Title": "Development",
+          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et sapien eu risus consectetur imperdiet. Maecenas sit amet lorem auctor, commodo est vulputate, volutpat felis"
         }
       ]
     },
@@ -631,7 +639,7 @@
       "Subtitle": "Crafting Visual Excellence",
       "Description": "From Concept to Creation, Your Vision Brought to Life"
     },
-    
+
     "Design": {
       "Title": "Design",
       "Subtitle": "Crafting Visual Excellence",
@@ -707,20 +715,124 @@
 
     "Services": {
       "Title": "SERVICES",
-      "Subtitle": "Three Main Ways of the design",
+      "Subtitle": "All about Marketing Services",
       "Description": "The best service for all your needs",
-      "ServicesCards": [
+      "AccordionCards": [
         {
-          "Title": "UX/ UI research and design",
-          "Description": "Tailored user experiences and intuitive interfaces designed to elevate your product's performance"
+          "Title": "Branding",
+          "Description": "Tailored user experiences and intuitive interfaces designed to elevate your product's performance",
+          "Button": "Contact us",
+          "InfoCards": [
+            {
+              "Title": "Connect",
+              "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et sapien eu risus consectetur imperdiet. Maecenas sit amet lorem auctor, commodo est vulputate, volutpat felis"
+            },
+            {
+              "Title": "Research",
+              "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et sapien eu risus consectetur imperdiet. Maecenas sit amet lorem auctor, commodo est vulputate, volutpat felis"
+            },
+            {
+              "Title": "Development",
+              "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et sapien eu risus consectetur imperdiet. Maecenas sit amet lorem auctor, commodo est vulputate, volutpat felis"
+            },
+            {
+              "Title": "Development",
+              "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et sapien eu risus consectetur imperdiet. Maecenas sit amet lorem auctor, commodo est vulputate, volutpat felis"
+            },
+            {
+              "Title": "Development",
+              "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et sapien eu risus consectetur imperdiet. Maecenas sit amet lorem auctor, commodo est vulputate, volutpat felis"
+            }
+          ]
         },
         {
-          "Title": "Web, landings and mobile design",
-          "Description": "Engaging designs optimized for web, landing pages, and mobile platforms to drive user engagement and conversions"
+          "Title": "Website development",
+          "Description": "Engaging designs optimized for web, landing pages, and mobile platforms to drive user engagement and conversions",
+          "Button": "Contact us",
+          "InfoCards": [
+            {
+              "Title": "2",
+              "Description": "2"
+            },
+            {
+              "Title": "2",
+              "Description": "2"
+            },
+            {
+              "Title": "2",
+              "Description": "2"
+            },
+            {
+              "Title": "2",
+              "Description": "2"
+            }
+          ]
         },
         {
-          "Title": "Outdoor design for business",
-          "Description": "Eye-catching outdoor designs crafted to enhance brand visibility and leave a lasting impression on your audience"
+          "Title": "Strategic marketing",
+          "Description": "Engaging designs optimized for web, landing pages, and mobile platforms to drive user engagement and conversions",
+          "InfoCards": [
+            {
+              "Title": "3",
+              "Description": "3"
+            },
+            {
+              "Title": "3",
+              "Description": "3"
+            },
+            {
+              "Title": "3",
+              "Description": "3"
+            },
+            {
+              "Title": "3",
+              "Description": "3"
+            }
+          ]
+        },
+        {
+          "Title": "Outdoor marketing",
+          "Description": "Engaging designs optimized for web, landing pages, and mobile platforms to drive user engagement and conversions",
+          "InfoCards": [
+            {
+              "Title": "4",
+              "Description": "4"
+            },
+            {
+              "Title": "4",
+              "Description": "4"
+            },
+            {
+              "Title": "4",
+              "Description": "4"
+            },
+            {
+              "Title": "4",
+              "Description": "4"
+            }
+          ]
+        },
+        {
+          "Title": "Digital marketing",
+          "Description": "Eye-catching outdoor designs crafted to enhance brand visibility and leave a lasting impression on your audience",
+          "InfoCards": [
+            {
+              "Title": "5",
+              "Description": "5"
+            },
+            {
+              "Title": "5",
+              "Description": "5"
+            },
+            {
+              "Title": "5",
+              "Description": "5"
+            },
+            {
+              "Title": "5",
+              "Description": "5"
+            }
+          ]
         }
       ]
     },
@@ -729,7 +841,7 @@
       "Subtitle": "Crafting Visual Excellence",
       "Description": "From Concept to Creation, Your Vision Brought to Life"
     },
-    
+
     "Design": {
       "Title": "Design",
       "Subtitle": "Crafting Visual Excellence",

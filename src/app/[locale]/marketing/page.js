@@ -46,6 +46,7 @@ import ContactForm from "@/components/ui/ContactForm/ContactForm";
 import Faq from "@/components/Faq/Faq";
 import DesignSection from "@/components/Design/DesignSection";
 import DesignSlider from "@/components/Design/DesegnSlider/DesegnSlider";
+import AccordionCardHolder from "@/components/AccordionCardHolder/AccordionCardHolder";
 
 const images = [
   lineImage1,
@@ -87,7 +88,7 @@ const getIcon = (title) => {
 const inter = Inter({ subsets: ["latin"] });
 
 export default function MarketingPage() {
-  const t = useTranslations("Design");
+  const t = useTranslations("Marketing");
 
   // const aboutData = t.raw("About.InfoCards").map((card) => ({
   //   ...card,
@@ -100,7 +101,7 @@ export default function MarketingPage() {
     text: item.Description,
   }));
 
-  const servicesData = t.raw("Services.ServicesCards").map((card) => ({
+  const AccordionCardsData = t.raw("Services.AccordionCards").map((card) => ({
     ...card,
     icon: getIcon(card.Title),
   }));
@@ -145,7 +146,7 @@ export default function MarketingPage() {
             .split(" ")
             .map((word, index, words) => {
               const specialWord = [""].includes(word);
-              const blueWord = ["Three", "main", "ways"].includes(word);
+              const blueWord = ["Marketing", "Services"].includes(word);
 
               if (specialWord || blueWord) {
                 return (
@@ -174,10 +175,14 @@ export default function MarketingPage() {
           description={t("Services.Description")}
           styleType="sectionTitleWhite"
         />
-        <InfoCards data={servicesData} color="dark" textAlign="center" />
+        {/* <InfoCards data={AccordionCardsData} color="red" textAlign="center" /> */}
       </SectionWrapper>
 
-      <div className="my-10">
+      <SectionWrapper>
+        <AccordionCardHolder data={AccordionCardsData} />
+      </SectionWrapper>
+
+      {/* <div className="my-10">
       <SectionTitle
           title={t("Design.Title")}
           subtitle={t("Design.Subtitle")
@@ -214,11 +219,11 @@ export default function MarketingPage() {
           styleType="sectionTitleWhite"
         />
         <DesignSlider />
-      </div>
+      </div> */}
 
       {/* <DesignSection/> */}
 
-      <SectionWrapper >
+      {/* <SectionWrapper >
         <SectionTitle
           title={t("Advantages.Title")}
           subtitle={t("Advantages.Subtitle")
@@ -256,9 +261,9 @@ export default function MarketingPage() {
         />
 
         <InfoCards data={AdvantagesData} color="dark" textAlign="center" />
-      </SectionWrapper>
+      </SectionWrapper> */}
 
-      <SectionWrapper dark={true}>
+      {/* <SectionWrapper dark={true}>
         <SectionTitle
           title={t("Process.Title")}
           subtitle={t("Process.Subtitle")
@@ -296,7 +301,7 @@ export default function MarketingPage() {
         />
 
         <StepsCards data={StepsData} />
-      </SectionWrapper>
+      </SectionWrapper> */}
 
       {/* <ContactForm></ContactForm> */}
       {/* <Faq page="BackendPageItems" /> */}

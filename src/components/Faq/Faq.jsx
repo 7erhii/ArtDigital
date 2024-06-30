@@ -7,7 +7,6 @@ import CustomAccordion from "../ui/customAccordion/CustomAccordion";
 export default function Faq({ page }) {
   const t = useTranslations("FAQ");
 
-  // Получение массива объектов из переводов
   const items = t.raw(page);
 
   return (
