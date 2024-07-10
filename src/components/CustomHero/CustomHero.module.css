@@ -1,0 +1,36 @@
+.Wrapper {
+  display: flex;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  min-height: 4em;
+  background-image: url("../../assets/images/image-spin.png");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.Text {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+  padding: 0 7.5em;
+}
+
+.TextDescr {
+  padding-top: 2.5em;
+  font-size: 1em;
+  font-weight: 300;
+}
+
+.Video {
+  width: 50%;
+}
+
+.HeroActions {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  padding-top: 4em;
+}

@@ -1,0 +1,43 @@
+.Wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75em;
+}
+.CardItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 2.5em;
+  cursor: pointer;
+  transition: background 0.24s ease-in-out;
+}
+
+.CardItem:hover {
+  background: #3c7bf6;
+  border-radius: 1px solid rgba(0, 0, 0, 0);
+}
+
+.CardTile > p {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 1em;
+  cursor: pointer;
+}
+.CardTile > h4 {
+  color: #fff;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.CardDescr {
+  max-width: 40%;
+  display: flex;
+  align-items: center;
+  text-align: right;
+}
+.CardDescr > h5 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.12em;
+  cursor: pointer;
+}

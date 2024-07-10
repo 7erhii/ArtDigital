@@ -1,0 +1,914 @@
+{
+  "Header": [
+    {
+      "title": "Design",
+      "links": ["/design", "/design", "/design"],
+      "subtitles": [
+        "UX/ UI research and design",
+        "Web, landings and mobile design",
+        "Outdoor design for business"
+      ]
+    },
+    {
+      "title": "Development",
+      "links": ["/backend", "/frontend", "/fullstack"],
+      "subtitles": ["Back-End", "Front-End", "Full Stack"]
+    },
+    {
+      "title": "Marketing",
+      "links": ["/marketing", "/seo-advertising"],
+      "subtitles": ["Product branding", "SEO Advertising"]
+    },
+    {
+      "title": "Ready-made Solutions",
+      "links": [
+        "/ip-telephony",
+        "/security-systems",
+        "/api-integration",
+        "/chat-bot",
+        "/billing-system",
+        "/iptv-ott"
+      ],
+      "subtitles": [
+        "IP telephony implementation & administration",
+        "Implementation of security systems",
+        "Implementation of a CRM system",
+        "Integration of systems using API",
+        "Chat bot implementations",
+        "Ready Billing system",
+        "IPTV/OTT"
+      ]
+    },
+    {
+      "title": "More",
+      "links": ["/service1", "/service2", "/service3"],
+      "subtitles": ["Service", "Service", "Service"]
+    }
+  ],
+  "Hero": {
+    "titleLine1": "we are ready to",
+    "titleLine2": "with you business",
+    "subtitle": "At our company, we're prepared for any challenge to ensure your business thrives. We're ready to create anything people desire, turning your ideas into digital solutions that exceed your expectations!",
+    "button": "Start cooperation"
+  },
+  "Cards": {
+    "card1": {
+      "title": "ready-made",
+      "subtitle": "Inspiration On Demand",
+      "descr": "More about Ready-Made"
+    },
+    "card2": {
+      "title": "Design",
+      "subtitle": "Crafting Visual Excellence",
+      "descr": "More about Design"
+    },
+    "card3": {
+      "title": "marketing",
+      "subtitle": "Strategic Impact",
+      "descr": "More about Marketing"
+    },
+    "card4": {
+      "title": "DEVELOPMENT",
+      "subtitle": "Building Your Wishes",
+      "descr": "More about Development"
+    },
+    "cardText": {
+      "prevPage": "previous page",
+      "nextPage": "NEXT PAGE"
+    }
+  },
+  "achievements": {
+    "title": "The Pinnacle of",
+    "blueTitle": "Professional Excellence",
+    "subtitle": "Our company stands as a beacon of excellence, having aided numerous businesses in achieving their goals. With a wealth of knowledge and a team of seasoned professionals, we bring extensive experience to every project. Our track record speaks volumes, as satisfied clients continue to be our greatest testament.",
+    "subtitleSecond": "Driven by a passion for innovation and a commitment to excellence, we continuously strive to exceed expectations. Our collaborative approach ensures that each client receives personalised attention and solutions tailored to their unique needs. ",
+    "buttonText": "More about us",
+    "titleSecond": "The achievements of our team, validated by the results attained",
+    "AchievementsData": [
+      { "Count": "9", "Description": "Years" },
+      { "Count": "53", "Description": "Projects" },
+      { "Count": "100+", "Description": "Solutions" },
+      { "Count": "190+", "Description": "Clients" }
+    ]
+  },
+  "designSection": {
+    "title": "Design",
+    "subtitle": "Crafting Visual Excellence",
+    "description": "From Concept to Creation, Your Vision Brought to Life",
+    "buttonRight": "Get in touch",
+    "buttonLeft": "More projects"
+  },
+
+  "SlidesDesign": [
+    {
+      "title": "Museum",
+      "subtitle": "Design / Development"
+    },
+    {
+      "title": "Arctic Travel",
+      "subtitle": "Design / Development"
+    },
+    {
+      "title": "Albion",
+      "subtitle": "Design / Development"
+    }
+  ],
+  "workSection": {
+    "title": "work process",
+    "subtitle": "Efficiency in Action",
+    "description": "Streamlining Success: Our Proven Methodology",
+    "buttonRight": "Get in touch",
+    "buttonLeft": "More projects"
+  },
+  "SlidesWork": [
+    {
+      "step": "STEP 1",
+      "title": "Discussion and analysis",
+      "description": "Engage in in-depth discussions to analyze project goals and requirements, ensuring a strategic roadmap."
+    },
+    {
+      "step": "STEP 2",
+      "title": "UI/UX Design",
+      "description": "Craft captivating designs for seamless user experiences, blending creativity and functionality."
+    },
+    {
+      "step": "STEP 3",
+      "title": "Development",
+      "description": "Bring visions to life with scalable, secure solutions using cutting-edge technologies and best practices."
+    },
+    {
+      "step": "STEP 4",
+      "title": "Deployment",
+      "description": "Ensure a smooth rollout of solutions with efficient planning and execution, minimizing downtime."
+    }
+  ],
+  "DeveopmentSection": {
+    "title": "DEVELOPMENT",
+    "subtitle": "Building Your Wishes",
+    "description": "Innovative Solutions Tailored to Your Needs",
+    "doubleCardText": "Nulla euismod sem eu fermentum volutpat. Interdum et malesuada fames ac ante ipsum primis in faucibus Nulla euismod sem eu fermentum volutpat. Interdum et"
+  },
+
+  "BorderTitles": {
+    "DeveopmentSection": "Front-end development",
+    "FrontEndSection": "Back-end development"
+  },
+  "MarketingSection": {
+    "title": "marketing",
+    "subtitle": "Strategic Impact",
+    "description": "Connecting Your Brand with the Right Audience"
+  },
+  "MarketingCards": {
+    "card1": "Development\nmulti-page websites",
+    "card2": "Fast Landing page\ndevelopment",
+    "card3": "Product branding",
+    "card4": "Advertising\nin the media",
+    "card5": "Outdoor advertising",
+    "card6": "Mobile app development",
+    "card7": "View more services"
+  },
+
+  "ReadySection": {
+    "title": "ready-made",
+    "subtitle": "Inspiration On Demand",
+    "description": "Explore Our Services & Completed Success Stories",
+    "ReadyCards": {
+      "card1": {
+        "title": "Ready-made solutions for IPTV/OTT",
+        "descr": "Streamline your content delivery with our ready-made IPTV/OTT solutions, designed to provide seamless entertainment experiences across multiple devices. Explore our comprehensive suite of features and accelerate your entry into the rapidly growing IPTV/OTT market."
+      },
+      "card2": {
+        "title": "IP telephony implementation & administration",
+        "descr": "Transform your communication infrastructure with our IP telephony implementation and administration services. From design to deployment and ongoing management, we ensure a smooth transition to next-generation communication systems, enhancing collaboration and efficiency across your organization."
+      },
+      "card3": {
+        "title": "Implementation of security systems",
+        "descr": "Safeguard your assets and data with our expert implementation of security systems."
+      },
+      "card4": {
+        "title": "Implementation of a CRM system",
+        "descr": "Unlock the full potential of your customer relationships with our CRM system implementation services."
+      },
+      "card5": {
+        "title": "Integration of systems using API",
+        "descr": "Seamlessly connect your systems and unlock new possibilities with our API integration services."
+      },
+      "card6": {
+        "title": "Chat bot implementations",
+        "descr": "Revolutionize your customer support and engagement with our chatbot implementations. Powered by AI and natural language processing, our chatbots provide personalized assistance, automate routine tasks, and deliver round-the-clock support, enhancing customer satisfaction and operational efficiency."
+      },
+      "card7": {
+        "title": "Ready Billing system",
+        "descr": "Simplify your billing processes and improve cash flow with our ready billing system. Designed to handle complex billing scenarios with ease, our solution offers flexibility, scalability, and accuracy, empowering you to focus on growth while we take care of the rest."
+      }
+    }
+  },
+  "ClientsSection": {
+    "title": "CLIENTS",
+    "subtitle": "Our best clients",
+    "description": "Join Our Network of Satisfied Collaborators"
+  },
+
+  "IndustriesSections": {
+    "title": "Industries",
+    "subtitle": "Industries we work with",
+    "description": "Empowering Success Across Multiple Sectors",
+    "IndustriesCards": {
+      "card1": {
+        "title": "E-commerce"
+      },
+      "card2": {
+        "title": "Medicine"
+      },
+      "card3": {
+        "title": "Hospitality and Tourism"
+      },
+      "card4": {
+        "title": "Education"
+      },
+      "card5": {
+        "title": "Real Estate"
+      },
+      "card6": {
+        "title": "Professional Services"
+      }
+    }
+  },
+
+  "FAQ": {
+    "title": "faq",
+    "subtitle": "Frequently Asked Questions",
+    "MainPageItems": [
+      {
+        "title": "What marketing strategies do you offer?",
+        "descr": "We provide a comprehensive range of marketing strategies tailored to your specific needs. Our services include social media marketing, search engine optimization (SEO), pay-per-click (PPC) advertising, content marketing, email marketing, and more. We work closely with you to develop a strategy that aligns with your goals and maximizes your online presence."
+      },
+      {
+        "title": "How long does it typically take to complete a project?",
+        "descr": "We provide a comprehensive range of marketing strategies tailored to your specific needs. Our services include social media marketing, search engine optimization (SEO), pay-per-click (PPC) advertising, content marketing, email marketing, and more. We work closely with you to develop a strategy that aligns with your goals and maximizes your online presence."
+      },
+      {
+        "title": "How do I get started with your services?",
+        "descr": "We provide a comprehensive range of marketing strategies tailored to your specific needs. Our services include social media marketing, search engine optimization (SEO), pay-per-click (PPC) advertising, content marketing, email marketing, and more. We work closely with you to develop a strategy that aligns with your goals and maximizes your online presence."
+      },
+      {
+        "title": "What industries do you specialize in?",
+        "descr": "We provide a comprehensive range of marketing strategies tailored to your specific needs. Our services include social media marketing, search engine optimization (SEO), pay-per-click (PPC) advertising, content marketing, email marketing, and more. We work closely with you to develop a strategy that aligns with your goals and maximizes your online presence."
+      },
+      {
+        "title": "Do you provide ongoing support after the project is completed?",
+        "descr": "We provide a comprehensive range of marketing strategies tailored to your specific needs. Our services include social media marketing, search engine optimization (SEO), pay-per-click (PPC) advertising, content marketing, email marketing, and more. We work closely with you to develop a strategy that aligns with your goals and maximizes your online presence."
+      },
+      {
+        "title": "What sets your development services apart from others?",
+        "descr": "We provide a comprehensive range of marketing strategies tailored to your specific needs. Our services include social media marketing, search engine optimization (SEO), pay-per-click (PPC) advertising, content marketing, email marketing, and more. We work closely with you to develop a strategy that aligns with your goals and maximizes your online presence."
+      }
+    ],
+    "FrontendPageItems": [
+      {
+        "title": "What is front-end development?",
+        "descr": "Front-end development involves creating the part of a website that users interact with directly. This includes the design, layout, and interactive elements"
+      },
+      {
+        "title": "Why is responsive design important in front-end development?",
+        "descr": "2"
+      },
+      {
+        "title": "What technologies are commonly used in front-end development?",
+        "descr": "3"
+      },
+      {
+        "title": "How do you ensure cross-browser compatibility in front-end development?",
+        "descr": "4"
+      },
+      {
+        "title": "How does front-end development differ from back-end development?",
+        "descr": "5"
+      },
+      {
+        "title": "What is the role of a front-end developer in a web development team?",
+        "descr": "=)"
+      }
+    ],
+    "BackendPageItems": [
+      {
+        "title": "What is back-end development?",
+        "descr": "Back-end development involves creating the server-side logic, databases, and infrastructure that power the functionality of websites and applications"
+      },
+      {
+        "title": "What is a database, and why is it important in back-end development?",
+        "descr": "2"
+      },
+      {
+        "title": "What programming languages are commonly used in back-end development?",
+        "descr": "3"
+      },
+      {
+        "title": "How do you ensure the security of a back-end system?",
+        "descr": "4"
+      },
+      {
+        "title": "",
+        "descr": ""
+      },
+      {
+        "title": "",
+        "descr": ""
+      }
+    ]
+  },
+
+  "ContactForm": {
+    "title": "Get In Touch With Your Future Partners!",
+    "description": "Let's explore your project concept collaboratively. Get in touch with us to outline your objectives and explore how we can support you.",
+    "inputName": {
+      "label": "Name or Company name",
+      "placeholder": "Enter name or company name"
+    },
+    "inputEmployees": {
+      "label": "Number of employees (optional)",
+      "placeholder": "Enter number",
+      "tooltip": "The number of employees is required if you choose a service for a company"
+    },
+    "inputEmail": {
+      "label": "Email",
+      "placeholder": "Enter email"
+    },
+    "inputPhone": {
+      "label": "Phone number",
+      "placeholder": "Enter phone number"
+    },
+    "inputDropdown": {
+      "label": "Area / Section",
+      "placeholder": "What area/section do you like?",
+      "options": {
+        "option1": "option1",
+        "option2": "option22",
+        "option3": "option33",
+        "option4": "option44"
+      }
+    },
+    "inputTextarea": {
+      "label": "Tell more about project",
+      "placeholder": "Tell us more about you wishes"
+    }
+  },
+  "Footer": {
+    "company": {
+      "descr": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra aliquet risus, non",
+      "contacts": {
+        "country": "Kyiv, Ukraine",
+        "street": "Lesi Ukrainky st., 123",
+        "phone": "050 132 0505",
+        "email": "Test.email@gmail.com"
+      }
+    }
+  },
+  "Colophon": {
+    "copyright": "Copyright © 2024 . All rights reserved",
+    "policy": "Privacy Policy",
+    "terms": "Terms & Conditions"
+  },
+  "FrontEnd": {
+    "Hero": {
+      "HeroTitle": "Professional Front-end Development",
+      "HeroSubtitle": "Creating innovative and user-friendly web interfaces that impress your clients and enhance your business efficiency",
+      "HeroButton": "Contact us",
+      "HeroButtonClear": "Button"
+    },
+    "About": {
+      "Title": "all about",
+      "Subtitle": "Our Clients",
+      "Description": "Discover how we partner with businesses to drive success through tailored solutions and exceptional service.",
+      "InfoCards": [
+        {
+          "Title": "Connect",
+          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et sapien eu risus consectetur imperdiet. Maecenas sit amet lorem auctor, commodo est vulputate, volutpat felis"
+        },
+        {
+          "Title": "Research",
+          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et sapien eu risus consectetur imperdiet. Maecenas sit amet lorem auctor, commodo est vulputate, volutpat felis"
+        },
+        {
+          "Title": "Development",
+          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et sapien eu risus consectetur imperdiet. Maecenas sit amet lorem auctor, commodo est vulputate, volutpat felis"
+        },
+        {
+          "Title": "Development",
+          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et sapien eu risus consectetur imperdiet. Maecenas sit amet lorem auctor, commodo est vulputate, volutpat felis"
+        },
+        {
+          "Title": "Development",
+          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et sapien eu risus consectetur imperdiet. Maecenas sit amet lorem auctor, commodo est vulputate, volutpat felis"
+        }
+      ]
+    },
+    "Services": {
+      "Title": "SERVICES",
+      "Subtitle": "Front-End development services",
+      "Description": "The best service for all your needs",
+      "ServicesCards": [
+        {
+          "Title": "Lorem ipsum dolor sit amet",
+          "Description": "Tailored user experiences and intuitive interfaces designed to elevate your product's performance"
+        },
+        {
+          "Title": "Lorem ipsum dolor sit amet",
+          "Description": "Tailored user experiences and intuitive interfaces designed to elevate your product's performance"
+        },
+        {
+          "Title": "Lorem ipsum dolor sit amet",
+          "Description": "Tailored user experiences and intuitive interfaces designed to elevate your product's performance"
+        }
+      ]
+    },
+    "Stack": {
+      "Title": "TECH STACK",
+      "Subtitle": "Crafting Visual Excellence",
+      "Description": "From Concept to Creation, Your Vision Brought to Life",
+      "DoubleCard": "Nulla euismod sem eu fermentum volutpat. Interdum et malesuada fames ac ante ipsum primis in faucibus Nulla euismod sem eu fermentum volutpat. Interdum et"
+    },
+    "Advantages": {
+      "Title": "Advantages",
+      "Subtitle": "Why Front-end Development Matters",
+      "Description": "Unleash the full potential of your website with responsive, dynamic, and user-centric front-end solutions",
+      "Items": [
+        {
+          "Title": "Enhanced User Experience",
+          "Description": "Front-end development focuses on creating intuitive and engaging interfaces that make it easy for users to navigate and interact with your website."
+        },
+        {
+          "Title": "Responsive Design",
+          "Description": "Ensures your website looks and functions well on all devices, from desktops to smartphones, providing a seamless experience for users."
+        },
+        {
+          "Title": "Faster Load Times",
+          "Description": "Optimized front-end code and efficient resource management lead to quicker page loads, reducing bounce rates and improving user satisfaction"
+        },
+        {
+          "Title": "Cross-Browser Compatibility",
+          "Description": "Front-end development ensures your website works consistently across different browsers, offering a uniform experience for all users."
+        },
+        {
+          "Title": "SEO Optimization",
+          "Description": "Properly structured front-end code and fast-loading pages improve your website's visibility on search engines, helping attract more organic traffic."
+        },
+        {
+          "Title": "Scalability and Maintenance",
+          "Description": "Well-organized and modular front-end code makes it easier to update and scale your website as your business grows, ensuring long-term sustainability."
+        }
+      ]
+    },
+    "Process": {
+      "Title": "process",
+      "Subtitle": "Front-End Development Process",
+      "Description": "A step-by-step process for creating effective and intuitive user interfaces.",
+      "Steps": [
+        {
+          "Title": "Analysis and Planning",
+          "Description": "Understanding project requirements and defining a clear roadmap"
+        },
+        {
+          "Title": "Wireframing and Prototyping",
+          "Description": "Designing the basic structure and interactive elements of the user interface"
+        },
+        {
+          "Title": "Visual Design",
+          "Description": "Crafting the aesthetic elements and overall look of the website"
+        },
+        {
+          "Title": "Development",
+          "Description": "Writing clean, efficient code to bring the design to life"
+        },
+        {
+          "Title": "Deployment",
+          "Description": "Launching the website and making it accessible to users"
+        },
+        {
+          "Title": "Maintenance and Updates",
+          "Description": "Continuously improving the website and adding new features based on user feedback and emerging trends"
+        }
+      ]
+    }
+  },
+  "BackEnd": {
+    "Hero": {
+      "HeroTitle": "Professional Back-end Development",
+      "HeroSubtitle": "Creating innovative and user-friendly web interfaces that impress your clients and enhance your business efficiency",
+      "HeroButton": "Contact us",
+      "HeroButtonClear": "Button"
+    },
+    "About": {
+      "Title": "all about",
+      "Subtitle": "Our Clients",
+      "Description": "Discover how we partner with businesses to drive success through tailored solutions and exceptional service.",
+      "InfoCards": [
+        {
+          "Title": "Connect",
+          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et sapien eu risus consectetur imperdiet. Maecenas sit amet lorem auctor, commodo est vulputate, volutpat felis"
+        },
+        {
+          "Title": "Research",
+          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et sapien eu risus consectetur imperdiet. Maecenas sit amet lorem auctor, commodo est vulputate, volutpat felis"
+        },
+        {
+          "Title": "Development",
+          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et sapien eu risus consectetur imperdiet. Maecenas sit amet lorem auctor, commodo est vulputate, volutpat felis"
+        }
+      ]
+    },
+    "Services": {
+      "Title": "SERVICES",
+      "Subtitle": "Back-End development services",
+      "Description": "The best service for all your needs",
+      "ServicesCards": [
+        {
+          "Title": "Lorem ipsum dolor sit amet",
+          "Description": "Tailored user experiences and intuitive interfaces designed to elevate your product's performance"
+        },
+        {
+          "Title": "Lorem ipsum dolor sit amet",
+          "Description": "Tailored user experiences and intuitive interfaces designed to elevate your product's performance"
+        },
+        {
+          "Title": "Lorem ipsum dolor sit amet",
+          "Description": "Tailored user experiences and intuitive interfaces designed to elevate your product's performance"
+        }
+      ]
+    },
+    "Stack": {
+      "Title": "TECH STACK",
+      "Subtitle": "Crafting Visual Excellence",
+      "Description": "From Concept to Creation, Your Vision Brought to Life"
+    },
+    "Advantages": {
+      "Title": "Advantages",
+      "Subtitle": "Why Back-end Development Matters",
+      "Description": "Unleash the full potential of your website with responsive, dynamic, and user-centric front-end solutions",
+      "Items": [
+        {
+          "Title": "Database Management",
+          "Description": "Back-end development ensures efficient storage, retrieval, and management of data, allowing for dynamic and data-driven websites and applications"
+        },
+        {
+          "Title": "User Authentication",
+          "Description": "Implements secure systems for user login, registration, and access control, ensuring data privacy and security"
+        },
+        {
+          "Title": "Server-Side Logic",
+          "Description": "Manages the core functionality and logic of applications, enabling complex operations and processes to be executed behind the scenes"
+        },
+        {
+          "Title": "API Integration",
+          "Description": "Facilitates seamless integration with third-party services and APIs, expanding the capabilities and functionality of the application"
+        },
+        {
+          "Title": "Performance Optimization",
+          "Description": "Enhances the speed and performance of applications by optimizing server responses and managing server resources efficiently"
+        },
+        {
+          "Title": "Scalability and Flexibility",
+          "Description": "Allows applications to handle increasing loads and grow with the business by implementing scalable server-side architecture and solutions"
+        }
+      ]
+    },
+    "Process": {
+      "Title": "process",
+      "Subtitle": "Back-End Development Process",
+      "Description": "A step-by-step process for creating effective and intuitive user interfaces.",
+      "Steps": [
+        {
+          "Title": "Analysis and Planning",
+          "Description": "Understanding project requirements and defining a clear roadmap"
+        },
+        {
+          "Title": "Wireframing and Prototyping",
+          "Description": "Designing the basic structure and interactive elements of the user interface"
+        },
+        {
+          "Title": "Development",
+          "Description": "Writing clean, efficient code to bring the design to life"
+        },
+        {
+          "Title": "Deployment",
+          "Description": "Launching the website and making it accessible to users"
+        },
+        {
+          "Title": "Deployment",
+          "Description": "Launching the website and making it accessible to users"
+        },
+        {
+          "Title": "Maintenance and Updates",
+          "Description": "Continuously improving the website and adding new features based on user feedback and emerging trends"
+        }
+      ]
+    }
+  },
+  "Design": {
+    "Hero": {
+      "HeroTitle": "WE DESIGN YOUR BEST IDEAS ",
+      "HeroSubtitle": "Creating innovative and user-friendly web interfaces that impress your clients and enhance your business efficiency",
+      "HeroButton": "Contact us",
+      "HeroButtonClear": "Button"
+    },
+    "AchievementsData": [
+      { "Count": "140+", "Description": "Succeeded projects" },
+      { "Count": "$12MM", "Description": "Annual revenue" },
+      { "Count": "3K+", "Description": "Clients" }
+    ],
+
+    "Services": {
+      "Title": "SERVICES",
+      "Subtitle": "Three Main Ways of the design",
+      "Description": "The best service for all your needs",
+      "ServicesCards": [
+        {
+          "Title": "UX/ UI research and design",
+          "Description": "Tailored user experiences and intuitive interfaces designed to elevate your product's performance"
+        },
+        {
+          "Title": "Web, landings and mobile design",
+          "Description": "Engaging designs optimized for web, landing pages, and mobile platforms to drive user engagement and conversions"
+        },
+        {
+          "Title": "Outdoor design for business",
+          "Description": "Eye-catching outdoor designs crafted to enhance brand visibility and leave a lasting impression on your audience"
+        }
+      ]
+    },
+    "Stack": {
+      "Title": "TECH STACK",
+      "Subtitle": "Crafting Visual Excellence",
+      "Description": "From Concept to Creation, Your Vision Brought to Life"
+    },
+
+    "Design": {
+      "Title": "Design",
+      "Subtitle": "Crafting Visual Excellence",
+      "Description": "From Concept to Creation, Your Vision Brought to Life"
+    },
+    "Advantages": {
+      "Title": "advantages",
+      "Subtitle": "Business Success with UX/UI Design",
+      "Description": "Discover how our designs boost your business",
+      "Items": [
+        {
+          "Title": "Increased User Engagement",
+          "Description": "Engaging UX/UI designs captivate users, encouraging longer interactions and repeat visits, boosting customer engagement"
+        },
+        {
+          "Title": "Higher Conversion Rates",
+          "Description": "Intuitive interfaces and clear calls-to-action guide users through the conversion funnel, resulting in increased sales and conversions"
+        },
+        {
+          "Title": "Brand Differentiation",
+          "Description": "Unique and visually appealing designs set your brand apart, creating memorable experiences for users and enhancing brand recognition"
+        },
+        {
+          "Title": "Improved Accessibility",
+          "Description": "Accessible design practices ensure that your product is usable by all, reaching a wider audience and enhancing inclusivity"
+        },
+        {
+          "Title": "Faster Time to Market",
+          "Description": "Efficient design processes reduce development time, enabling quicker launches and giving your business a competitive edge"
+        },
+        {
+          "Title": "Lower Support Costs",
+          "Description": "Intuitive designs minimize user confusion and support requests, reducing the need for customer support and associated costs"
+        }
+      ]
+    },
+    "Process": {
+      "Title": "process",
+      "Subtitle": "Design Creation Process",
+      "Description": "From research to implementation, learn the four key steps in crafting effective designs",
+      "Steps": [
+        {
+          "Title": "Research & Discovery",
+          "Description": "Gather insights, analyze competitors, and define user needs and goals"
+        },
+        {
+          "Title": "Conceptualization & Ideation",
+          "Description": "Brainstorm ideas, sketch wireframes, and create design concepts based on research findings"
+        },
+        {
+          "Title": "Prototyping & Testing",
+          "Description": "Develop interactive prototypes, conduct user testing, and gather feedback to refine designs"
+        },
+        {
+          "Title": "Implementation & Iteration",
+          "Description": "Hand off designs to development, iterate based on user feedback, and continuously improve the product"
+        }
+      ]
+    }
+  },
+  "Marketing": {
+    "Hero": {
+      "HeroTitle": "Expert Marketing Solutions",
+      "HeroSubtitle": "Drive growth and engage your audience with tailored strategies and innovative campaigns designed to achieve your business goals.",
+      "HeroButton": "Contact us",
+      "HeroButtonClear": "Button"
+    },
+    "AchievementsData": [
+      { "Count": "140+", "Description": "Succeeded projects" },
+      { "Count": "$12MM", "Description": "Annual revenue" },
+      { "Count": "3K+", "Description": "Clients" }
+    ],
+
+    "Services": {
+      "Title": "SERVICES",
+      "Subtitle": "All about Marketing Services",
+      "Description": "The best service for all your needs",
+      "AccordionCards": [
+        {
+          "Title": "Branding",
+          "Description": "Tailored user experiences and intuitive interfaces designed to elevate your product's performance",
+          "Button": "Contact us",
+          "InfoCards": [
+            {
+              "Title": "Connect",
+              "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et sapien eu risus consectetur imperdiet. Maecenas sit amet lorem auctor, commodo est vulputate, volutpat felis"
+            },
+            {
+              "Title": "Research",
+              "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et sapien eu risus consectetur imperdiet. Maecenas sit amet lorem auctor, commodo est vulputate, volutpat felis"
+            },
+            {
+              "Title": "Development",
+              "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et sapien eu risus consectetur imperdiet. Maecenas sit amet lorem auctor, commodo est vulputate, volutpat felis"
+            },
+            {
+              "Title": "Development",
+              "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et sapien eu risus consectetur imperdiet. Maecenas sit amet lorem auctor, commodo est vulputate, volutpat felis"
+            },
+            {
+              "Title": "Development",
+              "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et sapien eu risus consectetur imperdiet. Maecenas sit amet lorem auctor, commodo est vulputate, volutpat felis"
+            }
+          ]
+        },
+        {
+          "Title": "Website development",
+          "Description": "Engaging designs optimized for web, landing pages, and mobile platforms to drive user engagement and conversions",
+          "Button": "Contact us",
+          "InfoCards": [
+            {
+              "Title": "2",
+              "Description": "2"
+            },
+            {
+              "Title": "2",
+              "Description": "2"
+            },
+            {
+              "Title": "2",
+              "Description": "2"
+            },
+            {
+              "Title": "2",
+              "Description": "2"
+            }
+          ]
+        },
+        {
+          "Title": "Strategic marketing",
+          "Description": "Engaging designs optimized for web, landing pages, and mobile platforms to drive user engagement and conversions",
+          "InfoCards": [
+            {
+              "Title": "3",
+              "Description": "3"
+            },
+            {
+              "Title": "3",
+              "Description": "3"
+            },
+            {
+              "Title": "3",
+              "Description": "3"
+            },
+            {
+              "Title": "3",
+              "Description": "3"
+            }
+          ]
+        },
+        {
+          "Title": "Outdoor marketing",
+          "Description": "Engaging designs optimized for web, landing pages, and mobile platforms to drive user engagement and conversions",
+          "InfoCards": [
+            {
+              "Title": "4",
+              "Description": "4"
+            },
+            {
+              "Title": "4",
+              "Description": "4"
+            },
+            {
+              "Title": "4",
+              "Description": "4"
+            },
+            {
+              "Title": "4",
+              "Description": "4"
+            }
+          ]
+        },
+        {
+          "Title": "Digital marketing",
+          "Description": "Eye-catching outdoor designs crafted to enhance brand visibility and leave a lasting impression on your audience",
+          "InfoCards": [
+            {
+              "Title": "5",
+              "Description": "5"
+            },
+            {
+              "Title": "5",
+              "Description": "5"
+            },
+            {
+              "Title": "5",
+              "Description": "5"
+            },
+            {
+              "Title": "5",
+              "Description": "5"
+            }
+          ]
+        }
+      ]
+    },
+    "Stack": {
+      "Title": "TECH STACK",
+      "Subtitle": "Crafting Visual Excellence",
+      "Description": "From Concept to Creation, Your Vision Brought to Life"
+    },
+
+    "Design": {
+      "Title": "Design",
+      "Subtitle": "Crafting Visual Excellence",
+      "Description": "From Concept to Creation, Your Vision Brought to Life"
+    },
+    "Advantages": {
+      "Title": "advantages",
+      "Subtitle": "Business Success with UX/UI Design",
+      "Description": "Discover how our designs boost your business",
+      "Items": [
+        {
+          "Title": "Increased User Engagement",
+          "Description": "Engaging UX/UI designs captivate users, encouraging longer interactions and repeat visits, boosting customer engagement"
+        },
+        {
+          "Title": "Higher Conversion Rates",
+          "Description": "Intuitive interfaces and clear calls-to-action guide users through the conversion funnel, resulting in increased sales and conversions"
+        },
+        {
+          "Title": "Brand Differentiation",
+          "Description": "Unique and visually appealing designs set your brand apart, creating memorable experiences for users and enhancing brand recognition"
+        },
+        {
+          "Title": "Improved Accessibility",
+          "Description": "Accessible design practices ensure that your product is usable by all, reaching a wider audience and enhancing inclusivity"
+        },
+        {
+          "Title": "Faster Time to Market",
+          "Description": "Efficient design processes reduce development time, enabling quicker launches and giving your business a competitive edge"
+        },
+        {
+          "Title": "Lower Support Costs",
+          "Description": "Intuitive designs minimize user confusion and support requests, reducing the need for customer support and associated costs"
+        }
+      ]
+    },
+    "Process": {
+      "Title": "process",
+      "Subtitle": "Design Creation Process",
+      "Description": "From research to implementation, learn the four key steps in crafting effective designs",
+      "Steps": [
+        {
+          "Title": "Research & Discovery",
+          "Description": "Gather insights, analyze competitors, and define user needs and goals"
+        },
+        {
+          "Title": "Conceptualization & Ideation",
+          "Description": "Brainstorm ideas, sketch wireframes, and create design concepts based on research findings"
+        },
+        {
+          "Title": "Prototyping & Testing",
+          "Description": "Develop interactive prototypes, conduct user testing, and gather feedback to refine designs"
+        },
+        {
+          "Title": "Implementation & Iteration",
+          "Description": "Hand off designs to development, iterate based on user feedback, and continuously improve the product"
+        }
+      ]
+    }
+  },
+  "NotFoundPage": {
+    "title": "woooops...",
+    "page": "page NOT found",
+    "button": "TAKE ME BACK",
+    "error": "Server Error"
+  },
+  "Error": {}
+}

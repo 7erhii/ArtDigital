@@ -1,0 +1,13 @@
+.runningLineContainer {
+  width: 100%;
+  overflow: hidden;
+  padding: 1.8em 0;
+  background: #fff;
+}
+
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 4em;
+}

@@ -1,0 +1,220 @@
+.pageWrapper {
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background-color: #151515;
+  color: #fff;
+  background-image: url("../../assets/images/hero-bg.png");
+  
+  background-size: cover;
+  background-position: center;
+  min-height: 45em;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+  max-width: 70em;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroActions {
+  position: absolute;
+  display: flex;
+  bottom: 3em;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0.5em;
+  border-radius: 50px;
+  gap: 0.8em;
+}
+
+.heroButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5em;
+  border-radius: 50px;
+}
+
+.heroButtonActive {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.card {
+  position: absolute;
+  border-radius: 22px;
+  width: 13em;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+  background: #fff;
+
+  cursor: pointer;
+
+  overflow: hidden;
+}
+
+.cardText {
+  position: relative;
+}
+
+.cardTitle {
+  color: rgba(0, 0, 0, 0.05);
+  text-align: center;
+  padding-top: 0.7em;
+  padding-bottom: 2.4em;
+  font-size: 1.4em;
+  letter-spacing: -0.6px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.cardSubscribe {
+  position: absolute;
+  top: 15%;
+  color: #000;
+  text-align: center;
+  padding-top: 1em;
+  text-align: center;
+  width: 100%;
+  font-size: 1.2em;
+  line-height: 120%;
+  font-weight: 700;
+}
+
+.cardDescr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #000;
+  padding: 1em 1.3em;
+}
+.cardDescr > p {
+  font-size: 0.76em;
+}
+
+.hover {
+  width: 20px;
+  height: 300px;
+  background: rebeccapurple;
+}
+
+.sideButton {
+  position: absolute;
+  top: 30%;
+  transform: translateY(-50%);
+  width: 14em;
+  height: 20em;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+
+  z-index: 10;
+
+
+  
+}
+
+/* .AchievementsSection {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+
+  background-color: #151515;
+  color: #fff;
+}
+
+.achievementsWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.achievementsPinnacle {
+  display: flex;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 5em 7.5em;
+  align-items: center;
+  justify-content: center;
+}
+
+.achievementsPinnacleText {
+  padding-right: 3em;
+  width: 50%;
+}
+
+.achievementsPinnacleTitle {
+}
+
+.achievementsPinnacleSubtitle {
+}
+
+.achievementsPinnacleAction {
+}
+
+.pageTitlesElements {
+  font-size: 2.5em;
+}
+
+.achievementsPinnacleButton {
+  background: #3c7bf6;
+  padding: 1em 2em;
+  border-radius: 200px;
+  font-size: 1.5em;
+  transition: background-color 0.24s ease-in-out;
+}
+
+.achievementsPinnacleButton:hover {
+  background: #2554c7;
+}
+
+.achievementsPinnacleImage {
+  width: 50%;
+}
+
+.achievementsResults {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 5em 7.5em;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+.achievementsTitle {
+  display: flex;
+
+
+}
+
+.achievementsCards {
+  display: flex;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 4em;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8em;
+
+}
+
+.designAction {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+  margin-top: 4em;
+} */
