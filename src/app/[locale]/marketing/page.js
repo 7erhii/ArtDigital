@@ -26,6 +26,18 @@ import iconAccessibility from "@/assets/icons/icon-card-Accessibility.svg";
 import iconFaster from "@/assets/icons/icon-card-faster.svg";
 import iconThumb from "@/assets/icons/icon-card-thumb.svg";
 
+import iconJourney from "@/assets/icons/icon-card-journey.svg";
+import iconCommunication from "@/assets/icons/icon-card-communication.svg";
+import iconMagniWhite from "@/assets/icons/icon-card-research.svg";
+import iconNaming from "@/assets/icons/icon-card-naming.svg";
+import iconBulb from "@/assets/icons/icon-card-bulb.svg";
+import iconDesign from "@/assets/icons/icon-card-design.svg";
+import iconBook from "@/assets/icons/icon-card-book.svg";
+import iconBrand from "@/assets/icons/icon-card-brand.svg";
+import iconPoster from "@/assets/icons/icon-card-poster.svg";
+import iconAdvertising from "@/assets/icons/icon-card-advertising.svg";
+import iconOutdoor from "@/assets/icons/icon-card-outdoor.svg";
+
 import iconPhp from "@/assets/icons/icon-PHP.svg";
 import iconMysql from "@/assets/icons/icon-mysql-dark.svg";
 import iconPython from "@/assets/icons/icon-python.svg";
@@ -80,6 +92,30 @@ const getIcon = (title) => {
       return iconFaster;
     case "Lower Support Costs":
       return iconThumb;
+
+    case "Customer Journey":
+      return iconJourney;
+    case "Communication Strategy":
+      return iconCommunication;
+    case "Research":
+      return iconMagniWhite;
+    case "Naming":
+      return iconNaming;
+    case "Value Proposition":
+      return iconBulb;
+    case "Logo Design":
+      return iconDesign;
+    case "Brand-book":
+      return iconBook;
+    case "Brand design":
+      return iconBrand;
+    case "Billboards and Posters":
+      return iconPoster;
+    case "Street Furniture Advertising":
+      return iconAdvertising;
+    case "Digital Outdoor Advertising":
+      return iconOutdoor;
+    
     default:
       return null;
   }
@@ -103,7 +139,10 @@ export default function MarketingPage() {
 
   const AccordionCardsData = t.raw("Services.AccordionCards").map((card) => ({
     ...card,
-    icon: getIcon(card.Title),
+    InfoCards: card.InfoCards.map((infoCard) => ({
+      ...infoCard,
+      icon: getIcon(infoCard.Title),
+    })),
   }));
 
   const AdvantagesData = t.raw("Advantages.Items").map((card) => ({
@@ -223,14 +262,14 @@ export default function MarketingPage() {
 
       {/* <DesignSection/> */}
 
-      {/* <SectionWrapper >
+      <SectionWrapper dark={true}>
         <SectionTitle
           title={t("Advantages.Title")}
           subtitle={t("Advantages.Subtitle")
             .split(" ")
             .map((word, index, words) => {
               const specialWord = [""].includes(word);
-              const blueWord = ["Business", "Success"].includes(word);
+              const blueWord = ["Marketing"].includes(word);
 
               if (specialWord || blueWord) {
                 return (
@@ -257,11 +296,11 @@ export default function MarketingPage() {
               }
             }, [])}
           description={t("Advantages.Description")}
-          styleType="sectionTitleWhite"
+          styleType="sectionTitleDark"
         />
 
         <InfoCards data={AdvantagesData} color="dark" textAlign="center" />
-      </SectionWrapper> */}
+      </SectionWrapper>
 
       {/* <SectionWrapper dark={true}>
         <SectionTitle

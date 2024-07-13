@@ -1,16 +1,47 @@
 import React from "react";
 import Image from "next/image";
-
 import { useTranslations } from "next-intl";
-
 import styles from "./Industries.module.css";
-
 import SectionTitle from "../ui/SectionTitle/SectionTitle";
 import IndustriesCards from "./IndustriesCards/IndustriesCards";
 import ContactForm from "../ui/ContactForm/ContactForm";
 
+import iconHome from "@/assets/icons/icon-home.svg";
+import iconCardiology from "@/assets/icons/icon-cardiology.svg";
+import iconNature from "@/assets/icons/icon-nature.svg";
+import iconSchool from "@/assets/icons/icon-school.svg";
+import iconHomeWork from "@/assets/icons/icon-home_work.svg";
+import iconBackHand from "@/assets/icons/icon-back_hand.svg";
+
 export default function Industries() {
   const t = useTranslations("IndustriesSections");
+
+  const industriesCardsData = [
+    {
+      image: iconHome,
+      title: t("IndustriesCards.card1.title"),
+    },
+    {
+      image: iconCardiology,
+      title: t("IndustriesCards.card2.title"),
+    },
+    {
+      image: iconNature,
+      title: t("IndustriesCards.card3.title"),
+    },
+    {
+      image: iconSchool,
+      title: t("IndustriesCards.card4.title"),
+    },
+    {
+      image: iconHomeWork,
+      title: t("IndustriesCards.card5.title"),
+    },
+    {
+      image: iconBackHand,
+      title: t("IndustriesCards.card6.title"),
+    },
+  ];
 
   return (
     <div className={styles.pageWrapper}>
@@ -47,7 +78,7 @@ export default function Industries() {
         description={t("description")}
         styleType="sectionTitleDark"
       />
-      <IndustriesCards />
+      <IndustriesCards data={industriesCardsData} />
     </div>
   );
 }

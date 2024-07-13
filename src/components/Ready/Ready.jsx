@@ -1,22 +1,62 @@
 import React from "react";
-
 import { useTranslations } from "next-intl";
-
 import styles from "./Ready.module.css";
 import SectionTitle from "../ui/SectionTitle/SectionTitle";
-
-// import MarketingCards from "./MarketingCards/MarketingCards";
 import ReadyCards from "./ReadyCards/ReadyCards";
 
 export default function Ready() {
+  const t = useTranslations();
 
-  const t = useTranslations("ReadySection");
+  const readyCardsData = [
+    {
+      size: "1/2",
+      title: t("ReadySection.ReadyCards.card1.title"),
+      descr: t("ReadySection.ReadyCards.card1.descr"),
+      href: "#link1",
+    },
+    {
+      size: "1/2",
+      title: t("ReadySection.ReadyCards.card2.title"),
+      descr: t("ReadySection.ReadyCards.card2.descr"),
+      href: "#link2",
+    },
+    {
+      size: "1/3",
+      title: t("ReadySection.ReadyCards.card3.title"),
+      descr: t("ReadySection.ReadyCards.card3.descr"),
+      href: "#link3",
+    },
+    {
+      size: "1/3",
+      title: t("ReadySection.ReadyCards.card4.title"),
+      descr: t("ReadySection.ReadyCards.card4.descr"),
+      href: "#link4",
+    },
+    {
+      size: "1/3",
+      title: t("ReadySection.ReadyCards.card5.title"),
+      descr: t("ReadySection.ReadyCards.card5.descr"),
+      href: "#link5",
+    },
+    {
+      size: "1/2",
+      title: t("ReadySection.ReadyCards.card6.title"),
+      descr: t("ReadySection.ReadyCards.card6.descr"),
+      href: "#link6",
+    },
+    {
+      size: "1/2",
+      title: t("ReadySection.ReadyCards.card7.title"),
+      descr: t("ReadySection.ReadyCards.card7.descr"),
+      href: "#link7",
+    },
+  ];
 
   return (
     <div>
       <SectionTitle
-        title={t("title")}
-        subtitle={t("subtitle")
+        title={t("ReadySection.title")}
+        subtitle={t("ReadySection.subtitle")
           .split(" ")
           .map((word, index, words) => {
             let specialWord = ["Visual"].includes(word);
@@ -44,18 +84,11 @@ export default function Ready() {
               return [...acc, word];
             }
           }, [])}
-        description={t("description")}
+        description={t("ReadySection.description")}
         styleType="sectionTitleWhite"
       />
 
-
-
-      <ReadyCards/>
-
-      {/* <div className={styles.designAction}>
-      <MainButton text={t("buttonRight")} color="Blue" size="medium"/>
-      <MainButton text={t("buttonLeft")} color="White" size="medium"/>
-      </div> */}
+      <ReadyCards data={readyCardsData} />
     </div>
   );
 }

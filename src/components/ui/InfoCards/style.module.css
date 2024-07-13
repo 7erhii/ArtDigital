@@ -1,16 +1,62 @@
 .wrapper {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
   gap: 0.75em;
   max-width: 1440px;
   margin: 0 auto;
-  /* padding: 5em 7.5em; */
   flex-wrap: wrap;
 }
 
 .infoCard {
-  max-width: 32%;
+  min-width: 32%;
+  max-width: 49%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+  padding: 2.5em;
+  border-radius: 12px;
+  flex: 1;
+}
+
+.infoCard > h3 {
+  width: 100%;
+  font-size: 2em;
+  font-weight: 800;
+}
+
+.infoCard > p {
+  font-size: 1em;
+  font-weight: 400;
+}
+.infoCard > span {
+  width: 100%;
+  color: rgba(21, 21, 21, 0.8);
+  font-size: 1em;
+  font-weight: 400;
+}
+.infoCard > ul {
+  width: 100%;
+  list-style-type: disc;
+  padding-left: 1em;
+  color: rgba(21, 21, 21, 0.8);
+  font-size: 1em;
+  font-weight: 400;
+}
+
+/* .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75em;
+  max-width: 1440px;
+
+  flex-wrap: wrap;
+}
+
+.infoCard {
+  max-width: 49%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,4 +74,4 @@
 .infoCard > p {
   font-size: 1em;
   font-weight: 200;
-}
+} */

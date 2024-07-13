@@ -14,6 +14,9 @@ import Clients from "@/components/Clients/Clients";
 import Industries from "@/components/Industries/Industries";
 import Faq from "@/components/Faq/Faq";
 import ContactForm from "@/components/ui/ContactForm/ContactForm";
+import Footer from "@/components/Footer/Footer";
+import Colophon from "@/components/Colophon/Colophon";
+import Header from "@/components/Header/Header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,11 +29,45 @@ export function generateStaticParams() {
 export default function HomePage({ params: { locale } }) {
   unstable_setRequestLocale(locale);
 
+  const contactFormData = {
+    inputName: {
+      title: "inputName.label",
+      placeholder: "inputName.placeholder",
+    },
+    inputEmployees: {
+      title: "inputEmployees.label",
+      placeholder: "inputEmployees.placeholder",
+      tooltip: "inputEmployees.tooltip",
+    },
+    inputEmail: {
+      title: "inputEmail.label",
+      placeholder: "inputEmail.placeholder",
+    },
+    inputPhone: {
+      title: "inputPhone.label",
+      placeholder: "inputPhone.placeholder",
+    },
+    inputDropdown: {
+      title: "inputDropdown.label",
+      placeholder: "inputDropdown.placeholder",
+      options: {
+        option1: "inputDropdown.options.option1",
+        option2: "inputDropdown.options.option2",
+        option3: "inputDropdown.options.option3",
+        option4: "inputDropdown.options.option4",
+      },
+    },
+    inputTextarea: {
+      title: "inputTextarea.label",
+      placeholder: "inputTextarea.placeholder",
+    },
+  };
+
   return (
     <div className={inter.className}>
+      {/* <Header locale={locale} /> */}
       <Hero />
       <AchievementsSection />
-
       <DesignSection />
       <WorkSection />
       <Development />
@@ -38,8 +75,10 @@ export default function HomePage({ params: { locale } }) {
       <Ready />
       <Clients />
       <Industries />
-      <ContactForm />
+      <ContactForm data={contactFormData} />
       <Faq page="MainPageItems" />
+      <Footer />
+      <Colophon />
     </div>
   );
 }

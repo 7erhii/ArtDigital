@@ -1,44 +1,31 @@
-"use client";
 import React from "react";
 import Image from "next/image";
-
+import Link from "next/link";
 import { useTranslations } from "next-intl";
-
 import styles from "./Footer.module.css";
-
 import mainLogo from "@/assets/icons/MainLogoWhite.svg";
 
-const footerData = {
-  footerContactsDescr: "company.descr",
-  footerContacts: {
-    country: "company.contacts.country",
-    street: "company.contacts.street",
-    phone: "company.contacts.phone",
-    email: "company.contacts.email",
-  },
-};
-
-export default function Footer({ data = footerData }) {
+export default function Footer() {
   const t = useTranslations("Footer");
 
   return (
     <div className={styles.FooterContainer}>
       <div className={styles.FooterInfo}>
         <div className={styles.FooterCompany}>
-          <a href="/" className="header__logo">
+          <Link href="/" className="header__logo">
             <Image src={mainLogo} alt="Main Logo" />
-          </a>
-          <p>{t(data.footerContactsDescr)}</p>
+          </Link>
+          <p>{t("company.descr")}</p>
         </div>
         <div className={styles.FooterContacts}>
-          <h3>{t(data.footerContacts.country)}</h3>
-          <h4>{t(data.footerContacts.street)}</h4>
-          <a href={`tel:${data.footerContacts.phone}`}>
-            {t(data.footerContacts.phone)}
-          </a>
-          <a href={`mailto:${data.footerContacts.email}`}>
-            {t(data.footerContacts.email)}
-          </a>
+          <h3>{t("company.contacts.country")}</h3>
+          <h4>{t("company.contacts.street")}</h4>
+          <Link href={`tel:${t("company.contacts.phone")}`}>
+            {t("company.contacts.phone")}
+          </Link>
+          <Link href={`mailto:${t("company.contacts.email")}`}>
+            {t("company.contacts.email")}
+          </Link>
         </div>
       </div>
       <div className={styles.FooterMenu}></div>

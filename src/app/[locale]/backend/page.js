@@ -30,6 +30,12 @@ import iconApi from "@/assets/icons/icon-card-api.svg";
 import iconPerformance from "@/assets/icons/icon-card-performance.svg";
 import iconScalability from "@/assets/icons/icon-card-scalability.svg";
 
+import iconPage from "@/assets/icons/icon-card-page.svg";
+import iconCard from "@/assets/icons/icon-card-card.svg";
+import iconCorporate from "@/assets/icons/icon-card-corporate.svg";
+import iconCatalog from "@/assets/icons/icon-card-catalog.svg";
+import iconStore from "@/assets/icons/icon-card-store.svg";
+
 import iconPhp from "@/assets/icons/icon-PHP.svg";
 import iconMysql from "@/assets/icons/icon-mysql-dark.svg";
 import iconPython from "@/assets/icons/icon-python.svg";
@@ -40,7 +46,10 @@ import SectionTitle from "@/components/ui/SectionTitle/SectionTitle";
 import InfoCards from "@/components/ui/InfoCards/InfoCards";
 import StepsCards from "@/components/StepsCards/StepsCards";
 import ContactForm from "@/components/ui/ContactForm/ContactForm";
+import AccordionCardHolder from "@/components/AccordionCardHolder/AccordionCardHolder";
 import Faq from "@/components/Faq/Faq";
+import Footer from "@/components/Footer/Footer";
+import Colophon from "@/components/Colophon/Colophon";
 
 const images = [
   lineImage1,
@@ -74,6 +83,18 @@ const getIcon = (title) => {
       return iconPerformance;
     case "Scalability and Flexibility":
       return iconScalability;
+
+    case "landing page":
+      return iconPage;
+    case "Business Card Website":
+      return iconCard;
+    case "Corporate Website":
+      return iconCorporate;
+    case "Catalog Website":
+      return iconCatalog;
+    case "Online Store":
+      return iconStore;
+
     default:
       return null;
   }
@@ -91,7 +112,7 @@ export default function BackendPage() {
 
   const servicesData = t.raw("Services.ServicesCards").map((card) => ({
     ...card,
-    icon: getIcon(card.Title),
+    // icon: getIcon(card.Title),
   }));
 
   const AdvantagesData = t.raw("Advantages.Items").map((card) => ({
@@ -107,9 +128,51 @@ export default function BackendPage() {
     grid: [{ type: "single", image: iconNodeJs, text: "Node Js" }],
   };
 
+  const AccordionCardsData = t.raw("Services.AccordionCards").map((card) => ({
+    ...card,
+    InfoCards: card.InfoCards.map((infoCard) => ({
+      ...infoCard,
+      icon: getIcon(infoCard.Title),
+    })),
+  }));
+
   const StepsData = t.raw("Process.Steps").map((card) => ({
     ...card,
   }));
+
+  const contactFormData = {
+    inputName: {
+      title: "inputName.label",
+      placeholder: "inputName.placeholder",
+    },
+    inputEmployees: {
+      title: "inputEmployees.label",
+      placeholder: "inputEmployees.placeholder",
+      tooltip: "inputEmployees.tooltip",
+    },
+    inputEmail: {
+      title: "inputEmail.label",
+      placeholder: "inputEmail.placeholder",
+    },
+    inputPhone: {
+      title: "inputPhone.label",
+      placeholder: "inputPhone.placeholder",
+    },
+    inputDropdown: {
+      title: "inputDropdown.label",
+      placeholder: "inputDropdown.placeholder",
+      options: {
+        option1: "inputDropdown.options.option1",
+        option2: "inputDropdown.options.option2",
+        option3: "inputDropdown.options.option3",
+        option4: "inputDropdown.options.option4",
+      },
+    },
+    inputTextarea: {
+      title: "inputTextarea.label",
+      placeholder: "inputTextarea.placeholder",
+    },
+  };
 
   return (
     <div className={inter.className}>
@@ -202,6 +265,9 @@ export default function BackendPage() {
         />
         <InfoCards data={servicesData} colorType="dark" textAlign="left" />
       </SectionWrapper>
+      <SectionWrapper>
+        <AccordionCardHolder data={AccordionCardsData} />
+      </SectionWrapper>
 
       <SectionWrapper>
         <SectionTitle
@@ -280,7 +346,11 @@ export default function BackendPage() {
           styleType=""
         />
 
-        <InfoCards data={AdvantagesData} colorType="whiteDark" textAlign="center" />
+        <InfoCards
+          data={AdvantagesData}
+          colorType="whiteDark"
+          textAlign="center"
+        />
       </SectionWrapper>
 
       <SectionWrapper dark={true}>
@@ -323,9 +393,11 @@ export default function BackendPage() {
         <StepsCards data={StepsData} />
       </SectionWrapper>
 
-      <ContactForm></ContactForm>
-      <Faq page="BackendPageItems" />
+      <ContactForm data={contactFormData} />
 
+      <Faq page="BackendPageItems" />
+      <Footer/>
+      <Colophon/>
     </div>
   );
 }

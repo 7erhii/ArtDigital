@@ -1,3 +1,4 @@
+
 import React from "react";
 import { useTranslations } from "next-intl";
 import { Inter } from "next/font/google";
@@ -46,6 +47,10 @@ import ContactForm from "@/components/ui/ContactForm/ContactForm";
 import Faq from "@/components/Faq/Faq";
 import DesignSection from "@/components/Design/DesignSection";
 import DesignSlider from "@/components/Design/DesignSlider/DesignSlider";
+import Industries from "@/components/Industries/Industries";
+import Footer from "@/components/Footer/Footer";
+import Colophon from "@/components/Colophon/Colophon";
+import Header from "@/components/Header/Header";
 
 const images = [
   lineImage1,
@@ -87,6 +92,40 @@ const getIcon = (title) => {
 const inter = Inter({ subsets: ["latin"] });
 
 export default function DesignPage() {
+  const contactFormData = {
+    inputName: {
+      title: "inputName.label",
+      placeholder: "inputName.placeholder",
+    },
+    inputEmployees: {
+      title: "inputEmployees.label",
+      placeholder: "inputEmployees.placeholder",
+      tooltip: "inputEmployees.tooltip",
+    },
+    inputEmail: {
+      title: "inputEmail.label",
+      placeholder: "inputEmail.placeholder",
+    },
+    inputPhone: {
+      title: "inputPhone.label",
+      placeholder: "inputPhone.placeholder",
+    },
+    inputDropdown: {
+      title: "inputDropdown.label",
+      placeholder: "inputDropdown.placeholder",
+      options: {
+        option1: "inputDropdown.options.option1",
+        option2: "inputDropdown.options.option2",
+        option3: "inputDropdown.options.option3",
+        option4: "inputDropdown.options.option4",
+      },
+    },
+    inputTextarea: {
+      title: "inputTextarea.label",
+      placeholder: "inputTextarea.placeholder",
+    },
+  };
+
   const t = useTranslations("Design");
 
   // const aboutData = t.raw("About.InfoCards").map((card) => ({
@@ -124,6 +163,7 @@ export default function DesignPage() {
 
   return (
     <div className={inter.className}>
+      {/* <Header/> */}
       {/* <DesignSlider /> */}
 
       <CustomHero
@@ -176,8 +216,9 @@ export default function DesignPage() {
         />
         <InfoCards data={servicesData} colorType="dark" textAlign="center" />
       </SectionWrapper>
+      <DesignSection/>
 
-      <div className="my-10">
+      {/* <div className="my-10">
       <SectionTitle
           title={t("Design.Title")}
           subtitle={t("Design.Subtitle")
@@ -214,7 +255,7 @@ export default function DesignPage() {
           styleType="sectionTitleWhite"
         />
         <DesignSlider />
-      </div>
+      </div> */}
 
       {/* <DesignSection/> */}
 
@@ -297,9 +338,13 @@ export default function DesignPage() {
 
         <StepsCards data={StepsData} />
       </SectionWrapper>
+      <Industries/>
+      <ContactForm data={contactFormData} />
 
       {/* <ContactForm></ContactForm> */}
-      {/* <Faq page="BackendPageItems" /> */}
+      <Faq page="DesignPageItems" />
+      <Footer/>
+      <Colophon/>
     </div>
   );
 }

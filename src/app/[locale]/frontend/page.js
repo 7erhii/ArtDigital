@@ -25,6 +25,12 @@ import iconBrowser from "@/assets/icons/icon-card-browser.svg";
 import iconSeo from "@/assets/icons/icon-card-seo.svg";
 import iconMaitenance from "@/assets/icons/icon-card-maitenance.svg";
 
+import iconPage from "@/assets/icons/icon-card-page.svg";
+import iconCard from "@/assets/icons/icon-card-card.svg";
+import iconCorporate from "@/assets/icons/icon-card-corporate.svg";
+import iconCatalog from "@/assets/icons/icon-card-catalog.svg";
+import iconStore from "@/assets/icons/icon-card-store.svg";
+
 import iconHtml from "@/assets/icons/icon-HTML5.svg";
 import iconCss from "@/assets/icons/icon-CSS3.svg";
 import iconJs from "@/assets/icons/icon-JavaScript.svg";
@@ -42,6 +48,7 @@ import InfoCards from "@/components/ui/InfoCards/InfoCards";
 import GridCards from "@/components/ui/GridCards/GridCards";
 import StepsCards from "@/components/StepsCards/StepsCards";
 import ContactForm from "@/components/ui/ContactForm/ContactForm";
+import AccordionCardHolder from "@/components/AccordionCardHolder/AccordionCardHolder";
 import Faq from "@/components/Faq/Faq";
 
 const images = [
@@ -76,6 +83,17 @@ const getIcon = (title) => {
       return iconSeo;
     case "Scalability and Maintenance":
       return iconMaitenance;
+
+    case "landing page":
+      return iconPage;
+    case "Business Card Website":
+      return iconCard;
+    case "Corporate Website":
+      return iconCorporate;
+    case "Catalog Website":
+      return iconCatalog;
+    case "Online Store":
+      return iconStore;
     default:
       return null;
   }
@@ -85,6 +103,11 @@ export default function FrontEndPage() {
   const t = useTranslations("FrontEnd");
 
   const aboutData = t.raw("About.InfoCards").map((card) => ({
+    ...card,
+    icon: getIcon(card.Title),
+  }));
+
+  const servicesData = t.raw("Services.ServicesCards").map((card) => ({
     ...card,
     icon: getIcon(card.Title),
   }));
@@ -120,9 +143,51 @@ export default function FrontEndPage() {
     ],
   };
 
+  const AccordionCardsData = t.raw("Services.AccordionCards").map((card) => ({
+    ...card,
+    InfoCards: card.InfoCards.map((infoCard) => ({
+      ...infoCard,
+      icon: getIcon(infoCard.Title),
+    })),
+  }));
+
   const StepsData = t.raw("Process.Steps").map((card) => ({
     ...card,
   }));
+
+  const contactFormData = {
+    inputName: {
+      title: "inputName.label",
+      placeholder: "inputName.placeholder",
+    },
+    inputEmployees: {
+      title: "inputEmployees.label",
+      placeholder: "inputEmployees.placeholder",
+      tooltip: "inputEmployees.tooltip",
+    },
+    inputEmail: {
+      title: "inputEmail.label",
+      placeholder: "inputEmail.placeholder",
+    },
+    inputPhone: {
+      title: "inputPhone.label",
+      placeholder: "inputPhone.placeholder",
+    },
+    inputDropdown: {
+      title: "inputDropdown.label",
+      placeholder: "inputDropdown.placeholder",
+      options: {
+        option1: "inputDropdown.options.option1",
+        option2: "inputDropdown.options.option2",
+        option3: "inputDropdown.options.option3",
+        option4: "inputDropdown.options.option4",
+      },
+    },
+    inputTextarea: {
+      title: "inputTextarea.label",
+      placeholder: "inputTextarea.placeholder",
+    },
+  };
 
   return (
     <div>
@@ -171,7 +236,7 @@ export default function FrontEndPage() {
           description={t("About.Description")}
           styleType=""
         />
-        <InfoCards data={aboutData} colorType="whiteDark"  />
+        <InfoCards data={aboutData} colorType="whiteDark" />
       </SectionWrapper>
 
       <div className="bg-[#151515] pb-[5em]">
@@ -214,7 +279,11 @@ export default function FrontEndPage() {
           description={t("Services.Description")}
           styleType="sectionTitleWhite"
         />
-        <InfoCards data={aboutData} colorType="dark" textAlign="left" />
+        {/* <InfoCards data={aboutData} colorType="dark" textAlign="left" /> */}
+        <InfoCards data={servicesData} colorType="dark" textAlign="left" />
+      </SectionWrapper>
+      <SectionWrapper>
+        <AccordionCardHolder data={AccordionCardsData} />
       </SectionWrapper>
 
       <SectionWrapper>
@@ -294,7 +363,11 @@ export default function FrontEndPage() {
           styleType=""
         />
 
-        <InfoCards data={AdvantagesData} colorType="whiteDark" textAlign="center" />
+        <InfoCards
+          data={AdvantagesData}
+          colorType="whiteDark"
+          textAlign="center"
+        />
       </SectionWrapper>
 
       <SectionWrapper dark={true}>
@@ -336,7 +409,8 @@ export default function FrontEndPage() {
 
         <StepsCards data={StepsData} />
       </SectionWrapper>
-      <ContactForm />
+      <ContactForm data={contactFormData} />
+
       <Faq page="FrontendPageItems" />
     </div>
   );

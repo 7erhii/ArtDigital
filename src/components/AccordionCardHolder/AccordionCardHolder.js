@@ -1,13 +1,21 @@
 "use client";
 import InfoCards from "../ui/InfoCards/InfoCards";
 import styles from "./style.module.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function AccordionCardHolder({ data }) {
   const [activeIndex, setActiveIndex] = useState(null);
 
+  useEffect(() => {
+    if (data.length === 1) {
+      setActiveIndex(0);
+    }
+  }, [data.length]);
+
   const toggleCard = (index) => {
-    setActiveIndex(activeIndex === index ? null : index);
+    if (data.length > 1) {
+      setActiveIndex(activeIndex === index ? null : index);
+    }
   };
 
   return (
@@ -18,11 +26,13 @@ export default function AccordionCardHolder({ data }) {
           className={`${styles.card} ${activeIndex === index ? styles.activeCard : ""}`}
           style={{
             borderRadius:
-              index === 0
+              data.length === 1
+                ? "12px 12px 40px 40px"
+                : index === 0
                 ? "40px 40px 12px 12px"
                 : index === data.length - 1
-                  ? "12px 12px 40px 40px"
-                  : "12px",
+                ? "12px 12px 40px 40px"
+                : "12px",
           }}
           onClick={() => toggleCard(index)}
         >
@@ -31,10 +41,12 @@ export default function AccordionCardHolder({ data }) {
               <h3>{card.Title}</h3>
               <h4>{card.Description}</h4>
             </div>
-            <div className={styles.iconWrapper}>
-              <span className={styles.horizontalLine}></span>
-              <span className={styles.verticalLine}></span>
-            </div>
+            {data.length > 1 && (
+              <div className={styles.iconWrapper}>
+                <span className={styles.horizontalLine}></span>
+                <span className={styles.verticalLine}></span>
+              </div>
+            )}
           </div>
           <div
             className={`${styles.innerCardsWrapper} ${activeIndex === index ? styles.open : ""}`}
@@ -50,6 +62,8 @@ export default function AccordionCardHolder({ data }) {
                 data={card.InfoCards}
                 colorType="blue"
                 textAlign="left"
+                alignItems="flex-start"
+                titleSize="sm"
               />
             </div>
           </div>

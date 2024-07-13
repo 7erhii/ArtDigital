@@ -203,6 +203,7 @@
       }
     }
   },
+
   "ClientsSection": {
     "title": "CLIENTS",
     "subtitle": "Our best clients",
@@ -308,12 +309,38 @@
         "descr": "4"
       },
       {
-        "title": "",
-        "descr": ""
+        "title": "5",
+        "descr": "5"
       },
       {
-        "title": "",
-        "descr": ""
+        "title": "6",
+        "descr": "6"
+      }
+    ],
+    "DesignPageItems": [
+      {
+        "title": "What is the importance of research in design creation?",
+        "descr": "Research helps us understand your audience, their needs, and preferences, ensuring that our designs are tailored to meet their expectations"
+      },
+      {
+        "title": "How long does it typically take to complete a project?",
+        "descr": "Project timelines vary depending on factors such as project scope, complexity, and client feedback responsiveness. However, a typical project can take anywhere from a few weeks to several months to complete. We work closely with clients to establish realistic timelines and milestones, ensuring timely delivery of high-quality results"
+      },
+      {
+        "title": "Why is user testing essential during the design process?",
+        "descr": "User testing allows us to gather feedback directly from your target audience, ensuring that the final product meets their needs and preferences, leading to higher user satisfaction."
+      },
+      {
+        "title": "How do you ensure that design concepts meet our brand's requirements?",
+        "descr": "We collaborate closely with you to understand your brand guidelines, values, and objectives, ensuring that our designs align perfectly with your brand identity."
+      },
+      {
+        "title": "What steps are involved in turning designs into a functional product?",
+        "descr": "After finalizing designs, we hand them off to our development team who translate them into code. Through continuous collaboration between design and development, we ensure that the final product maintains the integrity of the original designs."
+      },
+      {
+        "title": "How do you handle design changes and feedback?",
+        "descr": "We welcome feedback throughout the design process and incorporate changes iteratively. Our flexible approach ensures that we address any concerns or suggestions effectively, resulting in a final product that meets your expectations."
       }
     ]
   },
@@ -392,14 +419,6 @@
         {
           "Title": "Development",
           "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et sapien eu risus consectetur imperdiet. Maecenas sit amet lorem auctor, commodo est vulputate, volutpat felis"
-        },
-        {
-          "Title": "Development",
-          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et sapien eu risus consectetur imperdiet. Maecenas sit amet lorem auctor, commodo est vulputate, volutpat felis"
-        },
-        {
-          "Title": "Development",
-          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et sapien eu risus consectetur imperdiet. Maecenas sit amet lorem auctor, commodo est vulputate, volutpat felis"
         }
       ]
     },
@@ -409,16 +428,68 @@
       "Description": "The best service for all your needs",
       "ServicesCards": [
         {
-          "Title": "Lorem ipsum dolor sit amet",
-          "Description": "Tailored user experiences and intuitive interfaces designed to elevate your product's performance"
+          "Title": "Responsive Web Design",
+          "Description": "We create visually appealing websites that adapt to any screen size, ensuring a consistent user experience on desktops, tablets, and smartphones",
+          "Features": "Features:",
+          "FeaturesItems": [
+            "Mobile-friendly layouts",
+            "Fluid grid systems",
+            "Media queries",
+            "Cross-browser compatibility"
+          ]
         },
         {
-          "Title": "Lorem ipsum dolor sit amet",
-          "Description": "Tailored user experiences and intuitive interfaces designed to elevate your product's performance"
+          "Title": "Interactive UI/UX Design",
+          "Description": "Our interactive UI/UX design services focus on creating intuitive and engaging interfaces that enhance user satisfaction and drive conversions",
+          "Features": "Features:",
+
+          "FeaturesItems": [
+            "User-centered design",
+            "Prototyping and wireframing",
+            "Usability testing",
+            "Visual design elements"
+          ]
         },
         {
-          "Title": "Lorem ipsum dolor sit amet",
-          "Description": "Tailored user experiences and intuitive interfaces designed to elevate your product's performance"
+          "Title": "Single Page Applications (SPA)",
+          "Description": "We build single-page applications that offer a seamless and fast user experience by loading content dynamically without refreshing the page.",
+          "Features": "Features:",
+
+          "FeaturesItems": [
+            "Efficient performance",
+            "Real-time data updates",
+            "Smooth navigation",
+            "Reduced server load"
+          ]
+        }
+      ],
+      "AccordionCards": [
+        {
+          "Title": "Website development",
+          "Description": "Engaging designs optimized for web, landing pages, and mobile platforms to drive user engagement and conversions",
+          "Button": "Contact us",
+          "InfoCards": [
+            {
+              "Title": "landing page",
+              "Description": "Capture more leads with our Landing Pages. Designed to grab attention and prompt action with compelling headlines and clear calls to action."
+            },
+            {
+              "Title": "Business Card Website",
+              "Description": "Create an impressive online presence with our Business Card Websites. Perfect for essential info like contact details and social media links."
+            },
+            {
+              "Title": "Corporate Website",
+              "Description": "Strengthen your brand with a Corporate Website. Showcase your company’s values, services, and news to build credibility."
+            },
+            {
+              "Title": "Catalog Website",
+              "Description": "Display your products effectively with a Catalog Website. Organized categories and detailed descriptions make it easy for customers to find what they need."
+            },
+            {
+              "Title": "Online Store",
+              "Description": "Increase sales with a professional Online Store. Features include product listings, shopping carts, and secure payment gateways for a seamless shopping experience."
+            }
+          ]
         }
       ]
     },
@@ -521,18 +592,71 @@
       "Title": "SERVICES",
       "Subtitle": "Back-End development services",
       "Description": "The best service for all your needs",
+
       "ServicesCards": [
         {
-          "Title": "Lorem ipsum dolor sit amet",
-          "Description": "Tailored user experiences and intuitive interfaces designed to elevate your product's performance"
+          "Title": "API Development and Integration",
+          "Description": "We develop robust APIs and integrate them seamlessly with your existing systems, ensuring smooth communication software components",
+          "Features": "Features:",
+          "FeaturesItems": [
+            "RESTful API design",
+            "Third-party API integration",
+            "Secure authentication",
+            "Comprehensive documentation"
+          ]
         },
         {
-          "Title": "Lorem ipsum dolor sit amet",
-          "Description": "Tailored user experiences and intuitive interfaces designed to elevate your product's performance"
+          "Title": "Database Management",
+          "Description": "Our database management services ensure that your data is stored securely and can be accessed efficiently, supporting the growth of your business",
+          "Features": "Features:",
+
+          "FeaturesItems": [
+            "Database design and modeling",
+            "Performance optimization",
+            "Data migration",
+            "Backup and recovery"
+          ]
         },
         {
-          "Title": "Lorem ipsum dolor sit amet",
-          "Description": "Tailored user experiences and intuitive interfaces designed to elevate your product's performance"
+          "Title": "Single Page Applications (SPA)",
+          "Description": "We provide server-side development services that ensure your applications run smoothly, securely, and can handle high traffic volumes",
+          "Features": "Features:",
+
+          "FeaturesItems": [
+            "Scalability and load balancing",
+            "Secure coding practices",
+            "Real-time data processing",
+            "Continuous integration and deployment (CI/CD)"
+          ]
+        }
+      ],
+      "AccordionCards": [
+        {
+          "Title": "Website development",
+          "Description": "Engaging designs optimized for web, landing pages, and mobile platforms to drive user engagement and conversions",
+          "Button": "Contact us",
+          "InfoCards": [
+            {
+              "Title": "landing page",
+              "Description": "Capture more leads with our Landing Pages. Designed to grab attention and prompt action with compelling headlines and clear calls to action."
+            },
+            {
+              "Title": "Business Card Website",
+              "Description": "Create an impressive online presence with our Business Card Websites. Perfect for essential info like contact details and social media links."
+            },
+            {
+              "Title": "Corporate Website",
+              "Description": "Strengthen your brand with a Corporate Website. Showcase your company’s values, services, and news to build credibility."
+            },
+            {
+              "Title": "Catalog Website",
+              "Description": "Display your products effectively with a Catalog Website. Organized categories and detailed descriptions make it easy for customers to find what they need."
+            },
+            {
+              "Title": "Online Store",
+              "Description": "Increase sales with a professional Online Store. Features include product listings, shopping carts, and secure payment gateways for a seamless shopping experience."
+            }
+          ]
         }
       ]
     },
@@ -721,52 +845,32 @@
       "Description": "The best service for all your needs",
       "AccordionCards": [
         {
-          "Title": "Branding",
-          "Description": "Tailored user experiences and intuitive interfaces designed to elevate your product's performance",
-          "Button": "Contact us",
+          "Title": "Digital marketing",
+          "Description": "Eye-catching outdoor designs crafted to enhance brand visibility and leave a lasting impression on your audience",
           "InfoCards": [
             {
-              "Title": "Connect",
-              "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et sapien eu risus consectetur imperdiet. Maecenas sit amet lorem auctor, commodo est vulputate, volutpat felis"
+              "Title": "SEO",
+              "Description" : ""
             },
             {
-              "Title": "Research",
-              "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et sapien eu risus consectetur imperdiet. Maecenas sit amet lorem auctor, commodo est vulputate, volutpat felis"
+              "Title": "PPC Advertising",
+              "Description" : ""
             },
             {
-              "Title": "Development",
-              "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et sapien eu risus consectetur imperdiet. Maecenas sit amet lorem auctor, commodo est vulputate, volutpat felis"
+              "Title": "SMM",
+              "Description" : ""
             },
             {
-              "Title": "Development",
-              "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et sapien eu risus consectetur imperdiet. Maecenas sit amet lorem auctor, commodo est vulputate, volutpat felis"
+              "Title": "Remarketing",
+              "Description" : ""
             },
             {
-              "Title": "Development",
-              "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et sapien eu risus consectetur imperdiet. Maecenas sit amet lorem auctor, commodo est vulputate, volutpat felis"
-            }
-          ]
-        },
-        {
-          "Title": "Website development",
-          "Description": "Engaging designs optimized for web, landing pages, and mobile platforms to drive user engagement and conversions",
-          "Button": "Contact us",
-          "InfoCards": [
-            {
-              "Title": "2",
-              "Description": "2"
+              "Title": "Email Marketing",
+              "Description" : ""
             },
             {
-              "Title": "2",
-              "Description": "2"
-            },
-            {
-              "Title": "2",
-              "Description": "2"
-            },
-            {
-              "Title": "2",
-              "Description": "2"
+              "Title": "Google Advertising",
+              "Description" : ""
             }
           ]
         },
@@ -775,20 +879,43 @@
           "Description": "Engaging designs optimized for web, landing pages, and mobile platforms to drive user engagement and conversions",
           "InfoCards": [
             {
-              "Title": "3",
-              "Description": "3"
+              "Title": "Customer Journey",
+              "Description": "This map helps improve service in a company and provides an understanding of the stages each customer goes through before making a purchase, aiding in their enhancement."
             },
             {
-              "Title": "3",
-              "Description": "3"
+              "Title": "Communication Strategy",
+              "Description": "Dialogue with the audience is our communication strategy, comprising marketing components (interviews, research), creative elements (messages, visuals), and media planning (channels)."
             },
             {
-              "Title": "3",
-              "Description": "3"
+              "Title": "Research",
+              "Description": "Creating marketing strategies without prior research is not only ineffective but also harmful to the company, which is why we always conduct a comprehensive analysis of the brand, market, and everything surrounding it."
             },
             {
-              "Title": "3",
-              "Description": "3"
+              "Title": "Naming",
+              "Description": "This map helps improve service in a company and provides an understanding of the stages each customer goes through before making a purchase, aiding in their enhancement."
+            },
+            {
+              "Title": "Value Proposition",
+              "Description": "Creating marketing strategies without prior research is not only ineffective but also harmful to the company, which is why we always conduct a comprehensive analysis of the brand, market, and everything surrounding it."
+            }
+          ]
+        },
+        {
+          "Title": "Branding",
+          "Description": "Tailored user experiences and intuitive interfaces designed to elevate your product's performance",
+          "Button": "Contact us",
+          "InfoCards": [
+            {
+              "Title": "Logo Design",
+              "Description": "Crafting a Memorable and Impactful Visual Identity"
+            },
+            {
+              "Title": "Brand-book",
+              "Description": "Your Comprehensive Guide to Consistent and Effective Brand Presentation"
+            },
+            {
+              "Title": "Brand design",
+              "Description": "Building a Cohesive and Recognizable Brand Image"
             }
           ]
         },
@@ -797,42 +924,16 @@
           "Description": "Engaging designs optimized for web, landing pages, and mobile platforms to drive user engagement and conversions",
           "InfoCards": [
             {
-              "Title": "4",
-              "Description": "4"
+              "Title": "Billboards and Posters",
+              "Description": "Large-scale advertisements placed in high-traffic areas to capture the attention of passersby"
             },
             {
-              "Title": "4",
-              "Description": "4"
+              "Title": "Street Furniture Advertising",
+              "Description": "Ads on bus shelters, benches, and kiosks strategically placed along sidewalks and streets"
             },
             {
-              "Title": "4",
-              "Description": "4"
-            },
-            {
-              "Title": "4",
-              "Description": "4"
-            }
-          ]
-        },
-        {
-          "Title": "Digital marketing",
-          "Description": "Eye-catching outdoor designs crafted to enhance brand visibility and leave a lasting impression on your audience",
-          "InfoCards": [
-            {
-              "Title": "5",
-              "Description": "5"
-            },
-            {
-              "Title": "5",
-              "Description": "5"
-            },
-            {
-              "Title": "5",
-              "Description": "5"
-            },
-            {
-              "Title": "5",
-              "Description": "5"
+              "Title": "Digital Outdoor Advertising",
+              "Description": "Digital screens and interactive displays in outdoor locations for dynamic and targeted messaging"
             }
           ]
         }
@@ -851,33 +952,34 @@
     },
     "Advantages": {
       "Title": "advantages",
-      "Subtitle": "Business Success with UX/UI Design",
-      "Description": "Discover how our designs boost your business",
+      "Subtitle": "Unlocking the Power of Marketing",
+      "Description": "Discover how effective marketing strategies can propel your business forward",
       "Items": [
         {
-          "Title": "Increased User Engagement",
-          "Description": "Engaging UX/UI designs captivate users, encouraging longer interactions and repeat visits, boosting customer engagement"
+          "Title": "Enhanced Brand Visibility",
+          "Description": "Marketing efforts increase brand exposure, making your business more recognizable to potential customers"
         },
         {
-          "Title": "Higher Conversion Rates",
-          "Description": "Intuitive interfaces and clear calls-to-action guide users through the conversion funnel, resulting in increased sales and conversions"
+          "Title": "Increased Sales and Revenue",
+          "Description": "Strategic marketing campaigns can generate leads and drive conversions, ultimately boosting sales and revenue"
         },
         {
-          "Title": "Brand Differentiation",
-          "Description": "Unique and visually appealing designs set your brand apart, creating memorable experiences for users and enhancing brand recognition"
+          "Title": "Improved Customer Engagement",
+          "Description": "Through targeted marketing, businesses can better connect with their audience, fostering loyalty and long-term relationships"
         },
         {
-          "Title": "Improved Accessibility",
-          "Description": "Accessible design practices ensure that your product is usable by all, reaching a wider audience and enhancing inclusivity"
+          "Title": "Competitive Advantage",
+          "Description": "Effective marketing allows businesses to differentiate themselves from competitors and establish a unique selling proposition"
         },
         {
-          "Title": "Faster Time to Market",
-          "Description": "Efficient design processes reduce development time, enabling quicker launches and giving your business a competitive edge"
+          "Title": "Market Insight and Analysis",
+          "Description": "Marketing initiatives often involve research and analysis, providing valuable insights into consumer behavior and market trends"
         },
         {
-          "Title": "Lower Support Costs",
-          "Description": "Intuitive designs minimize user confusion and support requests, reducing the need for customer support and associated costs"
+          "Title": "Adaptability and Flexibility",
+          "Description": "Marketing strategies can be adjusted and refined based on real-time data and feedback, allowing businesses to respond quickly to changes in the market"
         }
+
       ]
     },
     "Process": {
