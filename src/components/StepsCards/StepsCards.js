@@ -1,6 +1,6 @@
 import styles from "./style.module.css";
 
-export default function StepsCards({ data }) {
+export default function StepsCards({ data, type = "white" }) {
   return (
     <div className={styles.Wrapper}>
       {data.map((card, index) => (
@@ -14,7 +14,7 @@ export default function StepsCards({ data }) {
                   ? "12px 12px 40px 40px"
                   : "12px 12px 12px 12px",
           }}
-          className={styles.CardItem}
+          className={`${styles.CardItem} ${type === "dark" ? styles.CardItemDark : ""}`}
         >
           <div className={styles.CardTile}>
             <p>STEP {index + 1}</p>

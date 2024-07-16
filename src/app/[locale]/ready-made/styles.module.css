@@ -1,0 +1,72 @@
+.aboutSection {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #151515;
+  }
+  
+  .customCard {
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px 12px 12px 40px;
+    border: 1px solid rgba(21, 21, 21, 0.1);
+    padding: 2.5em;
+  }
+  
+  .customCard.white {
+    background-color: rgba(21, 21, 21, 0.02);
+  }
+  
+  .customCard.white h3,
+  .customCard.dark h3 {
+    font-size: 1.5em;
+    font-weight: 800;
+  }
+  
+  .customCard.white h3 {
+    color: #82b55b;
+  }
+  
+  .customCard.white h4,
+  .customCard.dark h4 {
+    font-size: 1em;
+    margin-top: 1.5em;
+  }
+  
+  .customCard.white h4 {
+    color: rgba(130, 181, 91, 0.8);
+  }
+  
+  .customCard.white p,
+  .customCard.white li,
+  .customCard.dark p,
+  .customCard.dark li {
+    font-size: 1em;
+    line-height: 180%;
+  }
+  
+  .customCard.white p {
+    padding: 0.75em 0;
+    color: #151515;
+  }
+  
+  .customCard.white ul,
+  .customCard.dark ul {
+    padding: 0 0.75em;
+    list-style: disc;
+  }
+  
+  .customCard.dark {
+    background-color: #151515;
+    border-radius: 12px 40px 40px 12px;
+  }
+  
+  .customCard.dark h3 {
+    color: #ffffff;
+  }
+  
+  .customCard.dark h4 {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 2.5em;
+  }
+  

@@ -41,3 +41,20 @@
   font-size: 1.12em;
   cursor: pointer;
 }
+
+/* Dark theme styles */
+.CardItemDark {
+  background: rgba(21, 21, 21, 0.02);
+}
+
+.CardItemDark .CardTile > p,
+.CardItemDark .CardTile > h4,
+.CardItemDark .CardDescr > h5 {
+  color: #151515;
+}
+
+.CardItemDark:hover .CardTile > p,
+.CardItemDark:hover .CardTile > h4,
+.CardItemDark:hover .CardDescr > h5 {
+  color: #fff;
+}

@@ -4,7 +4,7 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import styles from "./IndustriesCards.module.css";
 
-export default function IndustriesCards({ data }) {
+export default function IndustriesCards({ data, type }) {
   const t = useTranslations("IndustriesSections.IndustriesCards");
 
   return (
@@ -24,6 +24,8 @@ export default function IndustriesCards({ data }) {
                 : index === data.length - 1
                 ? "12px 12px 40px 12px"
                 : "12px",
+            background: type === "dark" ? "rgba(21, 21, 21, 0.02)" : "rgba(255, 255, 255, 0.05)",
+            border: type === "dark" ? "1px solid rgba(21, 21, 21, 0.10)" : "1px solid #404040",
           }}
         >
           <Image
@@ -33,7 +35,12 @@ export default function IndustriesCards({ data }) {
             height={50}
             className={styles.IndustriesCardImage}
           />
-          <p className={styles.IndustriesCardDescr}>{card.title}</p>
+          <p
+            className={styles.IndustriesCardDescr}
+            style={{ color: type === "white" ? "#fff" : "#151515" }}
+          >
+            {card.title}
+          </p>
         </div>
       ))}
     </div>

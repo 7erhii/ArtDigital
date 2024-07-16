@@ -16,8 +16,8 @@
 .IndustriesCard {
   display: flex;
   width: 32%;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid #404040;
+  /* background: #ffffff0d;
+  border: 1px solid #404040; */
   border-radius: 12px;
   padding: 2.2em;
   padding-right: 0;
@@ -31,7 +31,7 @@
 
 .IndustriesCardDescr {
   font-size: 1.5em;
-  color: #fff;
+  /* color: #fff; */
 }
 /*
 .marketingCards {

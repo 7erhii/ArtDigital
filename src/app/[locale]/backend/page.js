@@ -50,6 +50,7 @@ import AccordionCardHolder from "@/components/AccordionCardHolder/AccordionCardH
 import Faq from "@/components/Faq/Faq";
 import Footer from "@/components/Footer/Footer";
 import Colophon from "@/components/Colophon/Colophon";
+import Header from "@/components/Header/Header";
 
 const images = [
   lineImage1,
@@ -102,7 +103,7 @@ const getIcon = (title) => {
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function BackendPage() {
+export default function BackendPage({ params: { locale } }) {
   const t = useTranslations("BackEnd");
 
   const aboutData = t.raw("About.InfoCards").map((card) => ({
@@ -175,7 +176,10 @@ export default function BackendPage() {
   };
 
   return (
+    
     <div className={inter.className}>
+      <Header locale={locale} />
+
       <CustomHero
         sectionName="BackEnd"
         imageSrc={BackendImage}

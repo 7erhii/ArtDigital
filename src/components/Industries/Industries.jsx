@@ -13,7 +13,7 @@ import iconSchool from "@/assets/icons/icon-school.svg";
 import iconHomeWork from "@/assets/icons/icon-home_work.svg";
 import iconBackHand from "@/assets/icons/icon-back_hand.svg";
 
-export default function Industries() {
+export default function Industries({ type = "white" }) {
   const t = useTranslations("IndustriesSections");
 
   const industriesCardsData = [
@@ -44,7 +44,7 @@ export default function Industries() {
   ];
 
   return (
-    <div className={styles.pageWrapper}>
+    <div className={type === "white" ? styles.pageWrapper : styles.pageWrapperDarkMode}>
       <SectionTitle
         title={t("title")}
         subtitle={t("subtitle")
@@ -57,7 +57,7 @@ export default function Industries() {
               return (
                 <React.Fragment key={index}>
                   <span
-                    style={blueWord ? { color: "#3C7BF6" } : { color: "#fff" }}
+                    style={blueWord ? { color: "#3C7BF6" } : { color: "#151515" }}
                   >
                     {word}
                   </span>
@@ -76,9 +76,9 @@ export default function Industries() {
             }
           }, [])}
         description={t("description")}
-        styleType="sectionTitleDark"
+        styleType={type === "white" ? "sectionTitleDark" : "sectionTitleWhite"}
       />
-      <IndustriesCards data={industriesCardsData} />
+      <IndustriesCards data={industriesCardsData} type={type} />
     </div>
   );
 }

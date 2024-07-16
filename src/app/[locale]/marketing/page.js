@@ -26,6 +26,13 @@ import iconAccessibility from "@/assets/icons/icon-card-Accessibility.svg";
 import iconFaster from "@/assets/icons/icon-card-faster.svg";
 import iconThumb from "@/assets/icons/icon-card-thumb.svg";
 
+import iconEye from "@/assets/icons/icon-card-eye.svg";
+import iconArrowUp from "@/assets/icons/icon-card-arrowUp.svg";
+import iconUserPlus from "@/assets/icons/icon-card-userPlus.svg";
+import iconUserSphere from "@/assets/icons/icon-card-sphere.svg";
+import iconLightBulb from "@/assets/icons/icon-card-lightbulb.svg";
+import iconFlexibility from "@/assets/icons/icon-card-flexibility.svg";
+
 import iconJourney from "@/assets/icons/icon-card-journey.svg";
 import iconCommunication from "@/assets/icons/icon-card-communication.svg";
 import iconMagniWhite from "@/assets/icons/icon-card-research.svg";
@@ -59,6 +66,9 @@ import Faq from "@/components/Faq/Faq";
 import DesignSection from "@/components/Design/DesignSection";
 import DesignSlider from "@/components/Design/DesignSlider/DesignSlider";
 import AccordionCardHolder from "@/components/AccordionCardHolder/AccordionCardHolder";
+import Header from "@/components/Header/Header";
+import Footer from "@/components/Footer/Footer";
+import Colophon from "@/components/Colophon/Colophon";
 
 const images = [
   lineImage1,
@@ -115,15 +125,27 @@ const getIcon = (title) => {
       return iconAdvertising;
     case "Digital Outdoor Advertising":
       return iconOutdoor;
-    
+
+    case "Enhanced Brand Visibility":
+      return iconEye;
+    case "Increased Sales and Revenue":
+      return iconArrowUp;
+    case "Improved Customer Engagement":
+      return iconUserPlus;
+    case "Competitive Advantage":
+      return iconUserSphere;
+    case "Market Insight and Analysis":
+      return iconLightBulb;
+    case "Adaptability and Flexibility":
+      return iconFlexibility;
+
     default:
       return null;
   }
 };
-
 const inter = Inter({ subsets: ["latin"] });
 
-export default function MarketingPage() {
+export default function MarketingPage({ params: { locale } }) {
   const t = useTranslations("Marketing");
 
   // const aboutData = t.raw("About.InfoCards").map((card) => ({
@@ -162,8 +184,44 @@ export default function MarketingPage() {
     ...card,
   }));
 
+  const contactFormData = {
+    inputName: {
+      title: "inputName.label",
+      placeholder: "inputName.placeholder",
+    },
+    inputEmployees: {
+      title: "inputEmployees.label",
+      placeholder: "inputEmployees.placeholder",
+      tooltip: "inputEmployees.tooltip",
+    },
+    inputEmail: {
+      title: "inputEmail.label",
+      placeholder: "inputEmail.placeholder",
+    },
+    inputPhone: {
+      title: "inputPhone.label",
+      placeholder: "inputPhone.placeholder",
+    },
+    inputDropdown: {
+      title: "inputDropdown.label",
+      placeholder: "inputDropdown.placeholder",
+      options: {
+        option1: "inputDropdown.options.option1",
+        option2: "inputDropdown.options.option2",
+        option3: "inputDropdown.options.option3",
+        option4: "inputDropdown.options.option4",
+      },
+    },
+    inputTextarea: {
+      title: "inputTextarea.label",
+      placeholder: "inputTextarea.placeholder",
+    },
+  };
+
   return (
     <div className={inter.className}>
+      <Header locale={locale} />
+
       {/* <DesignSlider /> */}
 
       <CustomHero
@@ -221,47 +279,6 @@ export default function MarketingPage() {
         <AccordionCardHolder data={AccordionCardsData} />
       </SectionWrapper>
 
-      {/* <div className="my-10">
-      <SectionTitle
-          title={t("Design.Title")}
-          subtitle={t("Design.Subtitle")
-            .split(" ")
-            .map((word, index, words) => {
-              const specialWord = [""].includes(word);
-              const blueWord = ["Visual", "Excellence"].includes(word);
-
-              if (specialWord || blueWord) {
-                return (
-                  <React.Fragment key={index}>
-                    <span
-                      style={
-                        blueWord ? { color: "#3C7BF6" } : { color: "#fff" }
-                      }
-                    >
-                      {word}
-                    </span>
-                    {specialWord && <br />}
-                  </React.Fragment>
-                );
-              } else {
-                return <span key={index}>{word}</span>;
-              }
-            })
-            .reduce((acc, word, index, array) => {
-              if (index < array.length - 1) {
-                return [...acc, word, " "];
-              } else {
-                return [...acc, word];
-              }
-            }, [])}
-          description={t("Design.Description")}
-          styleType="sectionTitleWhite"
-        />
-        <DesignSlider />
-      </div> */}
-
-      {/* <DesignSection/> */}
-
       <SectionWrapper dark={true}>
         <SectionTitle
           title={t("Advantages.Title")}
@@ -302,7 +319,8 @@ export default function MarketingPage() {
         <InfoCards data={AdvantagesData} color="dark" textAlign="center" />
       </SectionWrapper>
 
-      {/* <SectionWrapper dark={true}>
+
+      <SectionWrapper dark={true}>
         <SectionTitle
           title={t("Process.Title")}
           subtitle={t("Process.Subtitle")
@@ -340,10 +358,14 @@ export default function MarketingPage() {
         />
 
         <StepsCards data={StepsData} />
-      </SectionWrapper> */}
+      </SectionWrapper>
 
-      {/* <ContactForm></ContactForm> */}
-      {/* <Faq page="BackendPageItems" /> */}
+      <ContactForm data={contactFormData} />
+
+      <Faq page="MarketingPageItems" />
+
+      <Footer />
+      <Colophon />
     </div>
   );
 }

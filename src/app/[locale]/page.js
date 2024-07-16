@@ -65,7 +65,7 @@ export default function HomePage({ params: { locale } }) {
 
   return (
     <div className={inter.className}>
-      {/* <Header locale={locale} /> */}
+      <Header locale={locale} />
       <Hero />
       <AchievementsSection />
       <DesignSection />

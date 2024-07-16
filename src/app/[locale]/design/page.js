@@ -1,4 +1,3 @@
-
 import React from "react";
 import { useTranslations } from "next-intl";
 import { Inter } from "next/font/google";
@@ -91,7 +90,7 @@ const getIcon = (title) => {
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function DesignPage() {
+export default function DesignPage({ params: { locale } }) {
   const contactFormData = {
     inputName: {
       title: "inputName.label",
@@ -163,7 +162,8 @@ export default function DesignPage() {
 
   return (
     <div className={inter.className}>
-      {/* <Header/> */}
+      <Header locale={locale} />
+
       {/* <DesignSlider /> */}
 
       <CustomHero
@@ -216,7 +216,7 @@ export default function DesignPage() {
         />
         <InfoCards data={servicesData} colorType="dark" textAlign="center" />
       </SectionWrapper>
-      <DesignSection/>
+      <DesignSection />
 
       {/* <div className="my-10">
       <SectionTitle
@@ -259,7 +259,7 @@ export default function DesignPage() {
 
       {/* <DesignSection/> */}
 
-      <SectionWrapper >
+      <SectionWrapper>
         <SectionTitle
           title={t("Advantages.Title")}
           subtitle={t("Advantages.Subtitle")
@@ -338,13 +338,13 @@ export default function DesignPage() {
 
         <StepsCards data={StepsData} />
       </SectionWrapper>
-      <Industries/>
+      <Industries />
       <ContactForm data={contactFormData} />
 
       {/* <ContactForm></ContactForm> */}
       <Faq page="DesignPageItems" />
-      <Footer/>
-      <Colophon/>
+      <Footer />
+      <Colophon />
     </div>
   );
 }

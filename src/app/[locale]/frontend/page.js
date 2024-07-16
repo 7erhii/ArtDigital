@@ -50,6 +50,7 @@ import StepsCards from "@/components/StepsCards/StepsCards";
 import ContactForm from "@/components/ui/ContactForm/ContactForm";
 import AccordionCardHolder from "@/components/AccordionCardHolder/AccordionCardHolder";
 import Faq from "@/components/Faq/Faq";
+import Header from "@/components/Header/Header";
 
 const images = [
   lineImage1,
@@ -99,7 +100,7 @@ const getIcon = (title) => {
   }
 };
 
-export default function FrontEndPage() {
+export default function FrontEndPage({ params: { locale } }) {
   const t = useTranslations("FrontEnd");
 
   const aboutData = t.raw("About.InfoCards").map((card) => ({
@@ -191,6 +192,8 @@ export default function FrontEndPage() {
 
   return (
     <div>
+      <Header locale={locale} />
+
       <CustomHero
         sectionName="FrontEnd"
         imageSrc={FrontendImage}
