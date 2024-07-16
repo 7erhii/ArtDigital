@@ -41,8 +41,8 @@
     },
     {
       "title": "More",
-      "links": ["/service1", "/service2", "/service3"],
-      "subtitles": ["Service", "Service", "Service"]
+      "links": ["/about", "/service2", "/service3"],
+      "subtitles": ["About Us", "Service", "Service"]
     }
   ],
   "Hero": {
@@ -1163,6 +1163,23 @@
           "Description": ""
         }
       ]
+    }
+  },
+  "AboutUs": {
+    "Hero": {
+      "HeroTitle": "MEET ART DIGITAL",
+      "HeroSubtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consequat molestie eleifend. Suspendisse potenti. In sed molestie velit. Nulla fermentum a enim id mollis",
+      "HeroButton": "Contact us",
+      "HeroButtonClear": "Button"
+    },
+    "AchievementsData": [
+      { "Count": "140+", "Description": "Succeeded projects" },
+      { "Count": "$12MM", "Description": "Annual revenue" },
+      { "Count": "3K+", "Description": "Clients" }
+    ],
+    "ContactForm": {
+      "title" : "Let’s build something amazing together",
+      "description" : "Whether you have a question, need a consultation, or are ready to start your next big project, we’re here to help. Reach out to us and let's make your vision a reality"
     }
   },
   "NotFoundPage": {

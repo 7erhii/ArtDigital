@@ -19,6 +19,8 @@ import IconRedyChat from "@/assets/icons/icon-header-redy-chat.svg";
 import IconRedyBilling from "@/assets/icons/icon-header-redy-billing.svg";
 import IconRedyIptv from "@/assets/icons/icon-header-redy-iptv.svg";
 
+import About from "@/assets/icons/icon-header-redy-iptv.svg";
+
 const icons = {
   "UX/ UI research and design": IconDesignUxUi,
   "Web, landings and mobile design": IconDesignWeb,
@@ -35,7 +37,7 @@ const icons = {
   "Chat bot implementations": IconRedyChat,
   "Ready Billing system": IconRedyBilling,
   "IPTV/OTT": IconRedyIptv,
-  Service: "/icons/icon-header-more-service1.svg",
+  "About Us": About,
 };
 
 const Nav = ({ locale }) => {
