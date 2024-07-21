@@ -27,7 +27,7 @@ const AchievementCard = ({ data }) => {
           {
             innerHTML: numberOnly,
             duration: 2,
-            ease: "power2.out", // Обновление ease для ускорения и замедления
+            ease: "power2.out",
             snap: { innerHTML: 1 },
             onUpdate: function () {
               ref.innerHTML = Math.ceil(ref.innerHTML) + suffix;
@@ -94,7 +94,7 @@ const AchievementCard = ({ data }) => {
               <p
                 ref={(el) => (numberRefs.current[index] = el)}
                 style={{
-                  fontFamily: "inter, sans-serif",
+                  fontFamily: "Satoshi, sans-serif",
                   fontSize: "5em",
                   fontWeight: "700",
                   lineHeight: "100%",
@@ -105,7 +105,7 @@ const AchievementCard = ({ data }) => {
               </p>
               <p
                 style={{
-                  fontFamily: "inter, sans-serif",
+                  fontFamily: "Satoshi, sans-serif",
                   fontSize: "1em",
                   fontWeight: "100",
                   color: "#fff",

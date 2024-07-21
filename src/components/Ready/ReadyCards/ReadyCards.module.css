@@ -37,11 +37,12 @@
   align-items: center;
   color: #fff;
   font-size: 1.25em;
+
 }
 .marketingCardsTitle h2 {
-  font-family: "Inter", sans-serif;
+  font-family: "Satoshi", sans-serif;
   color: #fff;
-  font-weight: 300;
+  font-weight: 600;
   line-height: 120%;
   letter-spacing: -0.1px;
   color: #fff;

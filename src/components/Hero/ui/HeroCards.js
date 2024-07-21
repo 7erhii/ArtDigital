@@ -1,6 +1,12 @@
 "use client";
 
 import React, { useState, useRef, useEffect } from "react";
+import { useContext } from 'react';
+
+import { ColorContext } from "@/context/ColorContext";
+
+import { lightenColor } from "@/utils/colorUtils";
+
 import Image from "next/image";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
@@ -11,26 +17,28 @@ import { IoArrowForwardOutline } from "react-icons/io5";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const lightenColor = (color, percent) => {
-  const num = parseInt(color.replace("#", ""), 16);
-  const amt = Math.round(2.55 * percent);
-  const R = (num >> 16) + amt;
-  const G = ((num >> 8) & 0x00ff) + amt;
-  const B = (num & 0x0000ff) + amt;
-  return (
-    "#" +
-    (
-      0x1000000 +
-      (R < 255 ? (R < 1 ? 0 : R) : 255) * 0x10000 +
-      (G < 255 ? (G < 1 ? 0 : G) : 255) * 0x100 +
-      (B < 255 ? (B < 1 ? 0 : B) : 255)
-    )
-      .toString(16)
-      .slice(1)
-  );
-};
+// const lightenColor = (color, percent) => {
+//   const num = parseInt(color.replace("#", ""), 16);
+//   const amt = Math.round(2.55 * percent);
+//   const R = (num >> 16) + amt;
+//   const G = ((num >> 8) & 0x00ff) + amt;
+//   const B = (num & 0x0000ff) + amt;
+//   return (
+//     "#" +
+//     (
+//       0x1000000 +
+//       (R < 255 ? (R < 1 ? 0 : R) : 255) * 0x10000 +
+//       (G < 255 ? (G < 1 ? 0 : G) : 255) * 0x100 +
+//       (B < 255 ? (B < 1 ? 0 : B) : 255)
+//     )
+//       .toString(16)
+//       .slice(1)
+//   );
+// };
 
 export default function HeroCards({ data: cards, buttonsData: cardText }) {
+  const { setColor } = useContext(ColorContext);
+
   const [activeButton, setActiveButton] = useState("card");
   const [cardIndex, setCardIndex] = useState(0);
   const [popUpText, setPopUpText] = useState(cardText.prewButton);
@@ -118,6 +126,9 @@ export default function HeroCards({ data: cards, buttonsData: cardText }) {
         borderTop: `2px solid ${borderColor}`,
         borderRight: `2px solid ${borderColor}`,
       });
+
+      setColor(backgroundColor); // Устанавливаем новый цвет в контексте
+
       return newIndex;
     });
   };
@@ -157,6 +168,8 @@ export default function HeroCards({ data: cards, buttonsData: cardText }) {
         backgroundColor: previousCardColor,
         color: previousTextColor,
       });
+
+      setColor(backgroundColor); // Устанавливаем новый цвет в контексте
 
       return newIndex;
     });
@@ -300,16 +313,11 @@ export default function HeroCards({ data: cards, buttonsData: cardText }) {
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "space-between",
-                color:
-                  card.cardColor === "#fff"
-                    ? "#151515"
-                    : "#fff",
+                color: card.cardColor === "#fff" ? "#151515" : "#fff",
                 padding: "1em 1.3em",
               }}
             >
-              <p style={{ fontSize: "0.76em" }}>
-                {card.descr}
-              </p>
+              <p style={{ fontSize: "0.76em", fontWeight: "500" }}>{card.descr}</p>
               <IoArrowForwardOutline />
             </div>
             <div
@@ -379,17 +387,13 @@ export default function HeroCards({ data: cards, buttonsData: cardText }) {
       ></button>
       <div className={`hero__actions ${styles.heroActions}`}>
         <button
-          className={`${styles.heroButton} ${
-            activeButton === "card" ? styles.heroButtonActive : ""
-          }`}
+          className={`${styles.heroButton} ${activeButton === "card" ? styles.heroButtonActive : ""}`}
           onClick={() => setActiveButton("card")}
         >
           <Image src={cardIcon} alt="" />
         </button>
         <button
-          className={`${styles.heroButton} ${
-            activeButton === "grid" ? styles.heroButtonActive : ""
-          }`}
+          className={`${styles.heroButton} ${activeButton === "grid" ? styles.heroButtonActive : ""}`}
           onClick={() => setActiveButton("grid")}
         >
           <Image src={gridIcon} alt="" />

@@ -48,7 +48,7 @@ export default function MarketingCards({ data }) {
                         : styles.textWrapperBlue
                     }
                   >
-                    <div>
+                    <div className={styles.marketingCardsText}>
                       {item.title
                         .split("\n")
                         .map((line, index, arr) => {

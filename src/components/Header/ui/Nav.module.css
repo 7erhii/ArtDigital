@@ -6,10 +6,15 @@
     display: flex;
     justify-content: center;
     overflow: hidden;
+    /* font-family: 'Satoshi', sans-serif;
+    font-weight: var(--satoshi100); */
 }
 
 .navItem {
     transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    font-size: 1em;
+    font-weight: 500;
+    color: #151515;
 }
 
 .navTitle {

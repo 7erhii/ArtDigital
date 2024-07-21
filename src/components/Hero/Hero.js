@@ -1,3 +1,4 @@
+
 import { useTranslations } from "next-intl";
 import HeroTitle from "./ui/HeroTitle";
 import HeroCards from "./ui/HeroCards";
@@ -20,18 +21,19 @@ export default function Hero() {
       cardColor: "#151515",
       image: imageCard1,
     },
-    {
-      title: cardsDataObj.card3.title,
-      subscribe: cardsDataObj.card3.subtitle,
-      descr: cardsDataObj.card3.descr,
-      cardColor: "#82B55B",
-      image: imageCard2,
-    },
+
     {
       title: cardsDataObj.card4.title,
       subscribe: cardsDataObj.card4.subtitle,
       descr: cardsDataObj.card4.descr,
       cardColor: "#fff",
+      image: imageCard4,
+    },
+    {
+      title: cardsDataObj.card3.title,
+      subscribe: cardsDataObj.card3.subtitle,
+      descr: cardsDataObj.card3.descr,
+      cardColor: "#82B55B",
       image: imageCard3,
     },
     {
@@ -39,7 +41,7 @@ export default function Hero() {
       subscribe: cardsDataObj.card2.subtitle,
       descr: cardsDataObj.card2.descr,
       cardColor: "#3C7BF6",
-      image: imageCard4,
+      image: imageCard2,
     },
   ];
 

@@ -6,7 +6,7 @@
   background-color: #151515;
   color: #fff;
   background-image: url("../../../assets/images/hero-bg.png");
-  
+
   background-size: cover;
   background-position: center;
   min-height: 45em;
@@ -62,6 +62,7 @@
 
 .cardText {
   position: relative;
+  font-family: "Satoshi";
 }
 
 .cardTitle {
@@ -85,7 +86,7 @@
   width: 100%;
   font-size: 1.2em;
   line-height: 120%;
-  font-weight: 700;
+  font-weight: 900;
 }
 
 .cardDescr {
@@ -97,6 +98,7 @@
 }
 .cardDescr > p {
   font-size: 0.76em;
+  font-weight: 500;
 }
 
 .hover {
@@ -117,9 +119,6 @@
   cursor: pointer;
 
   z-index: 10;
-
-
-  
 }
 
 /* .AchievementsSection {

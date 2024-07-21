@@ -1,55 +1,55 @@
 .sectionTitleWhite {
-    background: #fff;
-    display: flex;
-    justify-content: center;
+  background: #fff;
+  display: flex;
+  justify-content: center;
 }
 .sectionTitleDark {
-    background: #151515;
-    display: flex;
-    justify-content: center;
+  background: #151515;
+  display: flex;
+  justify-content: center;
 }
 
 .container {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 5.25em 7.5em;
-    /* margin-top: 4em; */
-    /* padding-top: 0; */
-    align-items: center;
-    justify-content: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 5.25em 7.5em;
+  /* margin-top: 4em; */
+  /* padding-top: 0; */
+  align-items: center;
+  justify-content: center;
 }
 
 .title {
-    position: absolute;
-    top: 0.2em;
-    font-family: "Inter", sans-serif;
-    font-size: 7em;
-    color: #F3F3F3;
-    font-weight: 900;
-    text-transform: uppercase;
-    text-shadow: 
-    -1px -1px 0 #FAFAFA,  
-     1px -1px 0 #FAFAFA,
-    -1px  1px 0 #FAFAFA,
-     1px  1px 0 #FAFAFA,
-     0px -1px 0 #FAFAFA,
-     0px  1px 0 #FAFAFA,
-    -1px  0px 0 #FAFAFA,
-     1px  0px 0 #FAFAFA;
+  position: absolute;
+  top: 0.2em;
+  font-family: "Satoshi", sans-serif;
+  font-size: 7em;
+  color: #f3f3f3;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-shadow:
+    -1px -1px 0 #fafafa,
+    1px -1px 0 #fafafa,
+    -1px 1px 0 #fafafa,
+    1px 1px 0 #fafafa,
+    0px -1px 0 #fafafa,
+    0px 1px 0 #fafafa,
+    -1px 0px 0 #fafafa,
+    1px 0px 0 #fafafa;
 }
 .titleDark {
-    position: absolute;
-    top: 0.2em;
-    font-family: "Inter", sans-serif;
-    font-size: 7em;
-    color: #2C2C2C;
-    font-weight: 900;
-    text-transform: uppercase;
-    /* text-shadow: 
+  position: absolute;
+  top: 0.2em;
+  font-family: "Satoshi", sans-serif;
+  font-size: 7em;
+  color: #2c2c2c;
+  font-weight: 900;
+  text-transform: uppercase;
+  /* text-shadow: 
     -1px -1px 0 #FAFAFA,  
      1px -1px 0 #FAFAFA,
     -1px  1px 0 #FAFAFA,
@@ -61,53 +61,52 @@
 }
 
 .subtitle {
-    /* margin-top: 4em;
+  /* margin-top: 4em;
     padding-top: 5em; */
-    margin-top: 1.2em;
+  margin-top: 1.2em;
 
-    font-family: "Inter", sans-serif;
-    z-index: 2;
-    color: #151515;
-    font-size: 2.5em;
-    font-weight: 900;
-    line-height: 120%;
-    text-align: center;
-    letter-spacing: 1.1px;
+  font-family: "Satoshi", sans-serif;
+  z-index: 2;
+  color: #151515;
+  font-size: 2.5em;
+  font-weight: 900;
+  line-height: 120%;
+  text-align: center;
+  letter-spacing: 1.1px;
 }
 .subtitleDark {
-    /* margin-top: 4em;
+  /* margin-top: 4em;
     padding-top: 5em; */
-    margin-top: 1.2em;
+  margin-top: 1.2em;
 
-    font-family: "Inter", sans-serif;
-    z-index: 2;
-    color: #fff;
-    font-size: 2.5em;
-    font-weight: 700;
-    line-height: 120%;
-    text-align: center;
-    letter-spacing: 1.1px;
+  font-family: "Satoshi", sans-serif;
+  z-index: 2;
+  color: #fff;
+  font-size: 2.5em;
+  font-weight: 700;
+  line-height: 120%;
+  text-align: center;
+  letter-spacing: 1.1px;
 }
 .description {
-    font-family: "Poppins", sans-serif;
-    z-index: 2;
-    color: rgba(21, 21, 21, 0.8);
-    font-size: 1em;
-    font-weight: 300;
-    line-height: 120%;
-    text-align: center;
-    letter-spacing: -0.1px;
-    margin-top: 1.2em;
+  font-family: "Poppins", sans-serif;
+  z-index: 2;
+  color: rgba(21, 21, 21, 0.8);
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 120%;
+  text-align: center;
+  letter-spacing: -0.1px;
+  margin-top: 1.2em;
 }
 .descriptionDark {
-    font-family: "Poppins", sans-serif;
-    z-index: 2;
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 1em;
-    font-weight: 300;
-    line-height: 120%;
-    text-align: center;
-    letter-spacing: -0.1px;
-    margin-top: 1.2em;
-
+  font-family: "Poppins", sans-serif;
+  z-index: 2;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 120%;
+  text-align: center;
+  letter-spacing: -0.1px;
+  margin-top: 1.2em;
 }

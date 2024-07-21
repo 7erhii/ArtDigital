@@ -1,4 +1,7 @@
 {
+  "Buttons": {
+    "contactBnt": "Contact us"
+  },
   "Header": [
     {
       "title": "Design",
@@ -1178,8 +1181,8 @@
       { "Count": "3K+", "Description": "Clients" }
     ],
     "ContactForm": {
-      "title" : "Let’s build something amazing together",
-      "description" : "Whether you have a question, need a consultation, or are ready to start your next big project, we’re here to help. Reach out to us and let's make your vision a reality"
+      "title": "Let’s build something amazing together",
+      "description": "Whether you have a question, need a consultation, or are ready to start your next big project, we’re here to help. Reach out to us and let's make your vision a reality"
     }
   },
   "NotFoundPage": {

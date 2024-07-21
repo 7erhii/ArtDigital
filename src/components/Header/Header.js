@@ -4,8 +4,10 @@ import mainLogo from "@/assets/images/main-logo.svg";
 import Nav from "./ui/Nav";
 import Link from "next/link";
 import LanguageSwitcher from "./ui/LanguageSwitcher";
+import { useTranslations } from "next-intl";
 
 const Header = ({ locale }) => {
+  const t = useTranslations()
   return (
     <header className={styles.header}>
       <div className={styles.container}>
@@ -15,9 +17,9 @@ const Header = ({ locale }) => {
         <Nav locale={locale} />
         <div className="header__actions flex gap-4">
           <button
-            className={`main-btn main-btn--sm main-btn--black bg-mainBlack text-white py-2 px-3 rounded-full ${styles.headerButton}`}
+            className={`main-btn main-btn--sm main-btn--black bg-mainBlack text-white py-2 px-6 rounded-full ${styles.headerButton}`}
           >
-            <span>Contact us</span>
+            <span>{t("Buttons.contactBnt")}</span>
           </button>
           <div className="language-menu flex items-center">
             <LanguageSwitcher />

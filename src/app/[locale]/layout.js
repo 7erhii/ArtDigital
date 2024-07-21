@@ -1,6 +1,7 @@
 import pick from "lodash/pick";
 
-import { Inter } from "next/font/google";
+import { DM_Sans } from "next/font/google";
+
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 
@@ -11,8 +12,9 @@ import Colophon from "@/components/Colophon/Colophon";
 import "./globals.css";
 import ContactForm from "@/components/ui/ContactForm/ContactForm";
 import Faq from "@/components/Faq/Faq";
+import { ColorProvider } from "@/context/ColorContext";
 
-const inter = Inter({ subsets: ["latin"] });
+const dmSans = DM_Sans({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Create Next App",
@@ -24,16 +26,18 @@ export default async function RootLayout({ children, params: { locale } }) {
 
   return (
     <html lang={locale}>
-      <body className={inter.className} style={{ fontSize: "16px" }}>
-        <NextIntlClientProvider
-          locale={locale}
-          messages={pick(messages, "Error")}
-        >
-          <div className="flex flex-col min-h-screen">
-            <FontResizer />
-            <main className="flex-grow">{children}</main>
-          </div>
-        </NextIntlClientProvider>
+      <body className={dmSans.className} style={{ fontSize: "16px" }}>
+        <ColorProvider>
+          <NextIntlClientProvider
+            locale={locale}
+            messages={pick(messages, "Error")}
+          >
+            <div className="flex flex-col min-h-screen">
+              <FontResizer />
+              <main className="flex-grow">{children}</main>
+            </div>
+          </NextIntlClientProvider>
+        </ColorProvider>
       </body>
     </html>
   );

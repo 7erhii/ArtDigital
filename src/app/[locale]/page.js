@@ -1,5 +1,5 @@
 import React from "react";
-import { Inter } from "next/font/google";
+
 import { unstable_setRequestLocale } from "next-intl/server";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -18,7 +18,6 @@ import Footer from "@/components/Footer/Footer";
 import Colophon from "@/components/Colophon/Colophon";
 import Header from "@/components/Header/Header";
 
-const inter = Inter({ subsets: ["latin"] });
 
 const locales = ["en", "ru"];
 
@@ -64,7 +63,7 @@ export default function HomePage({ params: { locale } }) {
   };
 
   return (
-    <div className={inter.className}>
+    <div >
       <Header locale={locale} />
       <Hero />
       <AchievementsSection />

@@ -18,7 +18,14 @@ export default function AchievementsSection() {
   const t = useTranslations("achievements");
 
   const achievementsData = t.raw("AchievementsData").map((item, index) => ({
-    icon: index === 0 ? CalendarIcon : index === 1 ? ArrowIcon : index === 2 ? UserIcon : CheckIcon,
+    icon:
+      index === 0
+        ? CalendarIcon
+        : index === 1
+          ? ArrowIcon
+          : index === 2
+            ? UserIcon
+            : CheckIcon,
     number: item.Count,
     text: item.Description,
   }));
@@ -32,13 +39,13 @@ export default function AchievementsSection() {
           >
             <div className={styles.achievementsPinnacleTitle}>
               <h2
-                className="font-poppins text-white"
+                className="font-satoshi text-white"
                 style={{ fontSize: "2.5em", lineHeight: "1" }}
               >
                 {t("title")}
               </h2>
               <h2
-                className="font-poppins text-red-400"
+                className="font-satoshi text-red-400"
                 style={{ fontSize: "2.5em", color: "#0D99FF", lineHeight: "1" }}
               >
                 {t("blueTitle")}
