@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useRef, useEffect } from "react";
-import { useContext } from 'react';
+import { useContext } from "react";
 
 import { ColorContext } from "@/context/ColorContext";
 
@@ -52,7 +52,7 @@ export default function HeroCards({ data: cards, buttonsData: cardText }) {
       x: 0,
       y: "-8em",
       rotation: (i) => [0, 7, -7, 0][i % 4],
-      scale: 1.6,
+      scale: 1.9,
       stagger: 0.1,
       scrollTrigger: {
         trigger: cardRefs.current,
@@ -127,7 +127,7 @@ export default function HeroCards({ data: cards, buttonsData: cardText }) {
         borderRight: `2px solid ${borderColor}`,
       });
 
-      setColor(backgroundColor); // Устанавливаем новый цвет в контексте
+      setColor(backgroundColor);
 
       return newIndex;
     });
@@ -169,7 +169,7 @@ export default function HeroCards({ data: cards, buttonsData: cardText }) {
         color: previousTextColor,
       });
 
-      setColor(backgroundColor); // Устанавливаем новый цвет в контексте
+      setColor(backgroundColor);
 
       return newIndex;
     });
@@ -221,7 +221,7 @@ export default function HeroCards({ data: cards, buttonsData: cardText }) {
       <button
         className={styles.sideButton}
         style={{
-          left: "25%",
+          left: "10%",
           display: activeButton === "card" ? "block" : "none",
           clipPath: "polygon(0% 0%, 100% 0%, 70% 50%, 100% 100%, 0% 100%)",
         }}
@@ -232,7 +232,7 @@ export default function HeroCards({ data: cards, buttonsData: cardText }) {
             duration: 0.5,
             x: "-140%",
             y: -50,
-            rotationX: -23,
+            rotationX: -20,
             rotationY: -41,
             skewY: -12,
             borderTop: `2px solid ${borderColorLeft}`,
@@ -291,8 +291,8 @@ export default function HeroCards({ data: cards, buttonsData: cardText }) {
                     let color = blueWord
                       ? "#3C7BF6"
                       : greenWord
-                      ? "#82B55B"
-                      : "#151515";
+                        ? "#82B55B"
+                        : "#151515";
 
                     return (
                       <React.Fragment key={wordIndex}>
@@ -317,7 +317,9 @@ export default function HeroCards({ data: cards, buttonsData: cardText }) {
                 padding: "1em 1.3em",
               }}
             >
-              <p style={{ fontSize: "0.76em", fontWeight: "500" }}>{card.descr}</p>
+              <p style={{ fontSize: "0.76em", fontWeight: "500" }}>
+                {card.descr}
+              </p>
               <IoArrowForwardOutline />
             </div>
             <div
@@ -342,7 +344,7 @@ export default function HeroCards({ data: cards, buttonsData: cardText }) {
       <button
         className={styles.sideButton}
         style={{
-          right: "25%",
+          right: "10%",
           display: activeButton === "card" ? "block" : "none",
           clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 30% 50%)",
         }}
@@ -353,7 +355,7 @@ export default function HeroCards({ data: cards, buttonsData: cardText }) {
             duration: 0.5,
             x: "140%",
             y: -50,
-            rotationX: -23,
+            rotationX: -20,
             rotationY: 41,
             skewY: -12,
             borderTop: `2px solid ${borderColorRight}`,

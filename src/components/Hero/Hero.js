@@ -1,4 +1,3 @@
-
 import { useTranslations } from "next-intl";
 import HeroTitle from "./ui/HeroTitle";
 import HeroCards from "./ui/HeroCards";

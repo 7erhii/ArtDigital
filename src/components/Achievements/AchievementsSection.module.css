@@ -26,10 +26,11 @@
   width: 50%;
 }
 
-.achievementsPinnacleTitle {
+.achievementsPinnacleTitle > h2 {
 }
 
-.achievementsPinnacleSubtitle {
+.achievementsPinnacleSubtitle > p {
+letter-spacing: 0.33px;
 }
 
 .achievementsPinnacleAction {
@@ -37,7 +38,9 @@
 
 .pageTitlesElements {
   font-size: 2.5em;
-  font-family: "satoshi", sans-serif;
+  font-weight: 800;
+  font-family: "Satoshi", sans-serif;
+  line-height: 140%;
   /* padding: 0 8em; */
 }
 
@@ -66,6 +69,7 @@
   padding: 5em 7.5em;
   align-items: center;
   justify-content: center;
+  padding-bottom: 10em;
 }
 
 .achievementsTitle {
@@ -80,7 +84,7 @@
   width: 100%;
   margin: 0 auto;
   /* padding: 5em 7.5em; */
-  padding-top: 4em;
+  padding-top: 1.3em;
   align-items: center;
   justify-content: center;
   gap: 0.8em;

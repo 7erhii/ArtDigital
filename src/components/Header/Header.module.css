@@ -1,46 +1,25 @@
-/* .Header {
+.header {
   display: flex;
   width: 100%;
-  max-width: 1440px;
-  padding: 2em;
-  align-items: center;
-  justify-content: space-between;
-}
-.HeaderNav {
-  display: flex;
-}
-.HeaderNav ul {
-  position: relative;
-  display: flex;
-  cursor: pointer;
-  background: #3c64f5;
-
-}
-
-.HeaderDropdown {
-  width: 100%;
-  position: absolute;
-  left: 0;
-  bottom: 100%;
-  padding: 2em;
-}
-
-.HeaderDropdownList {
-  position: absolute;
-}
-.HeaderDropdownListItem {
-  background: rebeccapurple;
-} */
-
-
- .header {
-  display: flex;
-  width: 100%;
-  padding: 0 8em;
+  /* max-width: 1440px; */
+  /* padding: 0 7.5em; */
+  margin: 0 auto;
   position: sticky;
   top: 0;
   background: #fff;
   z-index: 1000;
+}
+
+.HeaderLogo {
+  width: 100%;
+  max-width: 11em;
+  display: flex;
+}
+.HeaderAction {
+  display: flex;
+  align-items: center;
+  margin: 0 1.6em;
+  gap: 2em;
 }
 
 .container {
@@ -49,6 +28,8 @@
   justify-content: space-between;
   width: 100%;
   max-width: 1440px;
+  padding: 0 7.5em;
+
   margin: 0 auto;
   /* padding: 1em 0; */
 
@@ -69,4 +50,4 @@
 .headerButton > span {
   cursor: pointer;
   font-size: 0.8em;
-} 
+}

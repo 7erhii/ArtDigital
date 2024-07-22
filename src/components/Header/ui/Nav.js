@@ -56,15 +56,17 @@ const Nav = ({ locale }) => {
             <div className={styles.navDropdovnGrp}>
               {item.subtitles.map((subtitle, idx) => (
                 <div className={styles.navDropdovnItem} key={idx}>
-                  {icons[subtitle] && (
-                    <Image
-                      src={icons[subtitle]}
-                      alt={subtitle}
-                      width={20}
-                      height={20}
-                    />
-                  )}
-                  <Link href={`/${locale}${item.links[idx]}`}>{subtitle}</Link>
+                  <div className={styles.navDropDownText}>
+                      {icons[subtitle] && (
+                        <Image
+                          src={icons[subtitle]}
+                          alt={subtitle}
+                          width={20}
+                          height={20}
+                        />
+                      )}
+                      <Link href={`/${locale}${item.links[idx]}`} className={styles.navDropDownLink}>{subtitle}</Link>
+                  </div>
                 </div>
               ))}
             </div>

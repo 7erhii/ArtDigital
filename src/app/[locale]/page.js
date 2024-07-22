@@ -18,7 +18,6 @@ import Footer from "@/components/Footer/Footer";
 import Colophon from "@/components/Colophon/Colophon";
 import Header from "@/components/Header/Header";
 
-
 const locales = ["en", "ru"];
 
 export function generateStaticParams() {
@@ -63,7 +62,7 @@ export default function HomePage({ params: { locale } }) {
   };
 
   return (
-    <div >
+    <div>
       <Header locale={locale} />
       <Hero />
       <AchievementsSection />

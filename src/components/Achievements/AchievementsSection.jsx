@@ -40,13 +40,22 @@ export default function AchievementsSection() {
             <div className={styles.achievementsPinnacleTitle}>
               <h2
                 className="font-satoshi text-white"
-                style={{ fontSize: "2.5em", lineHeight: "1" }}
+                style={{
+                  fontSize: "2.5em",
+                  lineHeight: "120%",
+                  letterSpacing: "1.2px",
+                }}
               >
                 {t("title")}
               </h2>
               <h2
-                className="font-satoshi text-red-400"
-                style={{ fontSize: "2.5em", color: "#0D99FF", lineHeight: "1" }}
+                className="font-satoshi"
+                style={{
+                  fontSize: "2.5em",
+                  color: "#0D99FF",
+                  lineHeight: "120%",
+                  letterSpacing: "1.2px",
+                }}
               >
                 {t("blueTitle")}
               </h2>
@@ -55,13 +64,13 @@ export default function AchievementsSection() {
               className={`${styles.achievementsPinnacleSubtitle} flex flex-col gap-4`}
             >
               <p
-                className="font-sans text-white font-thin"
-                style={{ fontSize: "1em" }}
+                className="font-sans text-white text-opacity-80 font-thin"
+                style={{ fontSize: "1em", lineHeight: "150%" }}
               >
                 {t("subtitle")}
               </p>
               <p
-                className="font-sans text-white font-thin"
+                className="font-sans text-white text-opacity-80 font-thin"
                 style={{ fontSize: "1em" }}
               >
                 {t("subtitleSecond")}
@@ -82,12 +91,7 @@ export default function AchievementsSection() {
               {t("titleSecond")
                 .split(" ")
                 .map((word, index) => {
-                  let specialWord = [
-                    "team,",
-                    "команда,",
-                    "results",
-                    "результаты",
-                  ].includes(word);
+                  let specialWord = ["team,", "команда,"].includes(word);
                   let blueWord = [
                     "The",
                     "achievements",

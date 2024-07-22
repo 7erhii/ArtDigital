@@ -24,7 +24,7 @@ export default function HeroTitle({ data }) {
 
   return (
     <div
-      className="mx-auto text-center py-20  pb-0 "
+      className="mx-auto text-center py-28  pb-0 "
       style={{ maxWidth: "62em" }}
     >
       <div className="hero__title flex flex-col relative ">
@@ -40,7 +40,7 @@ export default function HeroTitle({ data }) {
         >
           {data.titleLine2}
         </h2>
-        <div className="w-[80%] flex mx-auto mt-16">
+        <div className="w-[80%] flex mx-auto mt-28">
           <h3 className="text-base text-[#151515]">{data.subtitle}</h3>
         </div>
 
@@ -57,7 +57,7 @@ export default function HeroTitle({ data }) {
           {data.button}
         </button>
       </div>
-      <div className="hero__subtitle font-poppins py-[5rem]">
+      <div className="hero__subtitle  py-[11em]">
         {/* <p>{t("subtitle")}</p> */}
       </div>
       {/* <button>CLICK1</button> */}
