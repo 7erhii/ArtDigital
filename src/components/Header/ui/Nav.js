@@ -53,7 +53,7 @@ const Nav = ({ locale }) => {
             <Link href={`/${locale}${item.links[0]}`}>
               <div className={styles.navTitle}>{item.title}</div>
             </Link>
-            <div className={styles.navDropdovnGroup}>
+            <div className={styles.navDropdovnGrp}>
               {item.subtitles.map((subtitle, idx) => (
                 <div className={styles.navDropdovnItem} key={idx}>
                   {icons[subtitle] && (

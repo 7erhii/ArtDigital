@@ -15,7 +15,9 @@ export default function ReadyCards({ data }) {
           href={card.href}
           key={card.title}
           className={`ready ${styles.marketingCards} ${
-            card.size === "1/3" ? styles.marketingCardsThird : styles.marketingCardsHalf
+            card.size === "1/3"
+              ? styles.marketingCardsThird
+              : styles.marketingCardsHalf
           }`}
         >
           <div className={`ready__title ${styles.marketingCardsTitle}`}>

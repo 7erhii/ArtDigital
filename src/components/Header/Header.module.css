@@ -1,38 +1,72 @@
-.header {
-    display: flex;
-    width: 100%;
-    padding: 0 8em;
+/* .Header {
+  display: flex;
+  width: 100%;
+  max-width: 1440px;
+  padding: 2em;
+  align-items: center;
+  justify-content: space-between;
+}
+.HeaderNav {
+  display: flex;
+}
+.HeaderNav ul {
+  position: relative;
+  display: flex;
+  cursor: pointer;
+  background: #3c64f5;
 
+}
+
+.HeaderDropdown {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 100%;
+  padding: 2em;
+}
+
+.HeaderDropdownList {
+  position: absolute;
+}
+.HeaderDropdownListItem {
+  background: rebeccapurple;
+} */
+
+
+ .header {
+  display: flex;
+  width: 100%;
+  padding: 0 8em;
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 1000;
 }
 
 .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 1em 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  /* padding: 1em 0; */
 
-    z-index: 10;
+  z-index: 10;
 }
 
 .navItem {
-    font-size: 2em;
-    font-weight: 700;
-    color: #ccc;
-}
-.navItem:hover {
-    color: red;
+  font-size: 2em;
+  font-weight: 700;
+  color: #ccc;
 }
 
-.headerButton { 
-    background: #151515;
-    cursor: pointer;
+.headerButton {
+  background: #151515;
+  cursor: pointer;
 }
 
-.headerButton > span  { 
-    cursor: pointer;
-    font-size: 0.8em;
-
-}
+.headerButton > span {
+  cursor: pointer;
+  font-size: 0.8em;
+} 
