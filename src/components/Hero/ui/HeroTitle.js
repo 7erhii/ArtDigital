@@ -29,7 +29,7 @@ export default function HeroTitle({ data }) {
     >
       <div className="hero__title flex flex-col relative ">
         <h2
-          className="uppercase text-8xl font-satoshi pr-[3em] text-nowrap"
+          className="uppercase text-8xl font-satoshi pr-[3em] whitespace-nowrap"
           style={{ fontSize: "5.25em", fontWeight: "900" }}
         >
           <HighlightText text={data.titleLine1} />

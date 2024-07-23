@@ -7,35 +7,10 @@ import CustomHero from "@/components/CustomHero/CustomHero";
 import AboutImage from "@/assets/images/image-about.png";
 import SectionWrapper from "@/components/SectionWrapper/SectionWrapper";
 import AchievementCard from "@/components/Achievements/AchievementCard";
-import StepsCards from "@/components/StepsCards/StepsCards";
-import SectionTitle from "@/components/ui/SectionTitle/SectionTitle";
-import Industries from "@/components/Industries/Industries";
-import InfoCards from "@/components/ui/InfoCards/InfoCards";
 
-import iconSolution from "@/assets/icons/icon-card-solution.svg";
-import iconLightning from "@/assets/icons/icon-card-lightning.svg";
-import iconSupport from "@/assets/icons/icon-card-support.svg";
-import ContactForm from "@/components/ui/ContactForm/ContactForm";
-import Faq from "@/components/Faq/Faq";
 import Footer from "@/components/Footer/Footer";
 import Colophon from "@/components/Colophon/Colophon";
-import MainButton from "@/components/ui/MainButton/MainButton";
-import { forEach } from "lodash";
 import ContactFormMini from "@/components/ui/ContactFormMini/ContactFormMini";
-
-const getIcon = (title) => {
-  switch (title) {
-    case "Professional Solutions You Can Trust":
-      return iconSolution;
-    case "Fast Turnaround Get Up and Running Quickly":
-      return iconLightning;
-    case "Personalized Support, We’re Here for You":
-      return iconSupport;
-
-    default:
-      return null;
-  }
-};
 
 const contactFormData = {
   inputName: {
@@ -77,21 +52,13 @@ const contactFormData = {
 export default function ReadyMade({ params: { locale } }) {
   const t = useTranslations("AboutUs");
   const aboutCardsData = t.raw("AboutDescription.Cards");
+  const aboutTextData = t.raw("AboutDescription.Text.Description");
 
   const achievementsData = t.raw("AchievementsData").map((item, index) => ({
     icon: null,
     number: item.Count,
     text: item.Description,
   }));
-
-  // const StepsData = t.raw("Process.Steps").map((card) => ({
-  //   ...card,
-  // }));
-
-  // const AdvantagesData = t.raw("Advantages.Items").map((card) => ({
-  //   ...card,
-  //   icon: getIcon(card.Title),
-  // }));
 
   return (
     <div>
@@ -119,7 +86,13 @@ export default function ReadyMade({ params: { locale } }) {
             ))}
           </div>
           <div className="w-1/2">
-            {/* TODO: */}
+            <h3>{t("AboutDescription.Text.Title")}</h3>
+
+            {aboutTextData.map((data, index) => (
+              <div key={index}>
+                <p>{data}</p>
+              </div>
+            ))}
           </div>
         </div>
       </SectionWrapper>
@@ -150,8 +123,11 @@ export default function ReadyMade({ params: { locale } }) {
                   return word + " ";
                 })}
             </h1>
-
-            <p>{t("ContactForm.description")}</p>
+            <div>
+              {aboutTextData.map((data, index) => (
+                <p key={index}>{data}</p>
+              ))}
+            </div>
           </div>
 
           <div className="w-1/2">
@@ -160,9 +136,6 @@ export default function ReadyMade({ params: { locale } }) {
         </div>
       </SectionWrapper>
 
-
-      {/* <ContactForm data={contactFormData} /> */}
-      {/* <Faq page="ReadyMadeItems" /> */}
       <Footer />
       <Colophon />
     </div>
