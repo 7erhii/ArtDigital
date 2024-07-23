@@ -7,7 +7,7 @@ import styles from "./WorkSlider.module.css";
 
 export default function WorkSlider({ data }) {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: false,
     speed: 500,
     slidesToShow: 2.8,

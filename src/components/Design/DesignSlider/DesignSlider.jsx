@@ -7,7 +7,7 @@ import styles from "./DesignSlider.module.css";
 
 export default function DesignSlider({ data }) {
   var settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     centerMode: true,

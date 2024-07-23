@@ -67,3 +67,18 @@
   height: 2em;
   transition: transform 0.24s ease;
 }
+
+@media (min-width: 1441px) {
+  .sliderDescr {
+    justify-content: space-around;
+    flex-direction: column;
+    display: flex;
+    min-height: 204px;
+  }
+}
+
+@media (min-width: 1441px) {
+  .sliderDescr {
+    min-height: 240px;
+  }
+}
