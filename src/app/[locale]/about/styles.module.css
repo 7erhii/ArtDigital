@@ -5,12 +5,36 @@
   background: #151515;
 }
 
-.customCard {
+.AboutDescription {
+  display: flex;
+  width: 100%;
+  padding-top: 10em;
+  padding-bottom: 6em;
+}
+
+.AboutCard {
   display: flex;
   flex-direction: column;
-  border-radius: 40px 12px 12px 40px;
-  border: 1px solid rgba(21, 21, 21, 0.1);
-  padding: 2.5em;
+  border-radius: 12px;
+  padding: 1.5em;
+  background: #151515;
+  color: #fff;
+  gap: 1.25em;
+  transition: background-color 0.24s ease-in-out;
+}
+.AboutCard:hover {
+  background-color: #3c7bf6;
+}
+
+.AboutCard > h3 {
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.5em;
+  font-weight: 800;
+}
+.AboutCard > p {
+  font-size: 1em;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .customCard.white {
@@ -69,7 +93,6 @@
   color: rgba(255, 255, 255, 0.8);
   margin-bottom: 2.5em;
 }
-
 
 .AboutTitle h1 {
   font-size: 5.6em;

@@ -1226,6 +1226,29 @@
       { "Count": "$12MM", "Description": "Annual revenue" },
       { "Count": "3K+", "Description": "Clients" }
     ],
+    "AboutDescription": {
+      "Cards": [
+        {
+          "Title": "Your Success, Our Mission",
+          "Description": "Our team comprises highly skilled professionals with years of experience in development, marketing, and design. We deliver only cutting-edge solutions tailored to your needs."
+        },
+        {
+          "Title": "Transforming Ideas into Reality",
+          "Description": "We harness the latest technologies and creative strategies to bring your vision to life. Our innovative approach ensures that your business stays ahead of the competition."
+        },
+        {
+          "Title": "Your Goals, Our Priority",
+          "Description": "We prioritize your business objectives and work closely with you to achieve them. Our client-focused methodology guarantees a personalized experience and outstanding results."
+        }
+      ],
+      "Text": {
+        "Title": "Your Trusted Partner in Technology",
+        "Description": [
+          "Our mission is to provide exceptional development, marketing, and design services that help your business thrive. Discover why clients choose us as their go-to partner for innovative solutions and personalized support. We are committed to delivering results that exceed expectations, driving your success in a competitive market.",
+          "At the heart of our service is a dedication to understanding your unique needs and challenges. We believe that a deep partnership with our clients fosters the most effective solutions. By combining our technical expertise with a keen sense of market trends, we create customized strategies that propel your business forward. Whether you're a startup looking to make a mark or an established company aiming to innovate, we have the tools and the talent to help you succeed."
+        ]
+      }
+    },
     "ContactForm": {
       "title": "Let’s build something amazing together",
       "description": "Whether you have a question, need a consultation, or are ready to start your next big project, we’re here to help. Reach out to us and let's make your vision a reality"

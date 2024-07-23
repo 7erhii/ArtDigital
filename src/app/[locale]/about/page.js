@@ -76,7 +76,7 @@ const contactFormData = {
 
 export default function ReadyMade({ params: { locale } }) {
   const t = useTranslations("AboutUs");
-  // const cardsData = t.raw("Offerings.Cards");
+  const aboutCardsData = t.raw("AboutDescription.Cards");
 
   const achievementsData = t.raw("AchievementsData").map((item, index) => ({
     icon: null,
@@ -108,6 +108,22 @@ export default function ReadyMade({ params: { locale } }) {
       <SectionWrapper dark={true}>
         <AchievementCard data={achievementsData} />
       </SectionWrapper>
+      <SectionWrapper>
+        <div className={styles.AboutDescription}>
+          <div className="w-1/2 gap-8 flex flex-col pr-20">
+            {aboutCardsData.map((card, index) => (
+              <div className={styles.AboutCard} key={index}>
+                <h3>{card.Title}</h3>
+                <p>{card.Description}</p>
+              </div>
+            ))}
+          </div>
+          <div className="w-1/2">
+            {/* TODO: */}
+          </div>
+        </div>
+      </SectionWrapper>
+
       <SectionWrapper>
         <div className={`flex w-full ${styles.AboutTitle}`}>
           <div className="w-1/2">
@@ -144,142 +160,6 @@ export default function ReadyMade({ params: { locale } }) {
         </div>
       </SectionWrapper>
 
-      {/* <SectionWrapper>
-        <SectionTitle
-          title={t("Process.Title")}
-          subtitle={t("Process.Subtitle")
-            .split(" ")
-            .map((word, index, words) => {
-              const specialWord = [""].includes(word);
-              const blueWord = ["It", "Works"].includes(word);
-
-              if (specialWord || blueWord) {
-                return (
-                  <React.Fragment key={index}>
-                    <span
-                      style={
-                        blueWord ? { color: "#3C7BF6" } : { color: "#fff" }
-                      }
-                    >
-                      {word}
-                    </span>
-                    {specialWord && <br />}
-                  </React.Fragment>
-                );
-              } else {
-                return <span key={index}>{word}</span>;
-              }
-            })
-            .reduce((acc, word, index, array) => {
-              if (index < array.length - 1) {
-                return [...acc, word, " "];
-              } else {
-                return [...acc, word];
-              }
-            }, [])}
-          description={t("Process.Description")}
-          styleType="sectionTitleWhite"
-        />
-
-        <StepsCards data={StepsData} type="dark" />
-      </SectionWrapper> */}
-
-      {/* <SectionWrapper>
-        <SectionTitle
-          title={t("Offerings.Title")}
-          subtitle={t("Offerings.Subtitle")
-            .split(" ")
-            .map((word, index, words) => {
-              const specialWord = [""].includes(word);
-              const blueWord = ["All", "In", "One"].includes(word);
-
-              if (specialWord || blueWord) {
-                return (
-                  <React.Fragment key={index}>
-                    <span
-                      style={
-                        blueWord ? { color: "#3C7BF6" } : { color: "#fff" }
-                      }
-                    >
-                      {word}
-                    </span>
-                    {specialWord && <br />}
-                  </React.Fragment>
-                );
-              } else {
-                return <span key={index}>{word}</span>;
-              }
-            })
-            .reduce((acc, word, index, array) => {
-              if (index < array.length - 1) {
-                return [...acc, word, " "];
-              } else {
-                return [...acc, word];
-              }
-            }, [])}
-          description={t("Offerings.Description")}
-          styleType="sectionTitleWhite"
-        />
-
-        <div className="flex gap-3">
-          <div className={`${styles.customCard} ${styles.white}`}>
-            <h3>{cardsData[0].Title}</h3>
-            <h4>{cardsData[0].Description}</h4>
-            <p>{cardsData[0].Extra}</p>
-            <ul>
-              {cardsData[0].List.map((item, index) => (
-                <li key={index}>{item}</li>
-              ))}
-            </ul>
-          </div>
-          <div className={`${styles.customCard} ${styles.dark}`}>
-            <h3>{cardsData[1].Title}</h3>
-            <h4>{cardsData[1].Description}</h4>
-            <MainButton color="Blue" size="medium" text={cardsData[1].Button} />
-          </div>
-        </div>
-      </SectionWrapper> */}
-
-      {/* <Industries type="dark" /> */}
-      {/* <SectionWrapper dark={true}>
-        <SectionTitle
-          title={t("Advantages.Title")}
-          subtitle={t("Advantages.Subtitle")
-            .split(" ")
-            .map((word, index, words) => {
-              const specialWord = [""].includes(word);
-              const blueWord = ["Choose", "Us"].includes(word);
-
-              if (specialWord || blueWord) {
-                return (
-                  <React.Fragment key={index}>
-                    <span
-                      style={
-                        blueWord ? { color: "#3C7BF6" } : { color: "#fff" }
-                      }
-                    >
-                      {word}
-                    </span>
-                    {specialWord && <br />}
-                  </React.Fragment>
-                );
-              } else {
-                return <span key={index}>{word}</span>;
-              }
-            })
-            .reduce((acc, word, index, array) => {
-              if (index < array.length - 1) {
-                return [...acc, word, " "];
-              } else {
-                return [...acc, word];
-              }
-            }, [])}
-          description={t("Advantages.Description")}
-          styleType=""
-        />
-
-        <InfoCards data={AdvantagesData} color="dark" textAlign="center" />
-      </SectionWrapper> */}
 
       {/* <ContactForm data={contactFormData} /> */}
       {/* <Faq page="ReadyMadeItems" /> */}
