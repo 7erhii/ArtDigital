@@ -447,7 +447,50 @@
         "phone": "050 132 0505",
         "email": "Test.email@gmail.com"
       }
-    }
+    },
+    "FooterItems": [
+      {
+        "Title": "Design",
+        "Subtitle": "Services",
+        "Points": [
+          { "Text": "UX-UI Design", "Link": "frontend" },
+          { "Text": "Web and App", "Link": "frontend" },
+          { "Text": "Offline Design", "Link": "frontend" }
+        ]
+      },
+      {
+        "Title": "Development",
+        "Subtitle": "Tech Stack",
+        "Points": [
+          { "Text": "Front-End Development ", "Link": "frontend" },
+          { "Text": "Back-end Development", "Link": "frontend" }
+        ]
+      },
+      {
+        "Title": "Marketing",
+        "Subtitle": "Services",
+        "Points": [
+          { "Text": "Branding", "Link": "frontend" },
+          { "Text": "Website development", "Link": "frontend" },
+          { "Text": "Strategic marketing", "Link": "frontend" },
+          { "Text": "Outdoor marketing", "Link": "frontend" },
+          { "Text": "Digital marketing", "Link": "frontend" }
+        ]
+      },
+      {
+        "Title": "Ready-Made",
+        "Subtitle": "Services",
+        "Points": [{ "Text": "All in One Projects", "Link": "frontend" }]
+      },
+      {
+        "Title": "About Us",
+        "Subtitle": "Team",
+        "Points": [
+          { "Text": "Company", "Link": "frontend" },
+          { "Text": "Contact Us", "Link": "frontend" }
+        ]
+      }
+    ]
   },
   "Colophon": {
     "copyright": "Copyright © 2024 . All rights reserved",

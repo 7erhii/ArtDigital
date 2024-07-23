@@ -5,8 +5,9 @@ import { useTranslations } from "next-intl";
 import styles from "./Footer.module.css";
 import mainLogo from "@/assets/icons/MainLogoWhite.svg";
 
-export default function Footer() {
+export default function Footer({ locale }) {
   const t = useTranslations("Footer");
+  const footerItemsObj = t.raw("FooterItems");
 
   return (
     <div className={styles.FooterContainer}>
@@ -28,7 +29,30 @@ export default function Footer() {
           </Link>
         </div>
       </div>
-      <div className={styles.FooterMenu}></div>
+      <nav className={styles.FooterMenu}>
+        {footerItemsObj.map((item, index) => (
+          <div key={index} className={styles.FooterMenuItem}>
+            <div className={styles.FooterMenuTitle}>
+              <p>{item.Title}</p>
+            </div>
+            <div className={styles.FooterMenuSubitle}>
+              <p>{item.Subtitle}</p>
+            </div>
+            <ul className={styles.FooterMenuList}>
+              {item.Points.map((point, subIndex) => (
+                <li key={`point-${index}-${subIndex}`}>
+                  <Link
+                    className={styles.FooterMenuLink}
+                    href={`/${locale}/${point.Link}`}
+                  >
+                    <p>{point.Text}</p>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </nav>
     </div>
   );
 }
