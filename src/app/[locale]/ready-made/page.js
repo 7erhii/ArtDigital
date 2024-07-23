@@ -68,6 +68,9 @@ const contactFormData = {
     title: "inputTextarea.label",
     placeholder: "inputTextarea.placeholder",
   },
+  button: {
+    text: "button.text",
+  },
 };
 
 export default function ReadyMade({ params: { locale } }) {
@@ -201,7 +204,6 @@ export default function ReadyMade({ params: { locale } }) {
         </div>
       </SectionWrapper>
 
-      
       <Industries type="dark" />
       <SectionWrapper dark={true}>
         <SectionTitle

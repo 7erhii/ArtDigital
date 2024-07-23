@@ -61,7 +61,7 @@ export default function Development() {
 
   const cardsDataBack = {
     grid1: [
-      { type: "single", image: iconPhp, text: "HTML" }
+      { type: "single", image: iconPhp, text: "PHP" }
     ],
     //
     grid2: [

@@ -123,6 +123,9 @@ export default function DesignPage({ params: { locale } }) {
       title: "inputTextarea.label",
       placeholder: "inputTextarea.placeholder",
     },
+    button: {
+      text: "button.text",
+    },
   };
 
   const t = useTranslations("Design");

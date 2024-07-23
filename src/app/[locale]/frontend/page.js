@@ -188,6 +188,9 @@ export default function FrontEndPage({ params: { locale } }) {
       title: "inputTextarea.label",
       placeholder: "inputTextarea.placeholder",
     },
+    button: {
+      text: "button.text",
+    },
   };
 
   return (

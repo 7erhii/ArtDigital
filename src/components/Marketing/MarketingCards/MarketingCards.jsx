@@ -7,7 +7,7 @@ import { IoArrowForward } from "react-icons/io5";
 
 import styles from "./MarketingCards.module.css";
 
-const highlightWords = ["Development", "page", "Mobile"];
+const highlightWords = ["Development", "page", "Mobile", "App"];
 
 export default function MarketingCards({ data }) {
   function highlightText(text, itemId) {

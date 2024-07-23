@@ -173,10 +173,12 @@ export default function BackendPage({ params: { locale } }) {
       title: "inputTextarea.label",
       placeholder: "inputTextarea.placeholder",
     },
+    button: {
+      text: "button.text",
+    },
   };
 
   return (
-    
     <div className={inter.className}>
       <Header locale={locale} />
 
@@ -400,8 +402,8 @@ export default function BackendPage({ params: { locale } }) {
       <ContactForm data={contactFormData} />
 
       <Faq page="BackendPageItems" />
-      <Footer/>
-      <Colophon/>
+      <Footer />
+      <Colophon />
     </div>
   );
 }

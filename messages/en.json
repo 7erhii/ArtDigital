@@ -433,6 +433,9 @@
     "inputTextarea": {
       "label": "Tell more about project",
       "placeholder": "Tell us more about you wishes"
+    },
+    "button": {
+      "text": "Start Cooperation"
     }
   },
   "Footer": {

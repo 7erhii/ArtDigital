@@ -17,7 +17,7 @@
   flex-direction: column;
   cursor: pointer;
   background: rgba(21, 21, 21, 0.04);
-  padding: 1.5em 2em;
+  padding: 1.5em;
   border-radius: 20px;
 }
 
@@ -29,9 +29,15 @@
 }
 
 .CustomAccordionTitle {
-  font-size: 1em;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.12em;
   color: #151515;
   font-weight: bold;
+  letter-spacing: 0.1px;
+}
+.CustomAccordionItem > svg {
+  width: 20px;
+  height: 20px;
 }
 
 .CustomAccordionDescr {
@@ -47,5 +53,6 @@
 
 .CustomAccordionDescr.open {
   max-height: 200px;
-  padding-top: 1.5em;
+  padding-top: 0.9em;
+  letter-spacing: 0.1px;
 }

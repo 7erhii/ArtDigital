@@ -10,7 +10,7 @@ const Input = React.forwardRef(({ className, icon, type, ...props }, ref) => {
       "flex h-9 w-full rounded-md border border-input bg-[rgba(20,20,20,0.04)] text-sm shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#3C7BF6] disabled:cursor-not-allowed disabled:opacity-50",
       className
     )}
-    style={{ fontSize: "1em", padding: "1.25em 1.5em" }}
+    style={{ fontSize: "1em", padding: "2em 1.5em" }}
     ref={ref}
     {...props}
   />

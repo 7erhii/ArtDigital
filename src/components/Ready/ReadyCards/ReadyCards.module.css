@@ -36,7 +36,7 @@
   justify-content: space-between;
   align-items: center;
   color: #fff;
-  font-size: 1.25em;
+  /* font-size: 1.25em; */
 
 }
 .marketingCardsTitle h2 {
@@ -44,18 +44,18 @@
   color: #fff;
   font-weight: 600;
   line-height: 120%;
-  letter-spacing: -0.1px;
+  letter-spacing: 0.4px;
   color: #fff;
   font-size: 1.22em;
 }
 
 .marketingCardsDescr {
-  max-width: 90%;
+  max-width: 95%;
   font-family: "Inter", sans-serif;
   color: #fff;
-  font-weight: 100;
+  font-weight: 500;
   line-height: 1.5;
-  letter-spacing: -0.1px;
+  letter-spacing: 0.4px;
 
   color: hsla(0, 0%, 100%, 0.5);
   font-size: 1em;

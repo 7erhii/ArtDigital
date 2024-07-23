@@ -1,7 +1,9 @@
 "use client";
 
 import * as React from "react";
-import { IoIosArrowRoundDown } from "react-icons/io";
+// import { IoArrowDownOutline } from "react-icons/io";
+import { IoArrowDownOutline } from "react-icons/io5";
+
 import styles from "./CustomAccordion.module.css";
 
 export default function CustomAccordion({ data = [] }) {
@@ -24,7 +26,7 @@ export default function CustomAccordion({ data = [] }) {
               >
                 <div className={styles.CustomAccordionItem}>
                   <span className={styles.CustomAccordionTitle}>{title}</span>
-                  <IoIosArrowRoundDown
+                  <IoArrowDownOutline
                     style={{
                       transform:
                         open === index ? "rotateX(180deg)" : "rotateX(0deg)",
@@ -54,7 +56,7 @@ export default function CustomAccordion({ data = [] }) {
               >
                 <div className={styles.CustomAccordionItem}>
                   <span className={styles.CustomAccordionTitle}>{title}</span>
-                  <IoIosArrowRoundDown
+                  <IoArrowDownOutline
                     style={{
                       transform:
                         open === index ? "rotateX(180deg)" : "rotateX(0deg)",

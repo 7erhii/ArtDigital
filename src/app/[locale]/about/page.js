@@ -69,6 +69,9 @@ const contactFormData = {
     title: "inputTextarea.label",
     placeholder: "inputTextarea.placeholder",
   },
+  button: {
+    text: "button.text",
+  },
 };
 
 export default function ReadyMade({ params: { locale } }) {

@@ -32,7 +32,7 @@ const ContactForm = React.memo(function ContactForm({ data }) {
             {t("title")
               .split(" ")
               .map((word, index) => {
-                let specialWord = ["With", "Future"].includes(word);
+                let specialWord = ["With"].includes(word);
                 let blueWord = ["Your", "Future", "Partners!"].includes(word);
 
                 return (
@@ -186,7 +186,7 @@ const ContactForm = React.memo(function ContactForm({ data }) {
             />
           </div>
           <div className={`${styles.ContactFormActions}`}>
-            <Button variant="outline">Submit</Button>
+            <Button variant="outline">{t(data.button.text)}</Button>
           </div>
         </form>
       </div>

@@ -216,6 +216,9 @@ export default function MarketingPage({ params: { locale } }) {
       title: "inputTextarea.label",
       placeholder: "inputTextarea.placeholder",
     },
+    button: {
+      text: "button.text",
+    },
   };
 
   return (
@@ -318,7 +321,6 @@ export default function MarketingPage({ params: { locale } }) {
 
         <InfoCards data={AdvantagesData} color="dark" textAlign="center" />
       </SectionWrapper>
-
 
       <SectionWrapper dark={true}>
         <SectionTitle

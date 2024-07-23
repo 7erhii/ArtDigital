@@ -23,7 +23,8 @@
 }
 
 .ContactFormTitle h2 {
-  color: #000;
+  font-family: "Satoshi", sans-serif;
+  color: #151515;
   font-size: 2.5em;
   font-weight: 900;
   line-height: 120%;
@@ -32,8 +33,9 @@
 .ContactFormTitle p {
   font-size: 1em;
   padding-top: 1.5em;
-  color: #000;
+  color: rgba(21, 21, 21, 0.8);
   letter-spacing: 0.2px;
+  font-weight: 500;
 }
 .ContactFormInputs {
   display: flex;
@@ -63,4 +65,5 @@
   width: 100%;
   max-width: 13em;
   margin: 0 auto;
+  margin-top: 2em;
 }

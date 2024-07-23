@@ -59,6 +59,9 @@ export default function HomePage({ params: { locale } }) {
       title: "inputTextarea.label",
       placeholder: "inputTextarea.placeholder",
     },
+    button: {
+      text: "button.text",
+    },
   };
 
   return (
