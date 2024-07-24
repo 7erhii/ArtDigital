@@ -43,6 +43,9 @@ const LanguageSwitcher = () => {
           <div className={styles.LangDropdownItem} onClick={() => changeLanguage("ru")}>
             RU
           </div>
+          <div className={styles.LangDropdownItem} onClick={() => changeLanguage("il")}>
+            IL
+          </div>
         </div>
       )}
     </div>

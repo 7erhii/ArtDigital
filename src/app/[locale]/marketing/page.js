@@ -45,6 +45,13 @@ import iconPoster from "@/assets/icons/icon-card-poster.svg";
 import iconAdvertising from "@/assets/icons/icon-card-advertising.svg";
 import iconOutdoor from "@/assets/icons/icon-card-outdoor.svg";
 
+import iconAdvertising2 from "@/assets/icons/icon-card-advertising2.svg";
+import iconLaptop from "@/assets/icons/icon-card-laptop.svg";
+import iconNetworking from "@/assets/icons/icon-card-networking.svg";
+import iconRemarketing from "@/assets/icons/icon-card-remarketing.svg";
+import iconBanner from "@/assets/icons/icon-card-banner.svg";
+import iconEmail from "@/assets/icons/icon-card-email.svg";
+
 import iconPhp from "@/assets/icons/icon-PHP.svg";
 import iconMysql from "@/assets/icons/icon-mysql-dark.svg";
 import iconPython from "@/assets/icons/icon-python.svg";
@@ -138,6 +145,19 @@ const getIcon = (title) => {
       return iconLightBulb;
     case "Adaptability and Flexibility":
       return iconFlexibility;
+
+    case "All types of Google advertising":
+      return iconAdvertising2;
+    case "Website promotion to the top positions (SEO)":
+      return iconLaptop;
+    case "Targeting in social networks (SMM)":
+      return iconNetworking;
+    case "Remarketing":
+      return iconRemarketing;
+    case "Contextual and Banner Advertising":
+      return iconBanner;
+    case "Email marketing":
+      return iconEmail;
 
     default:
       return null;

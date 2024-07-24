@@ -1,14 +1,24 @@
-import createMiddleware from 'next-intl/middleware';
- 
+import createMiddleware from "next-intl/middleware";
+
 export default createMiddleware({
-  // A list of all locales that are supported
-  locales: ['en', 'ru'],
- 
-  // Used when no locale matches
-  defaultLocale: 'en'
+  locales: ["en", "ru", "il"],
+
+  defaultLocale: "en",
+
+  async getLocale({ request, locales, defaultLocale }) {
+    const browserLocale = request.headers
+      .get("accept-language")
+      ?.split(",")[0]
+      .slice(0, 2);
+
+    if (!locales.includes(browserLocale)) {
+      return defaultLocale;
+    }
+
+    return browserLocale;
+  },
 });
- 
+
 export const config = {
-  // Match only internationalized pathnames
-  matcher: ['/', '/(ru|en)/:path*']
+  matcher: ["/", "/(ru|en|il)/:path*"],
 };

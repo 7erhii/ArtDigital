@@ -18,7 +18,7 @@ import Footer from "@/components/Footer/Footer";
 import Colophon from "@/components/Colophon/Colophon";
 import Header from "@/components/Header/Header";
 
-const locales = ["en", "ru"];
+const locales = ["en", "ru", "il"];
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ params: { locale } }));

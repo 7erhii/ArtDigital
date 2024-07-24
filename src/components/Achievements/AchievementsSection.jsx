@@ -114,9 +114,7 @@ export default function AchievementsSection() {
                 })}
             </h2>
           </div>
-          <div className={styles.achievementsCards}>
-            <AchievementCard data={achievementsData} />
-          </div>
+          <AchievementCard data={achievementsData} />
         </div>
       </div>
     </div>

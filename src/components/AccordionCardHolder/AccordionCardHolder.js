@@ -1,5 +1,6 @@
 "use client";
 import InfoCards from "../ui/InfoCards/InfoCards";
+import MainButton from "../ui/MainButton/MainButton";
 import styles from "./style.module.css";
 import { useState, useEffect } from "react";
 
@@ -29,10 +30,10 @@ export default function AccordionCardHolder({ data }) {
               data.length === 1
                 ? "12px 12px 40px 40px"
                 : index === 0
-                ? "40px 40px 12px 12px"
-                : index === data.length - 1
-                ? "12px 12px 40px 40px"
-                : "12px",
+                  ? "40px 40px 12px 12px"
+                  : index === data.length - 1
+                    ? "12px 12px 40px 40px"
+                    : "12px",
           }}
           onClick={() => toggleCard(index)}
         >
@@ -66,6 +67,11 @@ export default function AccordionCardHolder({ data }) {
                 titleSize="sm"
               />
             </div>
+
+            <div className={styles.innerCardButton}>
+              <MainButton color="FullWhite" text={card.Button} />
+            </div>
+
           </div>
         </div>
       ))}
