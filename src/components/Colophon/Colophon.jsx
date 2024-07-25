@@ -13,24 +13,26 @@ export default function Colophon() {
 
   return (
     <div className={styles.ColophonContainer}>
-      <div className={styles.ColophonCopyright}>
-        <p>{t("copyright")}</p>
-      </div>
-      <div className={styles.ColophonSocial}>
-        <a href="#" className={styles.ColophonSocialItem}>
-          <FaFacebookF />
-        </a>
-        <a href="#" className={styles.ColophonSocialItem}>
-          <FaLinkedinIn />
-        </a>
-      </div>
-      <div className={styles.ColophonPolicy}>
-        <a href="#">
-          <span>{t("policy")}</span>
-        </a>
-        <a href="#">
-          <span>{t("policy")}</span>
-        </a>
+      <div className={styles.ColophonContant}>
+        <div className={styles.ColophonCopyright}>
+          <p>{t("copyright")}</p>
+        </div>
+        <div className={styles.ColophonSocial}>
+          <a href="#" className={styles.ColophonSocialItem}>
+            <FaFacebookF />
+          </a>
+          <a href="#" className={styles.ColophonSocialItem}>
+            <FaLinkedinIn />
+          </a>
+        </div>
+        <div className={styles.ColophonPolicy}>
+          <a href="#">
+            <span>{t("policy")}</span>
+          </a>
+          <a href="#">
+            <span>{t("policy")}</span>
+          </a>
+        </div>
       </div>
     </div>
   );

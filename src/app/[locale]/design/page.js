@@ -221,47 +221,6 @@ export default function DesignPage({ params: { locale } }) {
       </SectionWrapper>
       <DesignSection />
 
-      {/* <div className="my-10">
-      <SectionTitle
-          title={t("Design.Title")}
-          subtitle={t("Design.Subtitle")
-            .split(" ")
-            .map((word, index, words) => {
-              const specialWord = [""].includes(word);
-              const blueWord = ["Visual", "Excellence"].includes(word);
-
-              if (specialWord || blueWord) {
-                return (
-                  <React.Fragment key={index}>
-                    <span
-                      style={
-                        blueWord ? { color: "#3C7BF6" } : { color: "#fff" }
-                      }
-                    >
-                      {word}
-                    </span>
-                    {specialWord && <br />}
-                  </React.Fragment>
-                );
-              } else {
-                return <span key={index}>{word}</span>;
-              }
-            })
-            .reduce((acc, word, index, array) => {
-              if (index < array.length - 1) {
-                return [...acc, word, " "];
-              } else {
-                return [...acc, word];
-              }
-            }, [])}
-          description={t("Design.Description")}
-          styleType="sectionTitleWhite"
-        />
-        <DesignSlider />
-      </div> */}
-
-      {/* <DesignSection/> */}
-
       <SectionWrapper>
         <SectionTitle
           title={t("Advantages.Title")}
@@ -341,7 +300,10 @@ export default function DesignPage({ params: { locale } }) {
 
         <StepsCards data={StepsData} />
       </SectionWrapper>
-      <Industries />
+      <SectionWrapper dark={true}>
+        <Industries />
+      </SectionWrapper>
+
       <ContactForm data={contactFormData} />
 
       {/* <ContactForm></ContactForm> */}

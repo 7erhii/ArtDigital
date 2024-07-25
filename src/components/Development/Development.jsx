@@ -28,8 +28,6 @@ import iconMysql from "@/assets/icons/icon-mysql.svg";
 import iconPython from "@/assets/icons/icon-python.svg";
 import iconNodeJs from "@/assets/icons/icon-nodejs.svg";
 
-
-
 export default function Development() {
   const t = useTranslations("DeveopmentSection");
 
@@ -38,7 +36,7 @@ export default function Development() {
       { type: "single", image: iconHtml, text: "HTML" },
       {
         type: "double",
-        text: t('doubleCardText'),
+        text: t("doubleCardText"),
       },
     ],
     //
@@ -60,19 +58,11 @@ export default function Development() {
   };
 
   const cardsDataBack = {
-    grid1: [
-      { type: "single", image: iconPhp, text: "PHP" }
-    ],
+    grid1: [{ type: "single", image: iconPhp, text: "PHP" }],
     //
-    grid2: [
-      { type: "single", image: iconMysql, text: "MySQL" },
-    ],
-    grid3: [
-      { type: "single", image: iconPython, text: "Python" },
-    ],
-    grid: [
-      { type: "single", image: iconNodeJs, text: "Node Js" },
-    ],
+    grid2: [{ type: "single", image: iconMysql, text: "MySQL" }],
+    grid3: [{ type: "single", image: iconPython, text: "Python" }],
+    grid: [{ type: "single", image: iconNodeJs, text: "Node Js" }],
   };
 
   return (
@@ -115,17 +105,13 @@ export default function Development() {
         />
 
         <BorderedTitle title={"DeveopmentSection"} />
-        <GridCards cardsData={cardsDataFront} type=""/>
+        <GridCards cardsData={cardsDataFront} type="" />
 
-        <BorderedTitle title={"FrontEndSection"} />
-        <GridCards cardsData={cardsDataBack} />
+        <div className={styles.pageDivider}>
+          <BorderedTitle title={"FrontEndSection"} />
 
-
-        {/* <WorkSlider /> */}
-        {/* <div className={styles.designAction}>
-      <MainButton text={t("buttonRight")} color="Blue" size="medium"/>
-      <MainButton text={t("buttonLeft")} color="White" size="medium"/>
-      </div> */}
+          <GridCards cardsData={cardsDataBack} />
+        </div>
       </div>
     </div>
   );

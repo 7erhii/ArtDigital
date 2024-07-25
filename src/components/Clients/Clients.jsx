@@ -19,7 +19,7 @@ import lineImage8 from "@/assets/images/line8.svg";
 import lineImage9 from "@/assets/images/line9.svg";
 
 
-const images = [lineImage1, lineImage2, lineImage3, lineImage4, lineImage5, lineImage6, lineImage7, lineImage8, lineImage9]
+const images = [lineImage1, lineImage2, lineImage3, lineImage4, lineImage5, lineImage6, lineImage7, lineImage8, lineImage9, lineImage1, lineImage2, lineImage3, lineImage4, lineImage5, lineImage6, lineImage7, lineImage8, lineImage9]
 
 export default function Clients() {
   

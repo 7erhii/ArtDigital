@@ -1,6 +1,15 @@
 .SectionWrapper {
-    margin: 0 auto;
-    padding: 5em 7.5em;
-    padding-top: 0;
-    gap: 300px;
+  width: 100%;
+  /* margin: 0 auto; */
+  padding-top: 0;
+  padding-bottom: 0;
+  gap: 300px;
+}
+
+.SectionContent {
+  width: 100%;
+  max-width: 1440px;
+  padding: 5em 7.5em;
+
+  margin: 0 auto;
 }

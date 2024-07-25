@@ -17,6 +17,7 @@ import ContactForm from "@/components/ui/ContactForm/ContactForm";
 import Footer from "@/components/Footer/Footer";
 import Colophon from "@/components/Colophon/Colophon";
 import Header from "@/components/Header/Header";
+import SectionWrapper from "@/components/SectionWrapper/SectionWrapper";
 
 const locales = ["en", "ru", "il"];
 
@@ -75,7 +76,9 @@ export default function HomePage({ params: { locale } }) {
       <MarketingSection />
       <Ready />
       <Clients />
-      <Industries />
+      <SectionWrapper dark={true}>
+        <Industries />
+      </SectionWrapper>
       <ContactForm data={contactFormData} />
       <Faq page="MainPageItems" />
       <Footer locale={locale} />
