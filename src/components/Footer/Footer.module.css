@@ -97,12 +97,12 @@
   font-weight: 500;
   color: hwb(0 100% 0% / 0.8);
   cursor: pointer;
-  transition: color 0.24s ease-in-out;
+  transition: color 0.23s ease-in-out;
   line-height: 175%;
   letter-spacing: 0.2px;
 }
 .FooterMenuLink:hover > p {
-  color: #fff;
+  color: #3C7BF6;
 }
 
 /* .AchievementsSection {

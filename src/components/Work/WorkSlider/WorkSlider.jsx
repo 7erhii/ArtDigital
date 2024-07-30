@@ -10,7 +10,7 @@ export default function WorkSlider({ data }) {
     dots: false,
     infinite: false,
     speed: 500,
-    slidesToShow: 2.8,
+    slidesToShow: 2.70,
     slidesToScroll: 1,
     autoplay: false,
     draggable: true,

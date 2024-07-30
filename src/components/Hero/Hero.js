@@ -45,8 +45,8 @@ export default function Hero() {
   ];
 
   const cardText = {
-    nextButton: cardsDataObj.cardText.prevPage,
-    prewButton: cardsDataObj.cardText.nextPage,
+    nextButton: cardsDataObj.cardText.nextPage,
+    prewButton: cardsDataObj.cardText.prevPage,
   };
 
   return (

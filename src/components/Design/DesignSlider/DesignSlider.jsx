@@ -14,7 +14,7 @@ export default function DesignSlider({ data }) {
     centerPadding: "30.3333%",
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 1800,
     responsive: [
       {

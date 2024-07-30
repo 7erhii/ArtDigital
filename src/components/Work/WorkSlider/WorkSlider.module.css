@@ -1,9 +1,9 @@
 .sliderWrapper {
-  padding: 0 1.5em;
+  padding: 0 0.75em;
 
   /* width: 30%; */
   /* margin: 0 auto; */
-  padding-bottom: 10em;
+  /* padding-bottom: 10em; */
 }
 
 .sliderContainer {
@@ -28,6 +28,7 @@
 .sliderDescr {
   width: 80%;
   padding: 1.5em 2.5em;
+  padding-right: 3em;
 
   background: hsl(0, 0%, 8%);
   border-radius: 0 12px 12px 0;

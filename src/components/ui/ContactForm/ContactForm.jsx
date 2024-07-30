@@ -93,7 +93,7 @@ const ContactForm = React.memo(function ContactForm({ data }) {
                 )}
             </Label>
 
-            <TooltipProvider>
+            <TooltipProvider delayDuration={100}>
               <div>
                 <Input
                   type="text"

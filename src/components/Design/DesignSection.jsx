@@ -71,10 +71,20 @@ export default function DesignSection() {
         description={t("designSection.description")}
         styleType="sectionTitleWhite"
       />
+
       <DesignSlider data={cardsData} />
+
       <div className={styles.designAction}>
-        <MainButton text={t("designSection.buttonRight")} color="Blue" size="medium" />
-        <MainButton text={t("designSection.buttonLeft")} color="White" size="medium" />
+        <MainButton
+          text={t("designSection.buttonRight")}
+          color="Blue"
+          size="medium"
+        />
+        <MainButton
+          text={t("designSection.buttonLeft")}
+          color="White"
+          size="medium"
+        />
       </div>
     </div>
   );

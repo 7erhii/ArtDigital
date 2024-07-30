@@ -12,7 +12,7 @@ export default function WorkSection() {
   const slidesData = t.raw("SlidesWork");
 
   return (
-    <div>
+    <div style={{paddingBottom: "10em"}}>
       <SectionTitle
         title={t("workSection.title")}
         subtitle={t("workSection.subtitle")

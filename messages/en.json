@@ -44,8 +44,8 @@
     },
     {
       "title": "More",
-      "links": ["/about", "/service2", "/service3"],
-      "subtitles": ["About Us", "Service", "Service"]
+      "links": ["/about", "/contacts"],
+      "subtitles": ["About Us", "Contacts"]
     }
   ],
   "Hero": {
