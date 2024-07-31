@@ -5,14 +5,12 @@ LOG_FILE="/home/ArtDigital/deploy.log"
 
 cd $PROJECT_DIR || exit
 
-git stash save "Auto stash before pull" >> $LOG_FILE 2>&1
+git add . >> $LOG_FILE 2>&1
+git commit -m "Auto commit before pull" >> $LOG_FILE 2>&1
 
 git pull origin main >> $LOG_FILE 2>&1
 
-git stash pop >> $LOG_FILE 2>&1
-
 npm i >> $LOG_FILE 2>&1
-
 npm run build >> $LOG_FILE 2>&1
 
 pm2 restart ArtDigital >> $LOG_FILE 2>&1
