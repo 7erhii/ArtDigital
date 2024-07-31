@@ -67,10 +67,10 @@ export default function HomePage({ params: { locale } }) {
 
 
 
-  
+
   return (
     <div>
-      <Header locale={locale} />
+      {/* <Header locale={locale} />
       <Hero />
       <AchievementsSection />
       <DesignSection />
@@ -83,7 +83,7 @@ export default function HomePage({ params: { locale } }) {
         <Industries />
       </SectionWrapper>
       <ContactForm data={contactFormData} />
-      <Faq page="MainPageItems" />
+      <Faq page="MainPageItems" /> */}
       <Footer locale={locale} />
       <Colophon />
     </div>
