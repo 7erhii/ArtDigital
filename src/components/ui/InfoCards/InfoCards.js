@@ -7,6 +7,7 @@ export default function InfoCards({
   textAlign = "center",
   alignItems = "center",
   titleSize = "m",
+  fixedBorderRadius = false,
 }) {
   const borderRadiusMap = {
     3: ["40px 12px 12px 40px", "12px", "12px 40px 40px 12px"],
@@ -57,14 +58,18 @@ export default function InfoCards({
       width = "49%";
     }
 
+    const borderRadius = fixedBorderRadius
+      ? "40px 40px 12px 12px"
+      : borderRadiusMap[length]?.[index] || "12px";
+
     return {
-      borderRadius: borderRadiusMap[length]?.[index] || "12px",
-      backgroundColor: backgroundColor,
+      borderRadius,
+      backgroundColor,
       color: textColor,
       border: `1px solid ${borderColor}`,
-      textAlign: textAlign,
-      alignItems: alignItems,
-      width: width,
+      textAlign,
+      alignItems,
+      width,
       display: "flex",
       flexDirection: "column",
     };
@@ -73,14 +78,10 @@ export default function InfoCards({
   const getTitleSizeStyle = (titleSize) => {
     switch (titleSize) {
       case "sm":
-        return {
-          fontSize: "1.5em",
-        };
+        return { fontSize: "1.5em" };
       case "m":
       default:
-        return {
-          fontSize: "2em",
-        };
+        return { fontSize: "2em" };
     }
   };
 

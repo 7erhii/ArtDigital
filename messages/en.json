@@ -438,6 +438,7 @@
       "text": "Start Cooperation"
     }
   },
+
   "Footer": {
     "company": {
       "descr": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra aliquet risus, non",
@@ -492,11 +493,13 @@
       }
     ]
   },
+
   "Colophon": {
     "copyright": "Copyright © 2024 . All rights reserved",
     "policy": "Privacy Policy",
     "terms": "Terms & Conditions"
   },
+
   "FrontEnd": {
     "Hero": {
       "HeroTitle": "Professional Front-end Development",
@@ -663,6 +666,7 @@
       ]
     }
   },
+
   "BackEnd": {
     "Hero": {
       "HeroTitle": "Professional Back-end Development",
@@ -827,8 +831,14 @@
           "Description": "Continuously improving the website and adding new features based on user feedback and emerging trends"
         }
       ]
+    },
+    "EngageSection": {
+      "Title": "BACK-END",
+      "Subtitle": "take all advantages from back-end developing process",
+      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare dolor nec ornare porttitor."
     }
   },
+
   "Design": {
     "Hero": {
       "HeroTitle": "WE DESIGN YOUR BEST IDEAS ",

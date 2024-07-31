@@ -19,7 +19,14 @@ import {
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import iconQuestion from "@/assets/icons/icon-question.svg";
+
+// Styles
 import styles from "./ContactForm.module.css";
+
+//  Icons
+import { SlQuestion } from "react-icons/sl";
+import { FaRegQuestionCircle } from "react-icons/fa";
+import { RiQuestionLine } from "react-icons/ri";
 
 const ContactForm = React.memo(function ContactForm({ data }) {
   const t = useTranslations("ContactForm");
@@ -102,20 +109,31 @@ const ContactForm = React.memo(function ContactForm({ data }) {
                   icon={
                     <Tooltip>
                       <TooltipTrigger asChild>
-                        <button type="button">
-                          <Image src={iconQuestion} alt="question" />
+                        <button type="button" className={styles.TooltipButton}>
+                          <RiQuestionLine />
                         </button>
                       </TooltipTrigger>
                       <TooltipContent
+                        side="bottom"
+                        align="end"
                         style={{
                           backgroundColor: "#fff",
                           color: "#151515",
                           maxWidth: "20em",
-                          padding: "1em",
+                          padding: "1em 1.25em",
                           border: "1px solid rgba(21, 21, 21, 0.08)",
                         }}
                       >
-                        <p>{t(data.inputEmployees.tooltip)}</p>
+                        <p
+                          style={{
+                            fontSize: "1em",
+                            lineHeight: "150%",
+                            color: "151515",
+                            fontWeight: "400",
+                          }}
+                        >
+                          {t(data.inputEmployees.tooltip)}
+                        </p>
                       </TooltipContent>
                     </Tooltip>
                   }

@@ -60,10 +60,20 @@
   max-width: 48%;
 }
 
-
 .ContactFormActions {
   width: 100%;
-  max-width: 13em;
+  max-width: 17.5em;
   margin: 0 auto;
   margin-top: 2em;
+}
+
+.TooltipButton svg {
+  transition: color 0.3s ease-in-out;
+}
+.TooltipButton svg {
+  color: #1c1b1f;
+}
+
+.TooltipButton:hover svg {
+  color: #3c7bf6;
 }

@@ -16,9 +16,8 @@
   justify-content: center;
   padding: 1.25em;
   margin: 0.5em 0;
-  gap: 1em;
+  gap: 0.5em;
   border-radius: 8px;
-
 }
 .cardItemDouble {
   grid-column: span 2;
@@ -36,10 +35,10 @@
 .cardItemText {
   font-family: "DM Sans", sans-serif;
   font-size: 1em;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 120%;
   text-align: center;
-  letter-spacing: -0.1px;
+  letter-spacing: 0.7px;
 }
 .cardItemTextDouble {
   font-family: "DM Sans", sans-serif;
@@ -51,13 +50,13 @@
 }
 
 .cardItemImage {
-  width: 2.37em;
+  width: 3.5em;
   height: 2.37em;
 }
 
 .cardItemWhite {
-    background: rgba(21, 21, 21, 0.02);
-    border: 1px solid rgba(21, 21, 21, 0.10);
+  background: rgba(21, 21, 21, 0.02);
+  border: 1px solid rgba(21, 21, 21, 0.1);
 }
 .cardItemDark {
   background: rgba(255, 255, 255, 0.04);
@@ -69,4 +68,32 @@
 }
 .cardItemTextDark {
   color: #fff;
+}
+
+.singleLeft {
+  border-radius: 16px 8px 8px 16px;
+}
+
+.singleRight {
+  border-radius: 8px 16px 16px 8px;
+}
+
+.topLeft {
+  border-radius: 16px 8px 8px 8px;
+}
+
+.topRight {
+  border-radius: 8px 16px 8px 8px;
+}
+
+.bottomLeft {
+  border-radius: 8px 8px 8px 16px;
+}
+
+.bottomRight {
+  border-radius: 8px 8px 16px 8px;
+}
+
+.normal {
+  border-radius: 8px;
 }

@@ -3,12 +3,7 @@ import { useTranslations } from "next-intl";
 import { Inter } from "next/font/google";
 import { useMessages } from "next-intl";
 
-import CustomHero from "@/components/CustomHero/CustomHero";
-
-import BackendImage from "@/assets/images/image-dev-backend.png";
-import RunningLine from "@/components/ui/RunningLine/RunningLine";
-import GridCards from "@/components/ui/GridCards/GridCards";
-
+// Images
 import lineImage1 from "@/assets/images/line1.svg";
 import lineImage2 from "@/assets/images/line2.svg";
 import lineImage3 from "@/assets/images/line3.svg";
@@ -19,6 +14,7 @@ import lineImage7 from "@/assets/images/line7.svg";
 import lineImage8 from "@/assets/images/line8.svg";
 import lineImage9 from "@/assets/images/line9.svg";
 
+// Icons
 import iconConnect from "@/assets/icons/icon-connect.svg";
 import iconResearch from "@/assets/icons/icon-Research.svg";
 import iconDevelopment from "@/assets/icons/icon-Development.svg";
@@ -41,6 +37,11 @@ import iconMysql from "@/assets/icons/icon-mysql-dark.svg";
 import iconPython from "@/assets/icons/icon-python.svg";
 import iconNodeJs from "@/assets/icons/icon-nodejs.svg";
 
+// Components
+import CustomHero from "@/components/CustomHero/CustomHero";
+import BackendImage from "@/assets/images/image-dev-backend.png";
+import RunningLine from "@/components/ui/RunningLine/RunningLine";
+import GridCards from "@/components/ui/GridCards/GridCards";
 import SectionWrapper from "@/components/SectionWrapper/SectionWrapper";
 import SectionTitle from "@/components/ui/SectionTitle/SectionTitle";
 import InfoCards from "@/components/ui/InfoCards/InfoCards";
@@ -51,6 +52,7 @@ import Faq from "@/components/Faq/Faq";
 import Footer from "@/components/Footer/Footer";
 import Colophon from "@/components/Colophon/Colophon";
 import Header from "@/components/Header/Header";
+import EngageSection from "@/components/EngageSection/page";
 
 const images = [
   lineImage1,
@@ -180,7 +182,7 @@ export default function BackendPage({ params: { locale } }) {
 
   return (
     <div className={inter.className}>
-      <Header locale={locale} />
+      {/* <Header locale={locale} />
 
       <CustomHero
         sectionName="BackEnd"
@@ -269,9 +271,12 @@ export default function BackendPage({ params: { locale } }) {
           description={t("Services.Description")}
           styleType="sectionTitleWhite"
         />
-        <InfoCards data={servicesData} colorType="dark" textAlign="left" />
-      </SectionWrapper>
-      <SectionWrapper>
+        <InfoCards
+          data={servicesData}
+          colorType="dark"
+          textAlign="left"
+          fixedBorderRadius={true}
+        />
         <AccordionCardHolder data={AccordionCardsData} />
       </SectionWrapper>
 
@@ -401,7 +406,50 @@ export default function BackendPage({ params: { locale } }) {
 
       <ContactForm data={contactFormData} />
 
-      <Faq page="BackendPageItems" />
+      <Faq page="BackendPageItems" /> */}
+
+      <SectionWrapper dark={true}>
+        <SectionTitle
+          title={t("EngageSection.Title")}
+          subtitle={t("EngageSection.Subtitle")
+            .split(" ")
+            .map((word, index, words) => {
+              const specialWord = ["from"].includes(word);
+              const blueWord = ["back-end", "developing", "process"].includes(
+                word
+              );
+
+              if (specialWord || blueWord) {
+                return (
+                  <React.Fragment key={index}>
+                    <span
+                      style={
+                        blueWord ? { color: "#3C7BF6" } : { color: "#fff" }
+                      }
+                    >
+                      {word}
+                    </span>
+                    {specialWord && <br />}
+                  </React.Fragment>
+                );
+              } else {
+                return <span key={index}>{word}</span>;
+              }
+            })
+            .reduce((acc, word, index, array) => {
+              if (index < array.length - 1) {
+                return [...acc, word, " "];
+              } else {
+                return [...acc, word];
+              }
+            }, [])}
+          description={t("EngageSection.Description")}
+          styleType=""
+        />
+
+        <EngageSection />
+      </SectionWrapper>
+
       <Footer />
       <Colophon />
     </div>

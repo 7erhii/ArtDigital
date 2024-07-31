@@ -6,6 +6,7 @@
   max-width: 1440px;
   margin: 0 auto;
 }
+
 .CardItem {
   display: flex;
   align-items: center;
@@ -14,12 +15,24 @@
   border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 2.5em;
   cursor: pointer;
-  transition: background 0.24s ease-in-out;
+  transition: background-color 0.24s ease-in-out;
 }
 
 .CardItem:hover {
-  background: #3c7bf6;
-  border-radius: 1px solid rgba(0, 0, 0, 0);
+  background-color: #3c7bf6;
+}
+
+.CardItem p,
+.CardItem .CardDescr h5 {
+  transition: color 0.24s ease-in-out;
+}
+
+.CardItem:hover p {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.CardItem:hover .CardDescr h5 {
+  color: #fff;
 }
 
 .CardTile > p {
@@ -27,6 +40,7 @@
   font-size: 1em;
   cursor: pointer;
 }
+
 .CardTile > h4 {
   color: #fff;
   font-size: 1.5em;
@@ -39,6 +53,7 @@
   align-items: center;
   text-align: right;
 }
+
 .CardDescr > h5 {
   color: rgba(255, 255, 255, 0.8);
   font-size: 1.12em;
