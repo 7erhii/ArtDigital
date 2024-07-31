@@ -80,8 +80,8 @@ export default function HomePage({ params: { locale } }) {
         <Industries />
       </SectionWrapper>
       <ContactForm data={contactFormData} />
-      <Faq page="MainPageItems" />
-      <Footer locale={locale} /> */}
+      <Faq page="MainPageItems" /> */}
+      <Footer locale={locale} />
       <Colophon />
     </div>
   );
