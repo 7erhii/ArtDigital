@@ -82,6 +82,7 @@ export default function HomePage({ params: { locale } }) {
       <ContactForm data={contactFormData} />
       <Faq page="MainPageItems" />
       <Footer locale={locale} /> */}
+      
       <Colophon />
     </div>
   );
