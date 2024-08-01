@@ -7,7 +7,16 @@ import { IoArrowForward } from "react-icons/io5";
 
 import styles from "./MarketingCards.module.css";
 
-const highlightWords = ["Development", "page", "Mobile", "App"];
+const highlightWords = [
+  "Development",
+  "Fast",
+  "Branding",
+  "branding",
+  "Advertising",
+  "advertising",
+  "Mobile",
+  "App",
+];
 
 export default function MarketingCards({ data }) {
   function highlightText(text, itemId) {
@@ -49,17 +58,15 @@ export default function MarketingCards({ data }) {
                     }
                   >
                     <div className={styles.marketingCardsText}>
-                      {item.title
-                        .split("\n")
-                        .map((line, index, arr) => {
-                          const processedLine = highlightText(line, itemKey);
-                          return (
-                            <React.Fragment key={`${itemKey}-line-${index}`}>
-                              {processedLine}
-                              {index < arr.length - 1 && <br />}
-                            </React.Fragment>
-                          );
-                        })}
+                      {item.title.split("\n").map((line, index, arr) => {
+                        const processedLine = highlightText(line, itemKey);
+                        return (
+                          <React.Fragment key={`${itemKey}-line-${index}`}>
+                            {processedLine}
+                            {index < arr.length - 1 && <br />}
+                          </React.Fragment>
+                        );
+                      })}
                     </div>
                     <IoArrowForward className={styles.cardsIcon} />
                   </div>

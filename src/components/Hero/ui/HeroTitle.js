@@ -1,11 +1,17 @@
+// HeroTitle.js
 "use client";
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { ColorContext } from "@/context/ColorContext";
-import { lightenColor } from "@/utils/colorUtils";
+
+// Style
+import styles from "./HeroTitle.module.css";
 
 export default function HeroTitle({ data }) {
-  const { color } = useContext(ColorContext);
+  const { color, hoverColor } = useContext(ColorContext);
   const highlightKeyword = ["ready", "готовы"];
+  const [initialClass, setInitialClass] = useState(
+    styles.HeroTitleButtonInitial
+  );
 
   const HighlightText = ({ text }) => {
     const regex = new RegExp(`(${highlightKeyword.join("|")})`, "gi");
@@ -22,45 +28,51 @@ export default function HeroTitle({ data }) {
     );
   };
 
+  useEffect(() => {
+    document.documentElement.style.setProperty("--button-color", color);
+    document.documentElement.style.setProperty(
+      "--button-hover-color",
+      hoverColor
+    );
+    setInitialClass(""); // Удаляем класс после получения цвета
+  }, [color, hoverColor]);
+
   return (
     <div
-      className="mx-auto text-center py-28  pb-0 "
-      style={{ maxWidth: "62em" }}
+      className="mx-auto text-center py-28 pb-0"
+      style={{ maxWidth: "65.5em" }}
     >
-      <div className="hero__title flex flex-col relative ">
+      <div className={`${styles.heroTitle} hero__title flex flex-col relative`}>
         <h2
-          className="uppercase text-8xl font-satoshi pr-[3em] whitespace-nowrap"
-          style={{ fontSize: "5.25em", fontWeight: "900" }}
+          className="uppercase text-8xl font-satoshi pr-[3.2em] whitespace-nowrap"
+          style={{
+            fontSize: "5.25em",
+            fontWeight: "900",
+            paddingBottom: "1.8rem",
+          }}
         >
           <HighlightText text={data.titleLine1} />
         </h2>
         <h2
           className="uppercase text-8xl font-satoshi"
-          style={{ fontSize: "5.25em", fontWeight: "900" }}
+          style={{
+            fontSize: "5.25em",
+            fontWeight: "900",
+            letterSpacing: "3.3px",
+            textShadow:
+              "1px 1px 0 #151515, -1px -1px 0 #151515, 1px -1px 0 #151515, -1px 1px 0 #151515",
+          }}
         >
           {data.titleLine2}
         </h2>
-        <div className="w-[80%] flex mx-auto mt-28">
+        <div className="w-[80%] flex mx-auto mt-20">
           <h3 className="text-base text-[#151515]">{data.subtitle}</h3>
         </div>
-
-        <button
-          className="main-btn main-btn--red btn absolute top-0 right-0"
-          style={{
-            background: color,
-            padding: "1.5em 2em",
-            border: `0.35em solid rgba(255, 255, 255, 0.2);`,
-            color: "#fff",
-            // boxShadow: `0 0 0 0.3em ${lightenColor(color, -20)}`,
-          }}
-        >
+        <button className={`${styles.HeroTitleButton} ${initialClass}`}>
           {data.button}
         </button>
       </div>
-      <div className="hero__subtitle  py-[11em]">
-        {/* <p>{t("subtitle")}</p> */}
-      </div>
-      {/* <button>CLICK1</button> */}
+      <div className="hero__subtitle py-[11em]"></div>
     </div>
   );
 }

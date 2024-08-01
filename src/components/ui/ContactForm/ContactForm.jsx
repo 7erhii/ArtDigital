@@ -27,6 +27,7 @@ import styles from "./ContactForm.module.css";
 import { SlQuestion } from "react-icons/sl";
 import { FaRegQuestionCircle } from "react-icons/fa";
 import { RiQuestionLine } from "react-icons/ri";
+import MainButton from "../MainButton/MainButton";
 
 const ContactForm = React.memo(function ContactForm({ data }) {
   const t = useTranslations("ContactForm");
@@ -204,7 +205,8 @@ const ContactForm = React.memo(function ContactForm({ data }) {
             />
           </div>
           <div className={`${styles.ContactFormActions}`}>
-            <Button variant="outline">{t(data.button.text)}</Button>
+            <MainButton text={t(data.button.text)} size="large"/>
+            {/* <Button variant="outline">{t(data.button.text)}</Button> */}
           </div>
         </form>
       </div>

@@ -1,0 +1,27 @@
+/* HeroTitle.module.css */
+.HeroTitleButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.9em 1.3em;
+  border: 0.35em solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border-radius: 100px;
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease;
+  background-color: var(--button-color);
+  font-size: 1.25em;
+  letter-spacing: 0.2px;
+}
+
+.HeroTitleButtonInitial {
+  background-color: #3c7bf6;
+}
+.HeroTitleButtonInitial:hover {
+  background-color: #1b5ad5;
+}
+
+.HeroTitleButton:hover {
+  background-color: var(--button-hover-color);
+}

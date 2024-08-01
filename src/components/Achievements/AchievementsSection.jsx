@@ -77,7 +77,7 @@ export default function AchievementsSection() {
               </p>
             </div>
             <div className={styles.achievementsPinnacleAction}>
-              <MainButton text={t("buttonText")} color="Blue" size="medium" />
+              <MainButton text={t("buttonText")} color="BlueToWhite" size="medium" />
             </div>
           </div>
           <div className={styles.achievementsPinnacleImage}>
