@@ -45,3 +45,4 @@ if [ $? -ne 0 ]; then
 fi
 
 echo "Deployment completed at $(date)" >> $LOG_FILE
+
