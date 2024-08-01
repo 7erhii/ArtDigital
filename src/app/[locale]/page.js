@@ -69,7 +69,7 @@ export default function HomePage({ params: { locale } }) {
     <div>
       {/* <Header locale={locale} /> */}
       {/* <Hero /> */}
-      {/* <AchievementsSection /> */}
+      <AchievementsSection />
       <DesignSection />
       <WorkSection />
       <Development />
