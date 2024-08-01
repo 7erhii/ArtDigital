@@ -65,8 +65,6 @@ export default function HomePage({ params: { locale } }) {
     },
   };
 
-
-  
   
   return (
     <div>
