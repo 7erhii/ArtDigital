@@ -1,32 +1,39 @@
 #!/bin/bash
 
-PROJECT_DIR="/home/ArtDigital"
 LOG_FILE="/home/ArtDigital/deploy.log"
+PROJECT_DIR="/home/ArtDigital"
 
-log() {
-    echo "$(date '+%Y-%m-%d %H:%M:%S') - $1" >> $LOG_FILE
-}
+echo "Starting deployment at $(date)" >> $LOG_FILE
 
-cd $PROJECT_DIR || { log "Ошибка: Не удалось перейти в директорию проекта"; exit 1; }
+# Переход в директорию проекта
+cd $PROJECT_DIR || { echo "Failed to change directory to $PROJECT_DIR" >> $LOG_FILE; exit 1; }
 
-log "Начало развертывания"
+# Обновление из репозитория
+git pull --ff-only >> $LOG_FILE 2>&1
+if [ $? -ne 0 ]; then
+    echo "Git pull failed" >> $LOG_FILE
+    exit 1
+fi
 
-log "Добавление изменений в git"
-git add . >> $LOG_FILE 2>&1
+# Установка зависимостей
+npm install >> $LOG_FILE 2>&1
+if [ $? -ne 0 ]; then
+    echo "NPM install failed" >> $LOG_FILE
+    exit 1
+fi
 
-log "Создание коммита в git"
-git commit -m "Auto commit before pull" >> $LOG_FILE 2>&1
-
-log "Обновление из удаленного репозитория"
-git pull origin main >> $LOG_FILE 2>&1
-
-log "Установка  npm"
-npm i >> $LOG_FILE 2>&1
-
-log "Сборка "
+# Сборка проекта
 npm run build >> $LOG_FILE 2>&1
+if [ $? -ne 0 ]; then
+    echo "NPM build failed" >> $LOG_FILE
+    exit 1
+fi
 
-log "Перезапуск  PM2"
+# Перезапуск через PM2
 pm2 restart ArtDigital >> $LOG_FILE 2>&1
+if [ $? -ne 0 ]; then
+    echo "PM2 restart failed" >> $LOG_FILE
+    exit 1
+fi
 
-log "завершено"
+echo "Deployment completed at $(date)" >> $LOG_FILE
