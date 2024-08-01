@@ -64,7 +64,6 @@ export default function HomePage({ params: { locale } }) {
       text: "button.text",
     },
   };
-
   
   return (
     <div>
