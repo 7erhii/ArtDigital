@@ -76,6 +76,7 @@ export default function MarketingCards({ data }) {
                       alt={item.title}
                       width={500}
                       height={300}
+                      quality={85}
                       className={
                         item.type !== "noPadding"
                           ? styles.marketingCards__image
