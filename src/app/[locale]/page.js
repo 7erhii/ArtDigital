@@ -67,8 +67,8 @@ export default function HomePage({ params: { locale } }) {
   
   return (
     <div>
-      {/* <Header locale={locale} /> */}
-      {/* <Hero /> */}
+      <Header locale={locale} />
+      <Hero />
       <AchievementsSection />
       <DesignSection />
       <WorkSection />
