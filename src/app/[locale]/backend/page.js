@@ -180,9 +180,15 @@ export default function BackendPage({ params: { locale } }) {
     },
   };
 
+  const engageData = {
+    title: "BackEnd.EngageSection.EngageBlock.Title",
+    description: "BackEnd.EngageSection.EngageBlock.Description",
+    button: "BackEnd.EngageSection.EngageBlock.Button",
+  };
+
   return (
     <div className={inter.className}>
-      {/* <Header locale={locale} />
+      <Header locale={locale} />
 
       <CustomHero
         sectionName="BackEnd"
@@ -406,7 +412,7 @@ export default function BackendPage({ params: { locale } }) {
 
       <ContactForm data={contactFormData} />
 
-      <Faq page="BackendPageItems" /> */}
+      <Faq page="BackendPageItems" />
 
       <SectionWrapper dark={true}>
         <SectionTitle
@@ -446,8 +452,7 @@ export default function BackendPage({ params: { locale } }) {
           description={t("EngageSection.Description")}
           styleType=""
         />
-
-        <EngageSection />
+        <EngageSection sectionData={engageData} />
       </SectionWrapper>
 
       <Footer />

@@ -35,8 +35,19 @@
   background: rgba(21, 21, 21, 0.05);
   color: #151515;
 }
+
 .mainButtonWhite:hover {
   background: #151515;
+  color: #fff;
+}
+
+.mainButtonFullWhite {
+  background: rgb(255, 255, 255);
+  color: #151515;
+}
+
+.mainButtonFullWhite:hover {
+  background: #1e1e1e;
   color: #fff;
 }
 /* Black */

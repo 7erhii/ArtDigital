@@ -1,9 +1,9 @@
 import React from "react";
 import { useTranslations } from "next-intl";
-import styles from "./styles.module.css";
-import CustomHero from "@/components/CustomHero/CustomHero";
-import FrontendImage from "@/assets/images/image-dev-frontend.png";
-import RunningLine from "@/components/ui/RunningLine/RunningLine";
+import { Inter } from "next/font/google";
+import { useMessages } from "next-intl";
+
+// Images
 import lineImage1 from "@/assets/images/line1.svg";
 import lineImage2 from "@/assets/images/line2.svg";
 import lineImage3 from "@/assets/images/line3.svg";
@@ -14,16 +14,17 @@ import lineImage7 from "@/assets/images/line7.svg";
 import lineImage8 from "@/assets/images/line8.svg";
 import lineImage9 from "@/assets/images/line9.svg";
 
+// Icons
 import iconConnect from "@/assets/icons/icon-connect.svg";
 import iconResearch from "@/assets/icons/icon-Research.svg";
 import iconDevelopment from "@/assets/icons/icon-Development.svg";
 
-import iconExpirience from "@/assets/icons/icon-card-expirience.svg";
-import iconResponcive from "@/assets/icons/icon-card-responcive.svg";
-import iconTime from "@/assets/icons/icon-card-time.svg";
-import iconBrowser from "@/assets/icons/icon-card-browser.svg";
-import iconSeo from "@/assets/icons/icon-card-seo.svg";
-import iconMaitenance from "@/assets/icons/icon-card-maitenance.svg";
+import iconDatabase from "@/assets/icons/icon-card-database.svg";
+import iconAuthentication from "@/assets/icons/icon-card-authentication.svg";
+import iconLogic from "@/assets/icons/icon-card-logic.svg";
+import iconApi from "@/assets/icons/icon-card-api.svg";
+import iconPerformance from "@/assets/icons/icon-card-performance.svg";
+import iconScalability from "@/assets/icons/icon-card-scalability.svg";
 
 import iconPage from "@/assets/icons/icon-card-page.svg";
 import iconCard from "@/assets/icons/icon-card-card.svg";
@@ -31,30 +32,27 @@ import iconCorporate from "@/assets/icons/icon-card-corporate.svg";
 import iconCatalog from "@/assets/icons/icon-card-catalog.svg";
 import iconStore from "@/assets/icons/icon-card-store.svg";
 
-import iconHtml from "@/assets/icons/icon-HTML5.svg";
-import iconCss from "@/assets/icons/icon-CSS3.svg";
-import iconJs from "@/assets/icons/icon-JavaScript.svg";
-import iconReact from "@/assets/icons/icon-React.svg";
-import iconSass from "@/assets/icons/icon-Sass.svg";
-import iconWordpress from "@/assets/icons/icon-wordpress-dark.svg";
-import iconElementor from "@/assets/icons/icon-Elementor.svg";
-import iconNextJs from "@/assets/icons/icon-next-js-dark.svg";
-import iconAngular from "@/assets/icons/icon-angular.svg";
-import iconTypescript from "@/assets/icons/icon-Typescript.svg";
+import iconPhp from "@/assets/icons/icon-PHP.svg";
+import iconMysql from "@/assets/icons/icon-mysql-dark.svg";
+import iconPython from "@/assets/icons/icon-python.svg";
+import iconNodeJs from "@/assets/icons/icon-nodejs.svg";
 
 // Components
-import Header from "@/components/Header/Header";
+import CustomHero from "@/components/CustomHero/CustomHero";
+import BackendImage from "@/assets/images/image-dev-backend.png";
+import RunningLine from "@/components/ui/RunningLine/RunningLine";
+import GridCards from "@/components/ui/GridCards/GridCards";
 import SectionWrapper from "@/components/SectionWrapper/SectionWrapper";
 import SectionTitle from "@/components/ui/SectionTitle/SectionTitle";
 import InfoCards from "@/components/ui/InfoCards/InfoCards";
-import GridCards from "@/components/ui/GridCards/GridCards";
 import StepsCards from "@/components/StepsCards/StepsCards";
 import ContactForm from "@/components/ui/ContactForm/ContactForm";
 import AccordionCardHolder from "@/components/AccordionCardHolder/AccordionCardHolder";
 import Faq from "@/components/Faq/Faq";
-import EngageSection from "@/components/EngageSection/page";
 import Footer from "@/components/Footer/Footer";
 import Colophon from "@/components/Colophon/Colophon";
+import Header from "@/components/Header/Header";
+import EngageSection from "@/components/EngageSection/page";
 
 const images = [
   lineImage1,
@@ -76,18 +74,18 @@ const getIcon = (title) => {
       return iconResearch;
     case "Development":
       return iconDevelopment;
-    case "Enhanced User Experience":
-      return iconExpirience;
-    case "Responsive Design":
-      return iconResponcive;
-    case "Faster Load Times":
-      return iconTime;
-    case "Cross-Browser Compatibility":
-      return iconBrowser;
-    case "SEO Optimization":
-      return iconSeo;
-    case "Scalability and Maintenance":
-      return iconMaitenance;
+    case "Database Management":
+      return iconDatabase;
+    case "User Authentication":
+      return iconAuthentication;
+    case "Server-Side Logic":
+      return iconLogic;
+    case "API Integration":
+      return iconApi;
+    case "Performance Optimization":
+      return iconPerformance;
+    case "Scalability and Flexibility":
+      return iconScalability;
 
     case "landing page":
       return iconPage;
@@ -99,13 +97,16 @@ const getIcon = (title) => {
       return iconCatalog;
     case "Online Store":
       return iconStore;
+
     default:
       return null;
   }
 };
 
-export default function FrontEndPage({ params: { locale } }) {
-  const t = useTranslations("FrontEnd");
+const inter = Inter({ subsets: ["latin"] });
+
+export default function BackendPage({ params: { locale } }) {
+  const t = useTranslations("BackEnd");
 
   const aboutData = t.raw("About.InfoCards").map((card) => ({
     ...card,
@@ -114,7 +115,7 @@ export default function FrontEndPage({ params: { locale } }) {
 
   const servicesData = t.raw("Services.ServicesCards").map((card) => ({
     ...card,
-    icon: getIcon(card.Title),
+    // icon: getIcon(card.Title),
   }));
 
   const AdvantagesData = t.raw("Advantages.Items").map((card) => ({
@@ -122,30 +123,12 @@ export default function FrontEndPage({ params: { locale } }) {
     icon: getIcon(card.Title),
   }));
 
-  const cardsDataFront = {
-    grid1: [
-      { type: "single", image: iconHtml, text: "HTML" },
-      {
-        type: "double",
-        text: t("Stack.DoubleCard"),
-      },
-    ],
+  const cardsDataBack = {
+    grid1: [{ type: "single", image: iconPhp, text: "PHP" }],
     //
-    grid2: [
-      { type: "single", image: iconCss, text: "CSS" },
-      { type: "single", image: iconSass, text: "SASS" },
-      { type: "single", image: iconNextJs, text: "NextJS" },
-    ],
-    grid3: [
-      { type: "single", image: iconJs, text: "JavaScript" },
-      { type: "single", image: iconWordpress, text: "WordPress" },
-      { type: "single", image: iconAngular, text: "Angular" },
-    ],
-    grid: [
-      { type: "single", image: iconReact, text: "React" },
-      { type: "single", image: iconElementor, text: "Elementor" },
-      { type: "single", image: iconTypescript, text: "TypeScript" },
-    ],
+    grid2: [{ type: "single", image: iconMysql, text: "MySQL" }],
+    grid3: [{ type: "single", image: iconPython, text: "Python" }],
+    grid: [{ type: "single", image: iconNodeJs, text: "Node Js" }],
   };
 
   const AccordionCardsData = t.raw("Services.AccordionCards").map((card) => ({
@@ -198,25 +181,24 @@ export default function FrontEndPage({ params: { locale } }) {
   };
 
   const engageData = {
-    title: "FrontEnd.EngageSection.EngageBlock.Title",
-    description: "FrontEnd.EngageSection.EngageBlock.Description",
-    button: "FrontEnd.EngageSection.EngageBlock.Button",
+    title: "BackEnd.EngageSection.EngageBlock.Title",
+    description: "BackEnd.EngageSection.EngageBlock.Description",
+    button: "BackEnd.EngageSection.EngageBlock.Button",
   };
 
   return (
-    <div>
+    <div className={inter.className}>
       <Header locale={locale} />
 
       <CustomHero
-        sectionName="FrontEnd"
-        imageSrc={FrontendImage}
-        imageAlt="FrontEnd image, people behind the table"
-        coloredWords={["Front-end"]}
-        specialWords={["Professional", "Front-end"]}
+        sectionName="BackEnd"
+        imageSrc={BackendImage}
+        imageAlt={"Backend image, people behind the table"}
+        coloredWords={["Back-end"]}
+        specialWords={["Professional", "Back-end"]}
       />
-      <div className={styles.aboutSection}></div>
 
-      <SectionWrapper dark={true}>
+      {/* <SectionWrapper dark={true}>
         <SectionTitle
           title={t("About.Title")}
           subtitle={t("About.Subtitle")
@@ -252,21 +234,21 @@ export default function FrontEndPage({ params: { locale } }) {
           description={t("About.Description")}
           styleType=""
         />
-        <InfoCards data={aboutData} colorType="whiteDark" />
-      </SectionWrapper>
+        <InfoCards data={aboutData} colorType="whiteDark" textAlign="center" />
+      </SectionWrapper> */}
 
-      <div className="bg-[#151515] pb-[5em]">
+      {/* <div className="bg-[#151515] pb-[5em]">
         <RunningLine speed={7000} images={images} />
-      </div>
+      </div> */}
 
-      <SectionWrapper>
+      {/* <SectionWrapper>
         <SectionTitle
           title={t("Services.Title")}
           subtitle={t("Services.Subtitle")
             .split(" ")
             .map((word, index, words) => {
-              const specialWord = ["Visual"].includes(word);
-              const blueWord = ["Front-End"].includes(word);
+              const specialWord = [""].includes(word);
+              const blueWord = ["Back-End"].includes(word);
 
               if (specialWord || blueWord) {
                 return (
@@ -295,14 +277,16 @@ export default function FrontEndPage({ params: { locale } }) {
           description={t("Services.Description")}
           styleType="sectionTitleWhite"
         />
-        {/* <InfoCards data={aboutData} colorType="dark" textAlign="left" /> */}
-        <InfoCards data={servicesData} colorType="dark" textAlign="left" />
-      </SectionWrapper>
-      <SectionWrapper>
+        <InfoCards
+          data={servicesData}
+          colorType="dark"
+          textAlign="left"
+          fixedBorderRadius={true}
+        />
         <AccordionCardHolder data={AccordionCardsData} />
-      </SectionWrapper>
+      </SectionWrapper> */}
 
-      <SectionWrapper>
+      {/* <SectionWrapper>
         <SectionTitle
           title={t("Stack.Title")}
           subtitle={t("Stack.Subtitle")
@@ -339,17 +323,17 @@ export default function FrontEndPage({ params: { locale } }) {
           styleType="sectionTitleWhite"
         />
 
-        <GridCards cardsData={cardsDataFront} type="white" />
-      </SectionWrapper>
+        <GridCards cardsData={cardsDataBack} type="white" />
+      </SectionWrapper> */}
 
-      <SectionWrapper dark={true}>
+      {/* <SectionWrapper dark={true}>
         <SectionTitle
           title={t("Advantages.Title")}
           subtitle={t("Advantages.Subtitle")
             .split(" ")
             .map((word, index, words) => {
               const specialWord = [""].includes(word);
-              const blueWord = ["Front-end", "Development"].includes(word);
+              const blueWord = ["Back-end", "Development"].includes(word);
 
               if (specialWord || blueWord) {
                 return (
@@ -384,9 +368,9 @@ export default function FrontEndPage({ params: { locale } }) {
           colorType="whiteDark"
           textAlign="center"
         />
-      </SectionWrapper>
+      </SectionWrapper> */}
 
-      <SectionWrapper dark={true}>
+      {/* <SectionWrapper dark={true}>
         <SectionTitle
           title={t("Process.Title")}
           subtitle={t("Process.Subtitle")
@@ -424,18 +408,20 @@ export default function FrontEndPage({ params: { locale } }) {
         />
 
         <StepsCards data={StepsData} />
-      </SectionWrapper>
-      <ContactForm data={contactFormData} />
+      </SectionWrapper> */}
 
-      <Faq page="FrontendPageItems" />
-      <SectionWrapper dark={true}>
+      {/* <ContactForm data={contactFormData} /> */}
+
+      {/* <Faq page="BackendPageItems" /> */}
+
+      {/* <SectionWrapper dark={true}>
         <SectionTitle
           title={t("EngageSection.Title")}
           subtitle={t("EngageSection.Subtitle")
             .split(" ")
             .map((word, index, words) => {
               const specialWord = ["from"].includes(word);
-              const blueWord = ["Front-end", "developing", "process"].includes(
+              const blueWord = ["back-end", "developing", "process"].includes(
                 word
               );
 
@@ -466,12 +452,11 @@ export default function FrontEndPage({ params: { locale } }) {
           description={t("EngageSection.Description")}
           styleType=""
         />
-
         <EngageSection sectionData={engageData} />
-      </SectionWrapper>
+      </SectionWrapper> */}
 
-      <Footer />
-      <Colophon />
+      {/* <Footer /> */}
+      {/* <Colophon /> */}
     </div>
   );
 }

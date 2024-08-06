@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 // Styles
 import styles from "./style.module.css";
@@ -12,15 +13,15 @@ export default function EngageTitle(props) {
 
   return (
     <div className={styles.container}>
-      <div>
-        <img src={iconDevelopment} alt="Development Icon" />
+      <div className={styles.title}>
+        <Image src={iconDevelopment} alt="Development Icon" width={40} height={40}/>
         <h4>{title}</h4>
       </div>
-      <div>
+      <div className={styles.description}>
         <h4>{description}</h4>
       </div>
-      <div>
-        <MainButton text={button} />
+      <div className={styles.button}>
+        <MainButton color="FullWhite" size="large"  text={button} />
       </div>
     </div>
   );

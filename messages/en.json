@@ -664,6 +664,16 @@
           "Description": "Continuously improving the website and adding new features based on user feedback and emerging trends"
         }
       ]
+    },
+    "EngageSection": {
+      "Title": "Front-end",
+      "Subtitle": "take all advantages from Front-end developing process",
+      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare dolor nec ornare porttitor. ",
+      "EngageBlock": {
+        "Title": "Fast Front-End Developing",
+        "Description": "Optimized front-end code and efficient resource management lead to quicker page loads, reducing bounce rates and improving user satisfaction",
+        "Button": "View more"
+      }
     }
   },
 
@@ -835,7 +845,12 @@
     "EngageSection": {
       "Title": "BACK-END",
       "Subtitle": "take all advantages from back-end developing process",
-      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare dolor nec ornare porttitor."
+      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare dolor nec ornare porttitor.",
+      "EngageBlock": {
+        "Title": "Fast Back-End Developing",
+        "Description": "Optimized Back-end code and efficient resource management lead to quicker page loads, reducing bounce rates and improving user satisfaction",
+        "Button": "View more"
+      }
     }
   },
 
