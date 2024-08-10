@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslations } from "next-intl";
-import { Inter } from "next/font/google";
+// import { Inter } from "next/font/google";
 import { useMessages } from "next-intl";
 
 import styles from "./styles.module.css";
@@ -88,7 +88,7 @@ const getIcon = (title) => {
   }
 };
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
 
 export default function DesignPage({ params: { locale } }) {
   const contactFormData = {
@@ -164,7 +164,7 @@ export default function DesignPage({ params: { locale } }) {
   }));
 
   return (
-    <div className={inter.className}>
+    <div>
       <Header locale={locale} />
 
       {/* <DesignSlider /> */}

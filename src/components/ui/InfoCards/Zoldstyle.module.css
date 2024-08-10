@@ -159,8 +159,6 @@
   transition:
     background-color 0.24s,
     color 0.24s;
-
-  color: #fff;
 }
 
 .linkCard > h3,
@@ -170,21 +168,9 @@
   cursor: pointer;
   transition: color 0.24s;
 }
-.linkCard .infoCardDigitalTypeTitle > h3 {
-  cursor: pointer;
-}
-
-/* .linkCard svg {
-  color: red;
-} */
 
 .linkCard:hover {
   background-color: #ffffff;
-  color: #151515;
-}
-
-.linkCard:hover svg {
-  color: #151515;
 }
 
 .linkCard:hover > h3,
@@ -212,13 +198,4 @@
 .linkCard:hover .arrow {
   /* color: #000; */
   transition: color 0.24s ease;
-}
-
-.linkCard:hover .infoCardDigitalTypeTitle svg {
-  fill: #151515;
-}
-
-.linkCard:hover .infoCardDigitalTypeTitle img {
-  filter: brightness(0) saturate(100%) invert(9%) sepia(11%) saturate(0%)
-    hue-rotate(18deg) brightness(95%) contrast(85%);
 }

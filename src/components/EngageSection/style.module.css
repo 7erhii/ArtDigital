@@ -9,3 +9,14 @@
     background-color: #3C7BF6;
     padding: 2.5em;
 }
+
+.button {
+    display: flex;
+    width: 100%;
+    /* max-width: 40%; */
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 2.5em; 
+}

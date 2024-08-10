@@ -90,7 +90,7 @@
   text-transform: capitalize;
 }
 .description {
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
   z-index: 2;
   color: rgba(21, 21, 21, 0.8);
   font-size: 1em;
@@ -101,7 +101,7 @@
   margin-top: 1.2em;
 }
 .descriptionDark {
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
   z-index: 2;
   color: rgba(255, 255, 255, 0.8);
   font-size: 1em;

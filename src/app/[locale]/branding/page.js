@@ -4,6 +4,7 @@ import { useTranslations } from "next-intl";
 import { useMessages } from "next-intl";
 
 // Images
+import BrandingHeroImage from "@/assets/images/image-hero-marketing-branding.png";
 import lineImage1 from "@/assets/images/line1.svg";
 import lineImage2 from "@/assets/images/line2.svg";
 import lineImage3 from "@/assets/images/line3.svg";
@@ -15,31 +16,25 @@ import lineImage8 from "@/assets/images/line8.svg";
 import lineImage9 from "@/assets/images/line9.svg";
 
 // Icons
-import iconConnect from "@/assets/icons/icon-connect.svg";
-import iconResearch from "@/assets/icons/icon-Research.svg";
-import iconDevelopment from "@/assets/icons/icon-Development.svg";
+import iconPhone from "@/assets/icons/icon-phone.svg";
+import iconPc from "@/assets/icons/icon-card--blue-pc.svg";
+import iconSmm from "@/assets/icons/icon-card--blue-smm.svg";
+import iconRefresh from "@/assets/icons/icon-card--blue-refresh.svg";
+import iconBanner from "@/assets/icons/icon-card--blue-banner.svg";
+import iconEmail from "@/assets/icons/icon-card--blue-email.svg";
 
-import iconDatabase from "@/assets/icons/icon-card-database.svg";
-import iconAuthentication from "@/assets/icons/icon-card-authentication.svg";
-import iconLogic from "@/assets/icons/icon-card-logic.svg";
-import iconApi from "@/assets/icons/icon-card-api.svg";
-import iconPerformance from "@/assets/icons/icon-card-performance.svg";
-import iconScalability from "@/assets/icons/icon-card-scalability.svg";
+import iconWay from "@/assets/icons/icon-card--blue-way.svg";
+import iconSearch from "@/assets/icons/icon-card--blue-search.svg";
+import iconCommunication from "@/assets/icons/icon-card--blue-communication.svg";
+import iconNaming from "@/assets/icons/icon-card--blue-naming.svg";
+import iconBulb from "@/assets/icons/icon-card--blue-bulb.svg";
 
-import iconPage from "@/assets/icons/icon-card-page.svg";
-import iconCard from "@/assets/icons/icon-card-card.svg";
-import iconCorporate from "@/assets/icons/icon-card-corporate.svg";
-import iconCatalog from "@/assets/icons/icon-card-catalog.svg";
-import iconStore from "@/assets/icons/icon-card-store.svg";
-
-import iconPhp from "@/assets/icons/icon-PHP.svg";
-import iconMysql from "@/assets/icons/icon-mysql-dark.svg";
-import iconPython from "@/assets/icons/icon-python.svg";
-import iconNodeJs from "@/assets/icons/icon-nodejs.svg";
+import iconJorney from "@/assets/icons/icon-card-journey.svg";
+import iconDesign from "@/assets/icons/icon-card-design.svg";
+import iconOutdoor from "@/assets/icons/icon-card-outdoor.svg";
 
 // Components
 import CustomHero from "@/components/CustomHero/CustomHero";
-import BackendImage from "@/assets/images/image-dev-backend.png";
 import RunningLine from "@/components/ui/RunningLine/RunningLine";
 import GridCards from "@/components/ui/GridCards/GridCards";
 import SectionWrapper from "@/components/SectionWrapper/SectionWrapper";
@@ -68,79 +63,43 @@ const images = [
 
 const getIcon = (title) => {
   switch (title) {
-    case "Connect":
-      return iconConnect;
+    case "Lorem ipsum":
+      return iconWay;
+    case "Customer Journey":
+      return iconWay;
     case "Research":
-      return iconResearch;
-    case "Development":
-      return iconDevelopment;
-    case "Database Management":
-      return iconDatabase;
-    case "User Authentication":
-      return iconAuthentication;
-    case "Server-Side Logic":
-      return iconLogic;
-    case "API Integration":
-      return iconApi;
-    case "Performance Optimization":
-      return iconPerformance;
-    case "Scalability and Flexibility":
-      return iconScalability;
+      return iconSearch;
+    case "Communication Strategy":
+      return iconCommunication;
+    case "Naming":
+      return iconNaming;
+    case "Value Proposition":
+      return iconBulb;
 
-    case "landing page":
-      return iconPage;
-    case "Business Card Website":
-      return iconCard;
-    case "Corporate Website":
-      return iconCorporate;
-    case "Catalog Website":
-      return iconCatalog;
-    case "Online Store":
-      return iconStore;
+    case "Strategic marketing":
+      return iconJorney;
+    case "Branding":
+      return iconDesign;
+    case "Outdoor marketing":
+      return iconOutdoor;
 
     default:
       return null;
   }
 };
 
-// const inter = Inter({ subsets: ["latin"] });
-
 export default function BackendPage({ params: { locale } }) {
-  const t = useTranslations("BackEnd");
+  const t = useTranslations("Branding");
+  const engageDataObject = t.raw("EngageSection.EngageBlock");
 
-  const aboutData = t.raw("About.InfoCards").map((card) => ({
+  const AboutData = t.raw("About.Items").map((card) => ({
     ...card,
     icon: getIcon(card.Title),
-  }));
-
-  const servicesData = t.raw("Services.ServicesCards").map((card) => ({
-    ...card,
-    // icon: getIcon(card.Title),
   }));
 
   const AdvantagesData = t.raw("Advantages.Items").map((card) => ({
     ...card,
     icon: getIcon(card.Title),
-  }));
-
-  const cardsDataBack = {
-    grid1: [{ type: "single", image: iconPhp, text: "PHP" }],
-    //
-    grid2: [{ type: "single", image: iconMysql, text: "MySQL" }],
-    grid3: [{ type: "single", image: iconPython, text: "Python" }],
-    grid: [{ type: "single", image: iconNodeJs, text: "Node Js" }],
-  };
-
-  const AccordionCardsData = t.raw("Services.AccordionCards").map((card) => ({
-    ...card,
-    InfoCards: card.InfoCards.map((infoCard) => ({
-      ...infoCard,
-      icon: getIcon(infoCard.Title),
-    })),
-  }));
-
-  const StepsData = t.raw("Process.Steps").map((card) => ({
-    ...card,
   }));
 
   const contactFormData = {
@@ -181,9 +140,11 @@ export default function BackendPage({ params: { locale } }) {
   };
 
   const engageData = {
-    title: "BackEnd.EngageSection.EngageBlock.Title",
-    description: "BackEnd.EngageSection.EngageBlock.Description",
-    button: "BackEnd.EngageSection.EngageBlock.Button",
+    button: "Digital.EngageSection.Button",
+    cards: engageDataObject.map((card) => ({
+      ...card,
+      icon: getIcon(card.Title),
+    })),
   };
 
   return (
@@ -191,14 +152,14 @@ export default function BackendPage({ params: { locale } }) {
       <Header locale={locale} />
 
       <CustomHero
-        sectionName="BackEnd"
-        imageSrc={BackendImage}
-        imageAlt={"Backend image, people behind the table"}
-        coloredWords={["Back-end"]}
-        specialWords={["Professional", "Back-end"]}
+        sectionName="Branding"
+        imageSrc={BrandingHeroImage}
+        imageAlt={"Branding marketing image, visition card"}
+        coloredWords={["Branding"]}
+        specialWords={["Branding"]}
       />
 
-      <SectionWrapper dark={true}>
+      {/* <SectionWrapper dark={true}>
         <SectionTitle
           title={t("About.Title")}
           subtitle={t("About.Subtitle")
@@ -235,13 +196,9 @@ export default function BackendPage({ params: { locale } }) {
           styleType=""
         />
         <InfoCards data={aboutData} colorType="whiteDark" textAlign="center" />
-      </SectionWrapper>
+      </SectionWrapper> */}
 
-      <div className="bg-[#151515] pb-[5em]">
-        <RunningLine speed={7000} images={images} />
-      </div>
-
-      <SectionWrapper>
+      {/* <SectionWrapper>
         <SectionTitle
           title={t("Services.Title")}
           subtitle={t("Services.Subtitle")
@@ -284,9 +241,9 @@ export default function BackendPage({ params: { locale } }) {
           fixedBorderRadius={true}
         />
         <AccordionCardHolder data={AccordionCardsData} />
-      </SectionWrapper>
+      </SectionWrapper> */}
 
-      <SectionWrapper>
+      {/* <SectionWrapper>
         <SectionTitle
           title={t("Stack.Title")}
           subtitle={t("Stack.Subtitle")
@@ -324,16 +281,59 @@ export default function BackendPage({ params: { locale } }) {
         />
 
         <GridCards cardsData={cardsDataBack} type="white" />
-      </SectionWrapper>
+      </SectionWrapper> */}
 
       <SectionWrapper dark={true}>
+        <SectionTitle
+          title={t("About.Title")}
+          subtitle={t("About.Subtitle")
+            .split(" ")
+            .map((word, index, words) => {
+              const specialWord = [""].includes(word);
+              const blueWord = ["Strategic"].includes(word);
+
+              if (specialWord || blueWord) {
+                return (
+                  <React.Fragment key={index}>
+                    <span
+                      style={
+                        blueWord ? { color: "#3C7BF6" } : { color: "#fff" }
+                      }
+                    >
+                      {word}
+                    </span>
+                    {specialWord && <br />}
+                  </React.Fragment>
+                );
+              } else {
+                return <span key={index}>{word}</span>;
+              }
+            })
+            .reduce((acc, word, index, array) => {
+              if (index < array.length - 1) {
+                return [...acc, word, " "];
+              } else {
+                return [...acc, word];
+              }
+            }, [])}
+          description={t("About.Description")}
+          styleType=""
+        />
+
+        <InfoCards data={AboutData} colorType="whiteDark" textAlign="center" />
+      </SectionWrapper>
+      <div className="bg-[#151515] pb-[5em]">
+        <RunningLine speed={7000} images={images} />
+      </div>
+
+      <SectionWrapper>
         <SectionTitle
           title={t("Advantages.Title")}
           subtitle={t("Advantages.Subtitle")
             .split(" ")
             .map((word, index, words) => {
               const specialWord = [""].includes(word);
-              const blueWord = ["Back-end", "Development"].includes(word);
+              const blueWord = ["Marketing"].includes(word);
 
               if (specialWord || blueWord) {
                 return (
@@ -360,17 +360,19 @@ export default function BackendPage({ params: { locale } }) {
               }
             }, [])}
           description={t("Advantages.Description")}
-          styleType=""
+          styleType="sectionTitleWhite"
         />
 
         <InfoCards
           data={AdvantagesData}
-          colorType="whiteDark"
-          textAlign="center"
+          colorType="dark"
+          textAlign="left"
+          titleSize="sm"
+          styleType="digital"
         />
       </SectionWrapper>
 
-      <SectionWrapper dark={true}>
+      {/* <SectionWrapper dark={true}>
         <SectionTitle
           title={t("Process.Title")}
           subtitle={t("Process.Subtitle")
@@ -408,11 +410,11 @@ export default function BackendPage({ params: { locale } }) {
         />
 
         <StepsCards data={StepsData} />
-      </SectionWrapper>
+      </SectionWrapper> */}
 
       <ContactForm data={contactFormData} />
 
-      <Faq page="BackendPageItems" />
+      <Faq page="DigitalPageItems" />
 
       <SectionWrapper dark={true}>
         <SectionTitle
@@ -421,9 +423,7 @@ export default function BackendPage({ params: { locale } }) {
             .split(" ")
             .map((word, index, words) => {
               const specialWord = ["from"].includes(word);
-              const blueWord = ["back-end", "developing", "process"].includes(
-                word
-              );
+              const blueWord = ["Marketing", "services"].includes(word);
 
               if (specialWord || blueWord) {
                 return (

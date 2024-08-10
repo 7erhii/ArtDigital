@@ -71,7 +71,6 @@ export default function AccordionCardHolder({ data }) {
             <div className={styles.innerCardButton}>
               <MainButton color="FullWhite" text={card.Button} />
             </div>
-
           </div>
         </div>
       ))}

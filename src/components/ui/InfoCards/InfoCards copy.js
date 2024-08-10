@@ -185,14 +185,16 @@ export default function InfoCards({
                   <Image
                     src={card.icon}
                     alt={card.Title}
-                    className={`w-[2em] h-[2em] ${styles.icon}`}
+                    className={` w-[2em] h-[2em]`}
                   />
                 )}
               </div>
             ) : (
               <>
-                {card.icon && <Image src={card.icon} alt={card.Title} />}
-                <h3 style={getTitleSizeStyle(titleSize)}>{card.Title}</h3>
+                <div className={styles.infoCardDigitalTypeTitle}>
+                  {card.icon && <Image src={card.icon} alt={card.Title} />}
+                  <h3 style={getTitleSizeStyle(titleSize)}>{card.Title}</h3>
+                </div>
               </>
             )}
             <p>{card.Description}</p>
@@ -239,7 +241,7 @@ export default function InfoCards({
               isDigital
                 ? data.length === 6
                   ? styles.infoCardDigitalLongType
-                  : styles.infoCardDigitalType
+                  : styles.infoCardDigitalLong
                 : styles.infoCard
             }
             style={

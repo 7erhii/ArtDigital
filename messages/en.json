@@ -397,6 +397,110 @@
         "title": "How do I get started with a ready-made project?",
         "descr": ""
       }
+    ],
+    "DigitalPageItems": [
+      {
+        "title": "What is back-end development?",
+        "descr": ""
+      },
+      {
+        "title": "",
+        "descr": ""
+      },
+      {
+        "title": "",
+        "descr": ""
+      },
+      {
+        "title": "",
+        "descr": ""
+      },
+      {
+        "title": "",
+        "descr": ""
+      },
+      {
+        "title": "",
+        "descr": ""
+      }
+    ],
+    "StrategicPageItems ": [
+      {
+        "title": "What is back-end development?",
+        "descr": ""
+      },
+      {
+        "title": "",
+        "descr": ""
+      },
+      {
+        "title": "",
+        "descr": ""
+      },
+      {
+        "title": "",
+        "descr": ""
+      },
+      {
+        "title": "",
+        "descr": ""
+      },
+      {
+        "title": "",
+        "descr": ""
+      }
+    ],
+    "BrandingPageItems": [
+      {
+        "title": "What is back-end development?",
+        "descr": ""
+      },
+      {
+        "title": "",
+        "descr": ""
+      },
+      {
+        "title": "",
+        "descr": ""
+      },
+      {
+        "title": "",
+        "descr": ""
+      },
+      {
+        "title": "",
+        "descr": ""
+      },
+      {
+        "title": "",
+        "descr": ""
+      }
+    ],
+    "OutdoorPageItems": [
+      {
+        "title": "What is back-end development?",
+        "descr": ""
+      },
+      {
+        "title": "",
+        "descr": ""
+      },
+      {
+        "title": "",
+        "descr": ""
+      },
+      {
+        "title": "",
+        "descr": ""
+      },
+      {
+        "title": "",
+        "descr": ""
+      },
+      {
+        "title": "",
+        "descr": ""
+      }
     ]
   },
 
@@ -1290,6 +1394,306 @@
     "page": "page NOT found",
     "button": "TAKE ME BACK",
     "error": "Server Error"
+  },
+  "Digital": {
+    "Hero": {
+      "HeroTitle": "DIGITAL Marketing SERVICE",
+      "HeroSubtitle": "Drive growth and engage your audience with tailored strategies and innovative campaigns designed to achieve your business goals.",
+      "HeroButton": "Contact us",
+      "HeroButtonClear": "Button"
+    },
+
+    "About": {
+      "Title": "all about",
+      "Subtitle": "Digital Marketing",
+      "Description": "Discover how we partner with businesses to drive success through tailored solutions and exceptional service.",
+      "Items": [
+        {
+          "Title": "Lorem ipsum",
+          "Description": "Marketing efforts increase brand exposure, making your business more recognizable to potential customers"
+        },
+        {
+          "Title": "Lorem ipsum",
+          "Description": "Strategic marketing campaigns can generate leads and drive conversions, ultimately boosting sales and revenue"
+        },
+        {
+          "Title": "Lorem ipsum",
+          "Description": "Through targeted marketing, businesses can better connect with their audience, fostering loyalty and long-term relationships"
+        }
+      ]
+    },
+    "Advantages": {
+      "Title": "advantages",
+      "Subtitle": "Unlocking the Power of Marketing",
+      "Description": "",
+      "Items": [
+        {
+          "Title": "All types of Google advertising",
+          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ipsum magna, congue at mi id, tristique cursus nisi. Integer consectetur libero massa, vitae facilisis elit dapibus venenatis. Praesent ex erat, ornare vel urna nec, iaculis varius libero. Sed id sapien ac risus posuere ultricies. Aliquam elementum enim sed eros fringilla, sit amet tempor magna faucibus. Nulla in diam non sem dignissim varius ut et mauris. Praesent viverra lacus imperdiet ante luctus pellentesque. "
+        },
+        {
+          "Title": "Website promotion to the top positions (SEO)",
+          "Description": "Nulla vitae mi tincidunt, congue nulla gravida, malesuada lectus. Sed vitae ornare mi. Suspendisse sit amet cursus massa. Quisque pellentesque posuere efficitur. Donec porta sapien vel mi tincidunt bibendum. Quisque elementum, odio ut suscipit facilisis, nibh nisl bibendum metus, ac accumsan leo purus nec est. In at turpis a metus aliquam facilisis. Aliquam libero eros, ultrices a facilisis ut, tempor quis felis."
+        },
+        {
+          "Title": "Targeting in social networks (SMM)",
+          "Description": "Nulla vitae mi tincidunt, congue nulla gravida, malesuada lectus. Sed vitae ornare mi. Suspendisse sit amet cursus massa. Quisque pellentesque posuere efficitur. Donec porta sapien vel mi tincidunt bibendum. Quisque elementum, odio ut suscipit facilisis, nibh nisl bibendum metus, ac accumsan leo purus nec est. In at turpis a metus aliquam facilisis. Aliquam libero eros, ultrices a facilisis ut, tempor quis felis."
+        },
+        {
+          "Title": "Remarketing",
+          "Description": "Nulla vitae mi tincidunt, congue nulla gravida, malesuada lectus. Sed vitae ornare mi. Suspendisse sit amet cursus massa. Quisque pellentesque posuere efficitur. Donec porta sapien vel mi tincidunt bibendum. Quisque elementum, odio ut suscipit facilisis, nibh nisl bibendum metus, ac accumsan leo purus nec est. In at turpis a metus aliquam facilisis. Aliquam libero eros, ultrices a facilisis ut, tempor quis felis."
+        },
+        {
+          "Title": "Contextual and Banner Advertising",
+          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ipsum magna, congue at mi id, tristique cursus nisi. Integer consectetur libero massa, vitae facilisis elit dapibus venenatis. Praesent ex erat, ornare vel urna nec, iaculis varius libero. Sed id sapien ac risus posuere ultricies. Aliquam elementum enim sed eros fringilla, sit amet tempor magna faucibus. Nulla in diam non sem "
+        },
+        {
+          "Title": "Email marketing",
+          "Description": "Nulla vitae mi tincidunt, congue nulla gravida, malesuada lectus. Sed vitae ornare mi. Suspendisse sit amet cursus massa. Quisque pellentesque posuere efficitur. Donec porta sapien vel mi tincidunt bibendum. Quisque elementum, odio ut suscipit facilisis, nibh nisl bibendum metus, ac accumsan leo purus nec est. In at turpis a metus aliquam facilisis. Aliquam libero eros, ultrices a facilisis ut, tempor quis felis."
+        }
+      ]
+    },
+    "EngageSection": {
+      "Title": "ALL SERVICES",
+      "Subtitle": "take all advantages from Marketing services",
+      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare dolor nec ornare porttitor. ",
+      "Button": "View all marketing srvices",
+      "EngageBlock": [
+        {
+          "Title": "Strategic marketing",
+          "Description": "Eye-catching outdoor designs crafted to enhance brand visibility and leave a lasting impression on your audience",
+          "Link": "#"
+        },
+        {
+          "Title": "Branding",
+          "Description": "Eye-catching outdoor designs crafted to enhance brand visibility and leave a lasting impression on your audience",
+          "Link": "#"
+        },
+        {
+          "Title": "Outdoor marketing",
+          "Description": "Eye-catching outdoor designs crafted to enhance brand visibility and leave a lasting impression on your audience",
+          "Link": "#"
+        }
+      ]
+    }
+  },
+  "Strategic": {
+    "Hero": {
+      "HeroTitle": "Strategic Marketing SERVICE",
+      "HeroSubtitle": "Drive growth and engage your audience with tailored strategies and innovative campaigns designed to achieve your business goals.",
+      "HeroButton": "Contact us",
+      "HeroButtonClear": "Button"
+    },
+
+    "About": {
+      "Title": "all about",
+      "Subtitle": "Strategic Marketing",
+      "Description": "Discover how we partner with businesses to drive success through tailored solutions and exceptional service.",
+      "Items": [
+        {
+          "Title": "Lorem ipsum",
+          "Description": "Marketing efforts increase brand exposure, making your business more recognizable to potential customers"
+        },
+        {
+          "Title": "Lorem ipsum",
+          "Description": "Strategic marketing campaigns can generate leads and drive conversions, ultimately boosting sales and revenue"
+        },
+        {
+          "Title": "Lorem ipsum",
+          "Description": "Through targeted marketing, businesses can better connect with their audience, fostering loyalty and long-term relationships"
+        }
+      ]
+    },
+    "Advantages": {
+      "Title": "advantages",
+      "Subtitle": "Unlocking the Power of Marketing",
+      "Description": "",
+      "Items": [
+        {
+          "Title": "Customer Journey",
+          "Description": "Nulla vitae mi tincidunt, congue nulla gravida, malesuada lectus. Sed vitae ornare mi. Suspendisse sit amet cursus massa. Quisque pellentesque posuere efficitur. Donec porta sapien vel mi tincidunt bibendum. Quisque elementum, odio ut suscipit facilisis, nibh nisl bibendum metus, ac accumsan leo purus nec est. In at turpis a metus aliquam facilisis. Aliquam libero eros, ultrices a facilisis ut, tempor quis felis."
+        },
+        {
+          "Title": "Research",
+          "Description": "Nulla vitae mi tincidunt, congue nulla gravida, malesuada lectus. Sed vitae ornare mi. Suspendisse sit amet cursus massa. Quisque pellentesque posuere efficitur. Donec porta sapien vel mi tincidunt bibendum. Quisque elementum, odio ut suscipit facilisis, nibh nisl bibendum metus, ac accumsan leo purus nec est. In at turpis a metus aliquam facilisis. Aliquam libero eros, ultrices a facilisis ut, tempor quis felis."
+        },
+        {
+          "Title": "Communication Strategy",
+          "Description": "Nulla vitae mi tincidunt, congue nulla gravida, malesuada lectus. Sed vitae ornare mi. Suspendisse sit amet cursus massa. Quisque pellentesque posuere efficitur. Donec porta sapien vel mi tincidunt bibendum. Quisque elementum, odio ut suscipit facilisis, nibh nisl bibendum metus, ac accumsan leo purus nec est. In at turpis a metus aliquam facilisis. Aliquam libero eros, ultrices a facilisis ut, tempor quis felis."
+        },
+        {
+          "Title": "Naming",
+          "Description": "Nulla vitae mi tincidunt, congue nulla gravida, malesuada lectus. Sed vitae ornare mi. Suspendisse sit amet cursus massa. Quisque pellentesque posuere efficitur. Donec porta sapien vel mi tincidunt bibendum. Quisque elementum, odio ut suscipit facilisis, nibh nisl bibendum metus, ac accumsan leo purus nec est. In at turpis a metus aliquam facilisis. Aliquam libero eros, ultrices a facilisis ut, tempor quis felis."
+        },
+        {
+          "Title": "Value Proposition",
+          "Description": "Nulla vitae mi tincidunt, congue nulla gravida, malesuada lectus. Sed vitae ornare mi. Suspendisse sit amet cursus massa. Quisque pellentesque posuere efficitur. Donec porta sapien vel mi tincidunt bibendum. Quisque elementum, odio ut suscipit facilisis, nibh nisl bibendum metus, ac accumsan leo purus nec est. In at turpis a metus aliquam facilisis. Aliquam libero eros, ultrices a facilisis ut, tempor quis felis."
+        }
+      ]
+    },
+    "EngageSection": {
+      "Title": "ALL SERVICES",
+      "Subtitle": "take all advantages from Marketing services",
+      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare dolor nec ornare porttitor. ",
+      "Button": "View all marketing srvices",
+      "EngageBlock": [
+        {
+          "Title": "Strategic marketing",
+          "Description": "Eye-catching outdoor designs crafted to enhance brand visibility and leave a lasting impression on your audience",
+          "Link": "#"
+        },
+        {
+          "Title": "Branding",
+          "Description": "Eye-catching outdoor designs crafted to enhance brand visibility and leave a lasting impression on your audience",
+          "Link": "#"
+        },
+        {
+          "Title": "Outdoor marketing",
+          "Description": "Eye-catching outdoor designs crafted to enhance brand visibility and leave a lasting impression on your audience",
+          "Link": "#"
+        }
+      ]
+    }
+  },
+  "Branding": {
+    "Hero": {
+      "HeroTitle": "Branding SERVICE",
+      "HeroSubtitle": "Drive growth and engage your audience with tailored strategies and innovative campaigns designed to achieve your business goals.",
+      "HeroButton": "Contact us",
+      "HeroButtonClear": "Button"
+    },
+
+    "About": {
+      "Title": "Branding SERVICE",
+      "Subtitle": "Strategic Marketing",
+      "Description": "Discover how we partner with businesses to drive success through tailored solutions and exceptional service.",
+      "Items": [
+        {
+          "Title": "Lorem ipsum",
+          "Description": "Marketing efforts increase brand exposure, making your business more recognizable to potential customers"
+        },
+        {
+          "Title": "Lorem ipsum",
+          "Description": "Strategic marketing campaigns can generate leads and drive conversions, ultimately boosting sales and revenue"
+        },
+        {
+          "Title": "Lorem ipsum",
+          "Description": "Through targeted marketing, businesses can better connect with their audience, fostering loyalty and long-term relationships"
+        }
+      ]
+    },
+    "Advantages": {
+      "Title": "advantages",
+      "Subtitle": "Unlocking the Power of Marketing",
+      "Description": "",
+      "Items": [
+        {
+          "Title": "Logo Design",
+          "Description": "Logo Design"
+        },
+        {
+          "Title": "Logo Design",
+          "Description": "Logo Design"
+        },
+        {
+          "Title": "Logo Design",
+          "Description": "Logo Design"
+        }
+      ]
+    },
+    "EngageSection": {
+      "Title": "ALL SERVICES",
+      "Subtitle": "take all advantages from Marketing services",
+      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare dolor nec ornare porttitor. ",
+      "Button": "View all marketing srvices",
+      "EngageBlock": [
+        {
+          "Title": "Strategic marketing",
+          "Description": "Eye-catching outdoor designs crafted to enhance brand visibility and leave a lasting impression on your audience",
+          "Link": "#"
+        },
+        {
+          "Title": "Branding",
+          "Description": "Eye-catching outdoor designs crafted to enhance brand visibility and leave a lasting impression on your audience",
+          "Link": "#"
+        },
+        {
+          "Title": "Outdoor marketing",
+          "Description": "Eye-catching outdoor designs crafted to enhance brand visibility and leave a lasting impression on your audience",
+          "Link": "#"
+        }
+      ]
+    }
+  },
+  "Outdoor": {
+    "Hero": {
+      "HeroTitle": "Outdoor marketing SERVICE",
+      "HeroSubtitle": "Drive growth and engage your audience with tailored strategies and innovative campaigns designed to achieve your business goals.",
+      "HeroButton": "Contact us",
+      "HeroButtonClear": "Button"
+    },
+
+    "About": {
+      "Title": "Branding SERVICE",
+      "Subtitle": "Strategic Marketing",
+      "Description": "Discover how we partner with businesses to drive success through tailored solutions and exceptional service.",
+      "Items": [
+        {
+          "Title": "Lorem ipsum",
+          "Description": "Marketing efforts increase brand exposure, making your business more recognizable to potential customers"
+        },
+        {
+          "Title": "Lorem ipsum",
+          "Description": "Strategic marketing campaigns can generate leads and drive conversions, ultimately boosting sales and revenue"
+        },
+        {
+          "Title": "Lorem ipsum",
+          "Description": "Through targeted marketing, businesses can better connect with their audience, fostering loyalty and long-term relationships"
+        }
+      ]
+    },
+    "Advantages": {
+      "Title": "advantages",
+      "Subtitle": "Unlocking the Power of Marketing",
+      "Description": "",
+      "Items": [
+        {
+          "Title": "Logo Design",
+          "Description": "Logo Design"
+        },
+        {
+          "Title": "Logo Design",
+          "Description": "Logo Design"
+        },
+        {
+          "Title": "Logo Design",
+          "Description": "Logo Design"
+        }
+      ]
+    },
+    "EngageSection": {
+      "Title": "ALL SERVICES",
+      "Subtitle": "take all advantages from Marketing services",
+      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare dolor nec ornare porttitor. ",
+      "Button": "View all marketing srvices",
+      "EngageBlock": [
+        {
+          "Title": "Strategic marketing",
+          "Description": "Eye-catching outdoor designs crafted to enhance brand visibility and leave a lasting impression on your audience",
+          "Link": "#"
+        },
+        {
+          "Title": "Branding",
+          "Description": "Eye-catching outdoor designs crafted to enhance brand visibility and leave a lasting impression on your audience",
+          "Link": "#"
+        },
+        {
+          "Title": "Outdoor marketing",
+          "Description": "Eye-catching outdoor designs crafted to enhance brand visibility and leave a lasting impression on your audience",
+          "Link": "#"
+        }
+      ]
+    }
   },
   "Error": {}
 }
