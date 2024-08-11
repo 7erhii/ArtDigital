@@ -202,7 +202,7 @@
 
 .linkCard:hover .arrowBlock {
   /* transform: translateX(calc(100% - 2em)); */
-  transform: translateX(2em);
+  transform: translateX(1em);
 }
 
 .arrow {
