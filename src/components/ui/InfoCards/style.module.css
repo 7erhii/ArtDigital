@@ -197,7 +197,7 @@
   width: 100%;
   display: flex;
   justify-content: flex-start;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.65s ease-in-out;
 }
 
 .linkCard:hover .arrowBlock {
