@@ -545,7 +545,7 @@
 
   "Footer": {
     "company": {
-      "descr": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra aliquet risus, non",
+      "descr": "lorems ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra aliquet risus, non",
       "contacts": {
         "country": "Kyiv, Ukraine",
         "street": "Lesi Ukrainky st., 123",
@@ -618,15 +618,15 @@
       "InfoCards": [
         {
           "Title": "Connect",
-          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et sapien eu risus consectetur imperdiet. Maecenas sit amet lorem auctor, commodo est vulputate, volutpat felis"
+          "Description": "lorems ipsum dolor sit amet, consectetur adipiscing elit. Cras et sapien eu risus consectetur imperdiet. Maecenas sit amet lorems auctor, commodo est vulputate, volutpat felis"
         },
         {
           "Title": "Research",
-          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et sapien eu risus consectetur imperdiet. Maecenas sit amet lorem auctor, commodo est vulputate, volutpat felis"
+          "Description": "lorems ipsum dolor sit amet, consectetur adipiscing elit. Cras et sapien eu risus consectetur imperdiet. Maecenas sit amet lorems auctor, commodo est vulputate, volutpat felis"
         },
         {
           "Title": "Development",
-          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et sapien eu risus consectetur imperdiet. Maecenas sit amet lorem auctor, commodo est vulputate, volutpat felis"
+          "Description": "lorems ipsum dolor sit amet, consectetur adipiscing elit. Cras et sapien eu risus consectetur imperdiet. Maecenas sit amet lorems auctor, commodo est vulputate, volutpat felis"
         }
       ]
     },
@@ -772,7 +772,7 @@
     "EngageSection": {
       "Title": "Front-end",
       "Subtitle": "take all advantages from Front-end developing process",
-      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare dolor nec ornare porttitor. ",
+      "Description": "lorems ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare dolor nec ornare porttitor. ",
       "EngageBlock": {
         "Title": "Fast Front-End Developing",
         "Description": "Optimized front-end code and efficient resource management lead to quicker page loads, reducing bounce rates and improving user satisfaction",
@@ -795,15 +795,15 @@
       "InfoCards": [
         {
           "Title": "Connect",
-          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et sapien eu risus consectetur imperdiet. Maecenas sit amet lorem auctor, commodo est vulputate, volutpat felis"
+          "Description": "lorems ipsum dolor sit amet, consectetur adipiscing elit. Cras et sapien eu risus consectetur imperdiet. Maecenas sit amet lorems auctor, commodo est vulputate, volutpat felis"
         },
         {
           "Title": "Research",
-          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et sapien eu risus consectetur imperdiet. Maecenas sit amet lorem auctor, commodo est vulputate, volutpat felis"
+          "Description": "lorems ipsum dolor sit amet, consectetur adipiscing elit. Cras et sapien eu risus consectetur imperdiet. Maecenas sit amet lorems auctor, commodo est vulputate, volutpat felis"
         },
         {
           "Title": "Development",
-          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et sapien eu risus consectetur imperdiet. Maecenas sit amet lorem auctor, commodo est vulputate, volutpat felis"
+          "Description": "lorems ipsum dolor sit amet, consectetur adipiscing elit. Cras et sapien eu risus consectetur imperdiet. Maecenas sit amet lorems auctor, commodo est vulputate, volutpat felis"
         }
       ]
     },
@@ -949,7 +949,7 @@
     "EngageSection": {
       "Title": "BACK-END",
       "Subtitle": "take all advantages from back-end developing process",
-      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare dolor nec ornare porttitor.",
+      "Description": "lorems ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare dolor nec ornare porttitor.",
       "EngageBlock": {
         "Title": "Fast Back-End Developing",
         "Description": "Optimized Back-end code and efficient resource management lead to quicker page loads, reducing bounce rates and improving user satisfaction",
@@ -1352,7 +1352,7 @@
   "AboutUs": {
     "Hero": {
       "HeroTitle": "MEET ART DIGITAL",
-      "HeroSubtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consequat molestie eleifend. Suspendisse potenti. In sed molestie velit. Nulla fermentum a enim id mollis",
+      "HeroSubtitle": "lorems ipsum dolor sit amet, consectetur adipiscing elit. Morbi consequat molestie eleifend. Suspendisse potenti. In sed molestie velit. Nulla fermentum a enim id mollis",
       "HeroButton": "Contact us",
       "HeroButtonClear": "Button"
     },
@@ -1409,15 +1409,15 @@
       "Description": "Discover how we partner with businesses to drive success through tailored solutions and exceptional service.",
       "Items": [
         {
-          "Title": "Lorem ipsum",
+          "Title": "lorems ipsu",
           "Description": "Marketing efforts increase brand exposure, making your business more recognizable to potential customers"
         },
         {
-          "Title": "Lorem ipsum",
+          "Title": "lorems ipsu",
           "Description": "Strategic marketing campaigns can generate leads and drive conversions, ultimately boosting sales and revenue"
         },
         {
-          "Title": "Lorem ipsum",
+          "Title": "lorems ipsu",
           "Description": "Through targeted marketing, businesses can better connect with their audience, fostering loyalty and long-term relationships"
         }
       ]
@@ -1429,7 +1429,7 @@
       "Items": [
         {
           "Title": "All types of Google advertising",
-          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ipsum magna, congue at mi id, tristique cursus nisi. Integer consectetur libero massa, vitae facilisis elit dapibus venenatis. Praesent ex erat, ornare vel urna nec, iaculis varius libero. Sed id sapien ac risus posuere ultricies. Aliquam elementum enim sed eros fringilla, sit amet tempor magna faucibus. Nulla in diam non sem dignissim varius ut et mauris. Praesent viverra lacus imperdiet ante luctus pellentesque. "
+          "Description": "lorems ipsum dolor sit amet, consectetur adipiscing elit. Nulla ipsum magna, congue at mi id, tristique cursus nisi. Integer consectetur libero massa, vitae facilisis elit dapibus venenatis. Praesent ex erat, ornare vel urna nec, iaculis varius libero. Sed id sapien ac risus posuere ultricies. Aliquam elementum enim sed eros fringilla, sit amet tempor magna faucibus. Nulla in diam non sem dignissim varius ut et mauris. Praesent viverra lacus imperdiet ante luctus pellentesque. "
         },
         {
           "Title": "Website promotion to the top positions (SEO)",
@@ -1445,7 +1445,7 @@
         },
         {
           "Title": "Contextual and Banner Advertising",
-          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ipsum magna, congue at mi id, tristique cursus nisi. Integer consectetur libero massa, vitae facilisis elit dapibus venenatis. Praesent ex erat, ornare vel urna nec, iaculis varius libero. Sed id sapien ac risus posuere ultricies. Aliquam elementum enim sed eros fringilla, sit amet tempor magna faucibus. Nulla in diam non sem "
+          "Description": "lorems ipsum dolor sit amet, consectetur adipiscing elit. Nulla ipsum magna, congue at mi id, tristique cursus nisi. Integer consectetur libero massa, vitae facilisis elit dapibus venenatis. Praesent ex erat, ornare vel urna nec, iaculis varius libero. Sed id sapien ac risus posuere ultricies. Aliquam elementum enim sed eros fringilla, sit amet tempor magna faucibus. Nulla in diam non sem "
         },
         {
           "Title": "Email marketing",
@@ -1456,7 +1456,7 @@
     "EngageSection": {
       "Title": "ALL SERVICES",
       "Subtitle": "take all advantages from Marketing services",
-      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare dolor nec ornare porttitor. ",
+      "Description": "lorems ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare dolor nec ornare porttitor. ",
       "Button": "View all marketing srvices",
       "EngageBlock": [
         {
@@ -1491,15 +1491,15 @@
       "Description": "Discover how we partner with businesses to drive success through tailored solutions and exceptional service.",
       "Items": [
         {
-          "Title": "Lorem ipsum",
+          "Title": "lorems ipsum",
           "Description": "Marketing efforts increase brand exposure, making your business more recognizable to potential customers"
         },
         {
-          "Title": "Lorem ipsum",
+          "Title": "lorems ipsum",
           "Description": "Strategic marketing campaigns can generate leads and drive conversions, ultimately boosting sales and revenue"
         },
         {
-          "Title": "Lorem ipsum",
+          "Title": "lorems ipsum",
           "Description": "Through targeted marketing, businesses can better connect with their audience, fostering loyalty and long-term relationships"
         }
       ]
@@ -1534,7 +1534,7 @@
     "EngageSection": {
       "Title": "ALL SERVICES",
       "Subtitle": "take all advantages from Marketing services",
-      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare dolor nec ornare porttitor. ",
+      "Description": "lorems ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare dolor nec ornare porttitor. ",
       "Button": "View all marketing srvices",
       "EngageBlock": [
         {
@@ -1569,15 +1569,15 @@
       "Description": "Discover how we partner with businesses to drive success through tailored solutions and exceptional service.",
       "Items": [
         {
-          "Title": "Lorem ipsum",
+          "Title": "lorems ipsum",
           "Description": "Marketing efforts increase brand exposure, making your business more recognizable to potential customers"
         },
         {
-          "Title": "Lorem ipsum",
+          "Title": "lorems ipsum",
           "Description": "Strategic marketing campaigns can generate leads and drive conversions, ultimately boosting sales and revenue"
         },
         {
-          "Title": "Lorem ipsum",
+          "Title": "lorems ipsum",
           "Description": "Through targeted marketing, businesses can better connect with their audience, fostering loyalty and long-term relationships"
         }
       ]
@@ -1604,7 +1604,7 @@
     "EngageSection": {
       "Title": "ALL SERVICES",
       "Subtitle": "take all advantages from Marketing services",
-      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare dolor nec ornare porttitor. ",
+      "Description": "lorems ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare dolor nec ornare porttitor. ",
       "Button": "View all marketing srvices",
       "EngageBlock": [
         {
@@ -1639,15 +1639,15 @@
       "Description": "Discover how we partner with businesses to drive success through tailored solutions and exceptional service.",
       "Items": [
         {
-          "Title": "Lorem ipsum",
+          "Title": "lorems ipsum",
           "Description": "Marketing efforts increase brand exposure, making your business more recognizable to potential customers"
         },
         {
-          "Title": "Lorem ipsum",
+          "Title": "lorems ipsum",
           "Description": "Strategic marketing campaigns can generate leads and drive conversions, ultimately boosting sales and revenue"
         },
         {
-          "Title": "Lorem ipsum",
+          "Title": "lorems ipsum",
           "Description": "Through targeted marketing, businesses can better connect with their audience, fostering loyalty and long-term relationships"
         }
       ]
@@ -1674,7 +1674,7 @@
     "EngageSection": {
       "Title": "ALL SERVICES",
       "Subtitle": "take all advantages from Marketing services",
-      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare dolor nec ornare porttitor. ",
+      "Description": "lorems ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare dolor nec ornare porttitor. ",
       "Button": "View all marketing srvices",
       "EngageBlock": [
         {
