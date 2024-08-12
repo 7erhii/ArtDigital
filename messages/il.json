@@ -440,7 +440,7 @@
   },
   "Footer": {
     "company": {
-      "descr": "Lorem  ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra aliquet risus, non",
+      "descr": "lorems  ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra aliquet risus, non",
       "contacts": {
         "country": "Kyiv, Ukraine",
         "street": "Lesi Ukrainky st., 123",
@@ -511,15 +511,15 @@
       "InfoCards": [
         {
           "Title": "Connect",
-          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et sapien eu risus consectetur imperdiet. Maecenas sit amet lorem auctor, commodo est vulputate, volutpat felis"
+          "Description": "lorems ipsum dolor sit amet, consectetur adipiscing elit. Cras et sapien eu risus consectetur imperdiet. Maecenas sit amet lorems auctor, commodo est vulputate, volutpat felis"
         },
         {
           "Title": "Research",
-          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et sapien eu risus consectetur imperdiet. Maecenas sit amet lorem auctor, commodo est vulputate, volutpat felis"
+          "Description": "lorems ipsum dolor sit amet, consectetur adipiscing elit. Cras et sapien eu risus consectetur imperdiet. Maecenas sit amet lorems auctor, commodo est vulputate, volutpat felis"
         },
         {
           "Title": "Development",
-          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et sapien eu risus consectetur imperdiet. Maecenas sit amet lorem auctor, commodo est vulputate, volutpat felis"
+          "Description": "lorems ipsum dolor sit amet, consectetur adipiscing elit. Cras et sapien eu risus consectetur imperdiet. Maecenas sit amet lorems auctor, commodo est vulputate, volutpat felis"
         }
       ]
     },
@@ -677,15 +677,15 @@
       "InfoCards": [
         {
           "Title": "Connect",
-          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et sapien eu risus consectetur imperdiet. Maecenas sit amet lorem auctor, commodo est vulputate, volutpat felis"
+          "Description": "lorems ipsum dolor sit amet, consectetur adipiscing elit. Cras et sapien eu risus consectetur imperdiet. Maecenas sit amet lorems auctor, commodo est vulputate, volutpat felis"
         },
         {
           "Title": "Research",
-          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et sapien eu risus consectetur imperdiet. Maecenas sit amet lorem auctor, commodo est vulputate, volutpat felis"
+          "Description": "lorems ipsum dolor sit amet, consectetur adipiscing elit. Cras et sapien eu risus consectetur imperdiet. Maecenas sit amet lorems auctor, commodo est vulputate, volutpat felis"
         },
         {
           "Title": "Development",
-          "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et sapien eu risus consectetur imperdiet. Maecenas sit amet lorem auctor, commodo est vulputate, volutpat felis"
+          "Description": "lorems ipsum dolor sit amet, consectetur adipiscing elit. Cras et sapien eu risus consectetur imperdiet. Maecenas sit amet lorems auctor, commodo est vulputate, volutpat felis"
         }
       ]
     },
@@ -1223,7 +1223,7 @@
   "AboutUs": {
     "Hero": {
       "HeroTitle": "MEET ART DIGITAL",
-      "HeroSubtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consequat molestie eleifend. Suspendisse potenti. In sed molestie velit. Nulla fermentum a enim id mollis",
+      "HeroSubtitle": "lorems ipsum dolor sit amet, consectetur adipiscing elit. Morbi consequat molestie eleifend. Suspendisse potenti. In sed molestie velit. Nulla fermentum a enim id mollis",
       "HeroButton": "Contact us",
       "HeroButtonClear": "Button"
     },
