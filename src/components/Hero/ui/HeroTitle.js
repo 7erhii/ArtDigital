@@ -34,7 +34,7 @@ export default function HeroTitle({ data }) {
       "--button-hover-color",
       hoverColor
     );
-    setInitialClass(""); // Удаляем класс после получения цвета
+    setInitialClass("");
   }, [color, hoverColor]);
 
   return (
