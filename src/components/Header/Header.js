@@ -13,7 +13,7 @@ const Header = ({ locale }) => {
     <header className={styles.header}>
       <div className={styles.container}>
         <Link href={`/${locale}`} className={styles.HeaderLogo}>
-          <Image src={mainLogo} alt="Main Logo" />
+          <Image src={mainLogo} alt="Main Logo" width={127} height={27} />
         </Link>
         <Nav locale={locale} />
         <div className={styles.HeaderAction}>
